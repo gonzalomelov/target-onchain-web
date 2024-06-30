@@ -1,3 +1,10 @@
+# [1.14.0](https://github.com/gonzalomelov/target-onchain/compare/v1.13.0...v1.14.0) (2024-06-30)
+
+
+### Features
+
+* invite to test shopify app ([71cf463](https://github.com/gonzalomelov/target-onchain/commit/71cf463444315c84ea389e8e97066558d2bd6105))
+
 # [1.13.0](https://github.com/gonzalomelov/target-onchain/compare/v1.12.3...v1.13.0) (2024-06-28)
 
 
