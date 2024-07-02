@@ -53,7 +53,7 @@ export const GET = async (req: Request) => {
       },
       ...(dev && {
         input: {
-          text: 'REQUIRED: Test wallet address',
+          text: 'Test wallet address',
         },
       }),
       ogDescription: frame!.title,
