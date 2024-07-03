@@ -1,3 +1,10 @@
+## [1.14.1](https://github.com/gonzalomelov/target-onchain/compare/v1.14.0...v1.14.1) (2024-07-03)
+
+
+### Bug Fixes
+
+* test wallet address is not mandatory ([2328239](https://github.com/gonzalomelov/target-onchain/commit/23282390fbb7c75bc6bfcbc468672cd59855c66a))
+
 # [1.14.0](https://github.com/gonzalomelov/target-onchain/compare/v1.13.0...v1.14.0) (2024-06-30)
 
 
