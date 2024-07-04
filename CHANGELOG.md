@@ -1,3 +1,10 @@
+# [1.15.0](https://github.com/gonzalomelov/target-onchain/compare/v1.14.1...v1.15.0) (2024-07-04)
+
+
+### Features
+
+* new endpoint to generate gif ([5a86a6d](https://github.com/gonzalomelov/target-onchain/commit/5a86a6d561c33c558b94a67282f86c3dafa95f57))
+
 ## [1.14.1](https://github.com/gonzalomelov/target-onchain/compare/v1.14.0...v1.14.1) (2024-07-03)
 
 
