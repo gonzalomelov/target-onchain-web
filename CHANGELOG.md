@@ -1,3 +1,10 @@
+# [1.17.0](https://github.com/gonzalomelov/target-onchain/compare/v1.16.0...v1.17.0) (2024-07-05)
+
+
+### Features
+
+* all criteria uses gif and delivers one of the many recommended products ([af72e38](https://github.com/gonzalomelov/target-onchain/commit/af72e388e6be4493a9216ec9aa0eb1e54fa82a90))
+
 # [1.16.0](https://github.com/gonzalomelov/target-onchain/compare/v1.15.0...v1.16.0) (2024-07-05)
 
 
