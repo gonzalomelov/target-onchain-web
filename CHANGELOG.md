@@ -1,3 +1,10 @@
+## [1.17.2](https://github.com/gonzalomelov/target-onchain/compare/v1.17.1...v1.17.2) (2024-07-05)
+
+
+### Bug Fixes
+
+* show gif when no product found for "All" criteria ([29eb7f6](https://github.com/gonzalomelov/target-onchain/commit/29eb7f6c6535f8250c93cfa35db772dfd72707c9))
+
 ## [1.17.1](https://github.com/gonzalomelov/target-onchain/compare/v1.17.0...v1.17.1) (2024-07-05)
 
 
