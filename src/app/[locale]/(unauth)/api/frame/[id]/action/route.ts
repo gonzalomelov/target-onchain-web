@@ -13,7 +13,12 @@ import { NextResponse } from 'next/server';
 import { db } from '@/libs/DB';
 import { Env } from '@/libs/Env';
 import { logger } from '@/libs/Logger';
-import { frameSchema, productSchema, userProductSchema } from '@/models/Schema';
+import {
+  frameSchema,
+  groupRecommendationSchema,
+  groupWalletSchema,
+  productSchema,
+} from '@/models/Schema';
 import { defaultErrorFrame, getBaseUrl } from '@/utils/Helpers';
 
 export type Attestation = {
@@ -239,12 +244,29 @@ const verifyAll = async (
   frameId: number,
 ): Promise<{ valid: boolean; data: any }> => {
   const recommendedProducts = await db
-    .select()
-    .from(userProductSchema)
+    .select({
+      frameId: groupRecommendationSchema.frameId,
+      frameTitle: frameSchema.title,
+      frameShop: frameSchema.shop,
+      frameMatchingCriteria: frameSchema.matchingCriteria,
+      profileText: groupRecommendationSchema.profileText,
+      productId: groupRecommendationSchema.productId,
+      productTitle: groupRecommendationSchema.productTitle,
+      message: groupRecommendationSchema.message,
+    })
+    .from(groupRecommendationSchema)
+    .innerJoin(
+      groupWalletSchema,
+      eq(groupRecommendationSchema.profileText, groupWalletSchema.profileText),
+    )
+    .innerJoin(
+      frameSchema,
+      eq(groupRecommendationSchema.frameId, frameSchema.id),
+    )
     .where(
       and(
-        eq(userProductSchema.walletAddress, address),
-        eq(userProductSchema.frameId, frameId),
+        eq(groupWalletSchema.walletAddress, address),
+        eq(groupRecommendationSchema.frameId, frameId),
       ),
     );
 

@@ -52,16 +52,36 @@ export const productSchema = mysqlTable('Product', {
   createdAt: int('createdAt').default(0).notNull(),
 });
 
-export const userProductSchema = mysqlTable(
-  'UserProduct',
+export const groupProfileSchema = mysqlTable('GroupProfile', {
+  profileText: varchar('profileText', { length: 100 }).primaryKey().notNull(),
+  createdAt: int('createdAt').default(0).notNull(),
+});
+
+export const groupWalletSchema = mysqlTable(
+  'GroupWallet',
   {
+    profileText: varchar('profileText', { length: 100 }).notNull(),
     walletAddress: varchar('walletAddress', { length: 255 }).notNull(),
-    frameId: int('frameId').notNull(),
-    productId1: varchar('productId1', { length: 255 }).notNull(),
-    productId2: varchar('productId2', { length: 255 }),
-    productId3: varchar('productId3', { length: 255 }),
+    createdAt: int('createdAt').default(0).notNull(),
   },
   (table) => ({
-    pk: primaryKey({ columns: [table.walletAddress, table.frameId] }),
+    pk: primaryKey({ columns: [table.profileText, table.walletAddress] }),
+  }),
+);
+
+export const groupRecommendationSchema = mysqlTable(
+  'GroupRecommendation',
+  {
+    frameId: int('frameId').notNull(),
+    profileText: varchar('profileText', { length: 100 }).notNull(),
+    productId: varchar('productId', { length: 255 }).notNull(),
+    productTitle: varchar('productTitle', { length: 255 }).notNull(),
+    message: text('message').notNull(),
+    createdAt: int('createdAt').default(0).notNull(),
+  },
+  (table) => ({
+    pk: primaryKey({
+      columns: [table.frameId, table.profileText, table.productId],
+    }),
   }),
 );
