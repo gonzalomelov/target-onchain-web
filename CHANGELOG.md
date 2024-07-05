@@ -1,3 +1,10 @@
+# [1.18.0](https://github.com/gonzalomelov/target-onchain/compare/v1.17.2...v1.18.0) (2024-07-05)
+
+
+### Features
+
+* show default message for users who have a profile but are not recommended any product ([d7075a5](https://github.com/gonzalomelov/target-onchain/commit/d7075a5bd95ce58c207b457389ae51f85a1a3faa))
+
 ## [1.17.2](https://github.com/gonzalomelov/target-onchain/compare/v1.17.1...v1.17.2) (2024-07-05)
 
 
