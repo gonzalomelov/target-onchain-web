@@ -68,7 +68,7 @@ export async function GET(req: Request): Promise<Response> {
               <div style={{ fontSize: 48, fontWeight: 400, marginTop: 20 }}>
                 {frameSubtitle}
               </div>
-              <div style={{ fontSize: 28, fontWeight: 500, marginTop: 10 }}>
+              <div style={{ fontSize: 48, fontWeight: 500, marginTop: 10 }}>
                 {content}
               </div>
             </div>
