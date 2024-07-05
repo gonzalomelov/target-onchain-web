@@ -271,7 +271,7 @@ const verifyAll = async (
     );
 
   return {
-    valid: recommendedProducts.length > 0,
+    valid: true,
     data: { recommendedProducts },
   };
 };
@@ -521,7 +521,7 @@ export const POST = async (req: Request) => {
       } else {
         const randomIndex = Math.floor(Math.random() * products.length);
         recommendedProduct = products[randomIndex];
-        imageSrc = `${getBaseUrl()}/api/gif?text=Although we know that you're from the US, currently we don't have any product to recommend to you. Go onchain and try again later!&title=${recommendedProduct!.title}&subtitle=&content=${recommendedProduct!.variantFormattedPrice}&url=${recommendedProduct!.image}&width=600`;
+        imageSrc = `${getBaseUrl()}/api/gif?text=Hey champ! 🌟 We couldn't find any onchain data for you, but we've got an iconic product that you’ll love. Check it out and grab yours now! 💪&title=${recommendedProduct!.title}&subtitle=&content=${recommendedProduct!.variantFormattedPrice}&url=${recommendedProduct!.image}&width=600`;
         customExplanation = `No onchain data or matching product found for ${accountAddress}. A random product is recommended.`;
       }
     }
