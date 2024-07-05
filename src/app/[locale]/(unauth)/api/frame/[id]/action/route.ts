@@ -516,7 +516,7 @@ export const POST = async (req: Request) => {
         );
 
         if (recommendedProduct) {
-          imageSrc = `${getBaseUrl()}/api/gif?text=${recommendedProducts[randomIndex]!.message}&title=${recommendedProduct!.title}&subtitle=&content=${recommendedProduct!.variantFormattedPrice}&url=${recommendedProduct!.image}&width=600`;
+          imageSrc = `${getBaseUrl()}/api/gif?text=${encodeURIComponent(recommendedProducts[randomIndex]!.message)}&title=${recommendedProduct!.title}&subtitle=&content=${recommendedProduct!.variantFormattedPrice}&url=${recommendedProduct!.image}&width=600`;
         }
       } else {
         const randomIndex = Math.floor(Math.random() * products.length);
