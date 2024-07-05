@@ -156,8 +156,8 @@ export async function GET(req: Request): Promise<Response> {
 
   // Initialize GIF encoder
   const encoder = GIFEncoder();
-  encoder.writeFrame(index1, 1200, 630, { palette: palette1, delay: 7500 });
-  encoder.writeFrame(index2, 1200, 630, { palette: palette2, delay: 7500 });
+  encoder.writeFrame(index1, 1200, 630, { palette: palette1, delay: 10000 });
+  encoder.writeFrame(index2, 1200, 630, { palette: palette2, delay: 10000 });
   encoder.finish();
 
   // Get the Uint8ClampedArray output of the binary GIF file
