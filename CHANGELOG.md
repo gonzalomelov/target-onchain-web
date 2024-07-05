@@ -1,3 +1,10 @@
+## [1.17.1](https://github.com/gonzalomelov/target-onchain/compare/v1.17.0...v1.17.1) (2024-07-05)
+
+
+### Bug Fixes
+
+* encode message ([70a02f6](https://github.com/gonzalomelov/target-onchain/commit/70a02f6a1715a96c5d2e5adb28019a8a2aeea672))
+
 # [1.17.0](https://github.com/gonzalomelov/target-onchain/compare/v1.16.0...v1.17.0) (2024-07-05)
 
 
