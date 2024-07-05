@@ -1,3 +1,10 @@
+# [1.16.0](https://github.com/gonzalomelov/target-onchain/compare/v1.15.0...v1.16.0) (2024-07-05)
+
+
+### Features
+
+* support a two frame gif ([3de94bd](https://github.com/gonzalomelov/target-onchain/commit/3de94bd359baeeb7b566226102861dad5788b098))
+
 # [1.15.0](https://github.com/gonzalomelov/target-onchain/compare/v1.14.1...v1.15.0) (2024-07-04)
 
 
