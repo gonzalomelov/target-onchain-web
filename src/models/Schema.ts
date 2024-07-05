@@ -54,6 +54,7 @@ export const productSchema = mysqlTable('Product', {
 
 export const groupProfileSchema = mysqlTable('GroupProfile', {
   profileText: varchar('profileText', { length: 100 }).primaryKey().notNull(),
+  message: text('message'),
   createdAt: int('createdAt').default(0).notNull(),
 });
 

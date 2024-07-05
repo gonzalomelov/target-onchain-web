@@ -15,6 +15,7 @@ import { Env } from '@/libs/Env';
 import { logger } from '@/libs/Logger';
 import {
   frameSchema,
+  groupProfileSchema,
   groupRecommendationSchema,
   groupWalletSchema,
   productSchema,
@@ -263,6 +264,10 @@ const verifyAll = async (
       frameSchema,
       eq(groupRecommendationSchema.frameId, frameSchema.id),
     )
+    .innerJoin(
+      groupProfileSchema,
+      eq(groupRecommendationSchema.profileText, groupProfileSchema.profileText),
+    )
     .where(
       and(
         eq(groupWalletSchema.walletAddress, address),
@@ -270,9 +275,24 @@ const verifyAll = async (
       ),
     );
 
+  const profileMessage = await db
+    .select({
+      profileMessage: groupProfileSchema.message,
+    })
+    .from(groupProfileSchema)
+    .innerJoin(
+      groupWalletSchema,
+      eq(groupProfileSchema.profileText, groupWalletSchema.profileText),
+    )
+    .where(eq(groupWalletSchema.walletAddress, address))
+    .limit(1);
+
   return {
     valid: true,
-    data: { recommendedProducts },
+    data: {
+      recommendedProducts,
+      profileMessage: profileMessage[0]?.profileMessage || null,
+    },
   };
 };
 
@@ -505,7 +525,7 @@ export const POST = async (req: Request) => {
         customExplanation = `No product matched for countries visited for ${accountAddress} based on Poaps`;
       }
     } else if (frame?.matchingCriteria === 'ALL') {
-      const { recommendedProducts } = data;
+      const { profileMessage, recommendedProducts } = data;
 
       if (recommendedProducts.length > 0) {
         const randomIndex = Math.floor(
@@ -521,7 +541,10 @@ export const POST = async (req: Request) => {
       } else {
         const randomIndex = Math.floor(Math.random() * products.length);
         recommendedProduct = products[randomIndex];
-        imageSrc = `${getBaseUrl()}/api/gif?text=Hey champ! 🌟 We couldn't find any onchain data for you, but we've got an iconic product that you’ll love. Check it out and grab yours now! 💪&title=${recommendedProduct!.title}&subtitle=&content=${recommendedProduct!.variantFormattedPrice}&url=${recommendedProduct!.image}&width=600`;
+        const quote =
+          profileMessage ||
+          'Hey champ! 🌟 We don’t know much about you. You should go onchain! While we don’t have a specific recommendation right now, we think you’ll love one of our iconic products. Grab Yours Now! 💪';
+        imageSrc = `${getBaseUrl()}/api/gif?text=${quote}&title=${recommendedProduct!.title}&subtitle=&content=${recommendedProduct!.variantFormattedPrice}&url=${recommendedProduct!.image}&width=600`;
         customExplanation = `No onchain data or matching product found for ${accountAddress}. A random product is recommended.`;
       }
     }
