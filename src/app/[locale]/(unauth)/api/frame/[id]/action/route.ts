@@ -508,13 +508,21 @@ export const POST = async (req: Request) => {
       const { recommendedProducts } = data;
 
       if (recommendedProducts.length > 0) {
+        const randomIndex = Math.floor(
+          Math.random() * recommendedProducts.length,
+        );
         recommendedProduct = products.find(
-          (p) => p.id === recommendedProducts[0]!.productId1,
+          (p) => p.id === recommendedProducts[randomIndex]!.productId,
         );
 
         if (recommendedProduct) {
-          imageSrc = `${getBaseUrl()}/api/og?title=${recommendedProduct!.title}&subtitle=${recommendedProduct!.description}&content=${recommendedProduct!.variantFormattedPrice}&url=${recommendedProduct!.image}&width=600`;
+          imageSrc = `${getBaseUrl()}/api/gif?text=${recommendedProducts[randomIndex]!.message}&title=${recommendedProduct!.title}&subtitle=&content=${recommendedProduct!.variantFormattedPrice}&url=${recommendedProduct!.image}&width=600`;
         }
+      } else {
+        const randomIndex = Math.floor(Math.random() * products.length);
+        recommendedProduct = products[randomIndex];
+        imageSrc = `${getBaseUrl()}/api/gif?text=Although we know that you're from the US, currently we don't have any product to recommend to you. Go onchain and try again later!&title=${recommendedProduct!.title}&subtitle=&content=${recommendedProduct!.variantFormattedPrice}&url=${recommendedProduct!.image}&width=600`;
+        customExplanation = `No onchain data or matching product found for ${accountAddress}. A random product is recommended.`;
       }
     }
   }
