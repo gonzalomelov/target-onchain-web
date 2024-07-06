@@ -34,5 +34,5 @@ export const defaultErrorFrame = getFrameHtmlResponse({
     src: 'https://i.imgur.com/HwF6LA3.gif',
   },
   ogDescription: 'Onchain Hyper-Personalization Commerce',
-  ogTitle: 'Target Onchain',
+  ogTitle: 'Wallet-aware Commerce',
 });

@@ -587,7 +587,7 @@ export const POST = async (req: Request) => {
       src: imageSrc!,
     },
     ogDescription: recommendedProduct!.title,
-    ogTitle: 'Target Onchain',
+    ogTitle: 'Wallet-aware Commerce',
     postUrl: `${getBaseUrl()}/api/frame`,
     ...(dev && {
       state: {

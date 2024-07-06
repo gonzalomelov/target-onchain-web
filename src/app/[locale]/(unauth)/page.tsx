@@ -21,7 +21,7 @@ export default function Index() {
           className="text-blue-700 hover:border-b-2 hover:border-blue-700"
           href="https://apps.shopify.com/target-onchain"
         >
-          Target Onchain
+          onchaintarget.xyz
         </a>{' '}
         can help you achieve it.
       </p>
