@@ -1,5 +1,5 @@
 {
-  "name": "next-js-boilerplate",
+  "name": "target-onchain-app",
   "version": "1.18.0",
   "scripts": {
     "dev:spotlight": "spotlight-sidecar",
