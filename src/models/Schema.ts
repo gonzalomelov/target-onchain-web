@@ -1,4 +1,7 @@
 import {
+  bigint,
+  boolean,
+  datetime,
   int,
   mysqlEnum,
   mysqlTable,
@@ -13,6 +16,21 @@ export const guestbookSchema = mysqlTable('Guestbook', {
   body: varchar('body', { length: 255 }).notNull(),
   createdAt: int('createdAt').default(0).notNull(),
   updatedAt: int('updatedAt').default(0).notNull(),
+});
+
+export const sessionSchema = mysqlTable('Session', {
+  id: varchar('id', { length: 255 }).primaryKey().notNull(),
+  shop: varchar('shop', { length: 255 }).notNull(),
+  state: varchar('state', { length: 255 }).notNull(),
+  isOnline: boolean('isOnline').default(false).notNull(),
+  scope: varchar('scope', { length: 255 }),
+  expires: datetime('expires'),
+  accessToken: varchar('accessToken', { length: 255 }).notNull(),
+  userId: bigint('userId', { mode: 'number' }),
+  clerkDbJwt: text('clerkDbJwt'),
+  storefrontAccessToken: varchar('storefrontAccessToken', {
+    length: 255,
+  }).notNull(),
 });
 
 export const frameSchema = mysqlTable('Frame', {

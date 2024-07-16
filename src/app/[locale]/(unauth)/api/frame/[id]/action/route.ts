@@ -19,6 +19,7 @@ import {
   groupRecommendationSchema,
   groupWalletSchema,
   productSchema,
+  sessionSchema,
 } from '@/models/Schema';
 import { defaultErrorFrame, getBaseUrl } from '@/utils/Helpers';
 
@@ -422,6 +423,19 @@ export const POST = async (req: Request) => {
 
   const [frame] = frames;
 
+  const sessions = await db
+    .select()
+    .from(sessionSchema)
+    .where(eq(sessionSchema.shop, frame!.shop))
+    .limit(1);
+
+  if (sessions.length === 0) {
+    logger.info('Session not found', { shop: frame!.shop });
+    return new NextResponse(defaultErrorFrame);
+  }
+
+  const [session] = sessions;
+
   // Get onchain data
   const { valid, explanation, data } = await processVerification(
     frame?.matchingCriteria!,
@@ -569,7 +583,7 @@ export const POST = async (req: Request) => {
     buttons.push({
       action: 'link',
       label: 'Buy',
-      target: `https://${frame!.shop}/cart/${recommendedProduct!.variantId}:1`,
+      target: `https://${frame!.shop}/cart/${recommendedProduct!.variantId}:1?access_token=${session!.storefrontAccessToken}`,
     });
   }
 
