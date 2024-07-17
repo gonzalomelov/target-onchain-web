@@ -1,3 +1,10 @@
+## [1.19.1](https://github.com/gonzalomelov/target-onchain/compare/v1.19.0...v1.19.1) (2024-07-17)
+
+
+### Bug Fixes
+
+* if no access_token, move on ([71fa2a3](https://github.com/gonzalomelov/target-onchain/commit/71fa2a37204290e6adbfe548ee256ca56c146870))
+
 # [1.19.0](https://github.com/gonzalomelov/target-onchain/compare/v1.18.0...v1.19.0) (2024-07-17)
 
 
