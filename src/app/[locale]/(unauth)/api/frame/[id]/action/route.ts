@@ -580,10 +580,16 @@ export const POST = async (req: Request) => {
   ];
 
   if (recommendedProduct!.variantId) {
+    let target = `https://${frame!.shop}/cart/${recommendedProduct!.variantId}:1`;
+
+    if (session!.storefrontAccessToken) {
+      target += `?access_token=${session!.storefrontAccessToken}`;
+    }
+
     buttons.push({
       action: 'link',
       label: 'Buy',
-      target: `https://${frame!.shop}/cart/${recommendedProduct!.variantId}:1?access_token=${session!.storefrontAccessToken}`,
+      target,
     });
   }
 
