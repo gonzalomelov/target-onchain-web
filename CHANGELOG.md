@@ -1,3 +1,10 @@
+# [1.19.0](https://github.com/gonzalomelov/target-onchain/compare/v1.18.0...v1.19.0) (2024-07-17)
+
+
+### Features
+
+* attribute sale if a successful purchase is made through the cart call-to-action ([a1f74d7](https://github.com/gonzalomelov/target-onchain/commit/a1f74d7b578290818dfab5609bbdfbd1de3c5e23))
+
 # [1.18.0](https://github.com/gonzalomelov/target-onchain/compare/v1.17.2...v1.18.0) (2024-07-05)
 
 
