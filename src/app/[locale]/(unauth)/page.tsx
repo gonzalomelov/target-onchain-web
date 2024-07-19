@@ -34,7 +34,7 @@ export default function Index() {
         >
           @gonzalomelov on Warpcast
         </a>{' '}
-        for updates and more information about the release.
+        for updates and more information about new features.
       </p>
       {/* <p>
         Our sponsors&apos; exceptional support has made this project possible.

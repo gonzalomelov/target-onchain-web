@@ -1,3 +1,4 @@
+import Image from 'next/image';
 import { useTranslations } from 'next-intl';
 
 import { AppConfig } from '@/utils/AppConfig';
@@ -18,6 +19,15 @@ const BaseTemplate = (props: {
               {AppConfig.name}
             </h1>
             <h2 className="text-xl">{t('description')}</h2>
+            <a href="https://apps.shopify.com/target-onchain" target="_blank">
+              <Image
+                className="mt-5"
+                src="/assets/images/Shopify-App-Store-Badge-Final-Black.png"
+                alt="Shopify App Store Badge"
+                width={332}
+                height={90}
+              />
+            </a>
           </div>
 
           <div className="flex justify-between">
