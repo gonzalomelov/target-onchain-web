@@ -54,6 +54,7 @@ export default function Layout(props: { children: React.ReactNode }) {
             <a
               className="border-none text-gray-700 hover:text-gray-900"
               href="https://github.com/gonzalomelov/onchain-hyper-personalization"
+              target="_blank"
             >
               GitHub
             </a>
