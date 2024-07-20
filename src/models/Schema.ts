@@ -38,7 +38,6 @@ export const frameSchema = mysqlTable('Frame', {
   title: varchar('title', { length: 255 }).notNull(),
   shop: varchar('shop', { length: 255 }).notNull(),
   productId: varchar('productId', { length: 255 }).notNull(),
-  productVariantId: varchar('productVariantId', { length: 255 }).notNull(),
   destination: varchar('destination', { length: 255 }).notNull(),
   createdAt: int('createdAt').default(0).notNull(),
   updatedAt: int('updatedAt').default(0).notNull(),
