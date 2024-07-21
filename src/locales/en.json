@@ -2,7 +2,7 @@
   "RootLayout": {
     "home_link": "Home",
     "support_link": "Support",
-    "guestbook_link": "Guestbook",
+    "frame_link": "Frame",
     "portfolio_link": "Portfolio",
     "terms_and_conditions_link": "Terms and Conditions",
     "sign_in_link": "Sign in",
@@ -16,16 +16,16 @@
     "meta_title": "Wallet-aware Commerce",
     "meta_description": "Deliver personalized products from your Shopify store to your users based on their onchain data."
   },
-  "Guestbook": {
-    "meta_title": "Guestbook",
+  "Frame": {
+    "meta_title": "Frame",
     "meta_description": "An example of CRUD operation",
     "database_powered_by": "Database powered by",
-    "loading_guestbook": "Loading guestbook...",
+    "loading_frame": "Loading frame...",
     "error_reporting_powered_by": "Error reporting powered by"
   },
-  "GuestbookForm": {
-    "username": "Username",
-    "body": "Body",
+  "FrameForm": {
+    "title": "Title",
+    "image": "Image",
     "save": "Save"
   },
   "Support": {

@@ -3,15 +3,15 @@ import { expect, test } from '@playwright/test';
 // Don't use the default user agent to avoid the requests to be blocked by Clerk middleware.
 test.use({ userAgent: '' });
 
-test.describe('Guestbook', () => {
+test.describe('Frame', () => {
   test.describe('Basic CRUD operations', () => {
-    test('should create a new entry in the guestbook and delete it', async ({
+    test('should create a new entry in the frame and delete it', async ({
       request,
     }) => {
-      const create = await request.post('/api/guestbook', {
+      const create = await request.post('/api/frame', {
         data: {
-          username: 'RANDOM_USERNAME',
-          body: 'RANDOM_BODY',
+          title: 'RANDOM_TITLE',
+          image: 'RANDOM_IMAGE',
         },
       });
       const createJson = await create.json();
@@ -19,7 +19,7 @@ test.describe('Guestbook', () => {
       expect(create.status()).toBe(200);
       expect(createJson.id).toBeDefined();
 
-      const del = await request.delete('/api/guestbook', {
+      const del = await request.delete('/api/frame', {
         data: {
           id: createJson.id,
         },

@@ -2,11 +2,11 @@
 
 import { useRouter } from 'next/navigation';
 
-const DeleteGuestbookEntry = (props: { id: number }) => {
+const DeleteFrameEntry = (props: { id: number }) => {
   const router = useRouter();
 
   const handleDelete = async () => {
-    await fetch(`/api/guestbook`, {
+    await fetch(`/api/frame`, {
       method: 'DELETE',
       headers: {
         'Content-Type': 'application/json',
@@ -41,4 +41,4 @@ const DeleteGuestbookEntry = (props: { id: number }) => {
   );
 };
 
-export { DeleteGuestbookEntry };
+export { DeleteFrameEntry };

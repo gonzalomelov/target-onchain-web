@@ -10,14 +10,6 @@ import {
   varchar,
 } from 'drizzle-orm/mysql-core';
 
-export const guestbookSchema = mysqlTable('Guestbook', {
-  id: int('id').primaryKey().autoincrement().notNull(),
-  username: varchar('username', { length: 255 }).notNull(),
-  body: varchar('body', { length: 255 }).notNull(),
-  createdAt: int('createdAt').default(0).notNull(),
-  updatedAt: int('updatedAt').default(0).notNull(),
-});
-
 export const sessionSchema = mysqlTable('Session', {
   id: varchar('id', { length: 255 }).primaryKey().notNull(),
   shop: varchar('shop', { length: 255 }).notNull(),

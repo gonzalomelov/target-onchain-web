@@ -3,13 +3,13 @@ import { useTranslations } from 'next-intl';
 import { getTranslations } from 'next-intl/server';
 import { Suspense } from 'react';
 
-import { AddGuestbookForm } from '@/components/AddGuestbookForm';
-import { GuestbookList } from '@/components/GuestbookList';
+import { AddFrameForm } from '@/components/AddFrameForm';
+import { FrameList } from '@/components/FrameList';
 
 export async function generateMetadata(props: { params: { locale: string } }) {
   const t = await getTranslations({
     locale: props.params.locale,
-    namespace: 'Guestbook',
+    namespace: 'Frame',
   });
 
   return {
@@ -18,15 +18,15 @@ export async function generateMetadata(props: { params: { locale: string } }) {
   };
 }
 
-const Guestbook = () => {
-  const t = useTranslations('Guestbook');
+const Frame = () => {
+  const t = useTranslations('Frame');
 
   return (
     <>
-      <AddGuestbookForm />
+      <AddFrameForm />
 
-      <Suspense fallback={<p>{t('loading_guestbook')}</p>}>
-        <GuestbookList />
+      <Suspense fallback={<p>{t('loading_frame')}</p>}>
+        <FrameList />
       </Suspense>
 
       <div className="mt-2 text-center text-sm">
@@ -56,4 +56,4 @@ const Guestbook = () => {
   );
 };
 
-export default Guestbook;
+export default Frame;

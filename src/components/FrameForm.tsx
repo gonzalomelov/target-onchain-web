@@ -6,32 +6,32 @@ import { useTranslations } from 'next-intl';
 import { type SubmitHandler, useForm } from 'react-hook-form';
 import type { z } from 'zod';
 
-import { GuestbookValidation } from '@/validations/GuestbookValidation';
+import { FrameValidation } from '@/validations/FrameValidation';
 
-type IGuestbookFormProps =
+type IFrameFormProps =
   | {
       edit: true;
       id: number;
-      defaultValues: z.infer<typeof GuestbookValidation>;
-      onValid: SubmitHandler<z.infer<typeof GuestbookValidation>>;
+      defaultValues: z.infer<typeof FrameValidation>;
+      onValid: SubmitHandler<z.infer<typeof FrameValidation>>;
     }
   | {
       edit?: false;
-      onValid: SubmitHandler<z.infer<typeof GuestbookValidation>>;
+      onValid: SubmitHandler<z.infer<typeof FrameValidation>>;
     };
 
-const GuestbookForm = (props: IGuestbookFormProps) => {
+const FrameForm = (props: IFrameFormProps) => {
   const {
     handleSubmit,
     register,
     reset,
     formState: { errors },
-  } = useForm<z.infer<typeof GuestbookValidation>>({
-    resolver: zodResolver(GuestbookValidation),
+  } = useForm<z.infer<typeof FrameValidation>>({
+    resolver: zodResolver(FrameValidation),
     defaultValues: props.edit ? props.defaultValues : undefined,
   });
   const router = useRouter();
-  const t = useTranslations('GuestbookForm');
+  const t = useTranslations('FrameForm');
 
   const handleCreate = handleSubmit(async (data) => {
     await props.onValid(data);
@@ -45,18 +45,18 @@ const GuestbookForm = (props: IGuestbookFormProps) => {
       <div>
         <label
           className="text-sm font-bold text-gray-700"
-          htmlFor={`username${props.edit ? `-${props.id}` : ''}`}
+          htmlFor={`title${props.edit ? `-${props.id}` : ''}`}
         >
-          {t('username')}
+          {t('title')}
           <input
-            id={`username${props.edit ? `-${props.id}` : ''}`}
+            id={`title${props.edit ? `-${props.id}` : ''}`}
             className="mt-2 w-full appearance-none rounded border px-3 py-2 leading-tight text-gray-700 focus:outline-none focus:ring focus:ring-blue-300/50"
-            {...register('username')}
+            {...register('title')}
           />
         </label>
-        {errors.username?.message && (
+        {errors.title?.message && (
           <div className="my-2 text-xs italic text-red-500">
-            {errors.username?.message}
+            {errors.title?.message}
           </div>
         )}
       </div>
@@ -64,18 +64,18 @@ const GuestbookForm = (props: IGuestbookFormProps) => {
       <div className="mt-3">
         <label
           className="text-sm font-bold text-gray-700"
-          htmlFor={`body${props.edit ? `-${props.id}` : ''}`}
+          htmlFor={`image${props.edit ? `-${props.id}` : ''}`}
         >
-          {t('body')}
+          {t('image')}
           <input
-            id={`body${props.edit ? `-${props.id}` : ''}`}
+            id={`image${props.edit ? `-${props.id}` : ''}`}
             className="mt-2 w-full appearance-none rounded border px-3 py-2 leading-tight text-gray-700 focus:outline-none focus:ring focus:ring-blue-300/50"
-            {...register('body')}
+            {...register('image')}
           />
         </label>
-        {errors.body?.message && (
+        {errors.image?.message && (
           <div className="my-2 text-xs italic text-red-500">
-            {errors.body?.message}
+            {errors.image?.message}
           </div>
         )}
       </div>
@@ -92,4 +92,4 @@ const GuestbookForm = (props: IGuestbookFormProps) => {
   );
 };
 
-export { GuestbookForm };
+export { FrameForm };

@@ -1,11 +1,11 @@
 'use client';
 
-import { GuestbookForm } from './GuestbookForm';
+import { FrameForm } from './FrameForm';
 
-const AddGuestbookForm = () => (
-  <GuestbookForm
+const AddFrameForm = () => (
+  <FrameForm
     onValid={async (data) => {
-      await fetch(`/api/guestbook`, {
+      await fetch(`/api/frame`, {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
@@ -16,4 +16,4 @@ const AddGuestbookForm = () => (
   />
 );
 
-export { AddGuestbookForm };
+export { AddFrameForm };

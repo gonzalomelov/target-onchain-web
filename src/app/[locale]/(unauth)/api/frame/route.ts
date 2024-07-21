@@ -3,31 +3,32 @@ import { NextResponse } from 'next/server';
 
 import { db } from '@/libs/DB';
 import { logger } from '@/libs/Logger';
-import { guestbookSchema } from '@/models/Schema';
+import { frameSchema } from '@/models/Schema';
 import {
-  DeleteGuestbookValidation,
-  EditGuestbookValidation,
-  GuestbookValidation,
-} from '@/validations/GuestbookValidation';
+  DeleteFrameValidation,
+  EditFrameValidation,
+  FrameValidation,
+} from '@/validations/FrameValidation';
 
 export const POST = async (request: Request) => {
   const json = await request.json();
-  const parse = GuestbookValidation.safeParse(json);
+  const parse = FrameValidation.safeParse(json);
 
   if (!parse.success) {
     return NextResponse.json(parse.error.format(), { status: 422 });
   }
 
   try {
-    const guestbook = await db.insert(guestbookSchema).values(parse.data);
+    // @ts-ignore
+    const frame = await db.insert(frameSchema).values(parse.data);
 
-    logger.info('A new guestbook has been created');
+    logger.info('A new frame has been created');
 
     return NextResponse.json({
-      id: guestbook[0]?.insertId,
+      id: frame[0]?.insertId,
     });
   } catch (error) {
-    logger.error(error, 'An error occurred while creating a guestbook');
+    logger.error(error, 'An error occurred while creating a frame');
 
     return NextResponse.json({}, { status: 500 });
   }
@@ -35,7 +36,7 @@ export const POST = async (request: Request) => {
 
 export const PUT = async (request: Request) => {
   const json = await request.json();
-  const parse = EditGuestbookValidation.safeParse(json);
+  const parse = EditFrameValidation.safeParse(json);
 
   if (!parse.success) {
     return NextResponse.json(parse.error.format(), { status: 422 });
@@ -43,18 +44,18 @@ export const PUT = async (request: Request) => {
 
   try {
     await db
-      .update(guestbookSchema)
+      .update(frameSchema)
       .set({
         ...parse.data,
         updatedAt: sql`(strftime('%s', 'now'))`,
       })
-      .where(eq(guestbookSchema.id, parse.data.id));
+      .where(eq(frameSchema.id, parse.data.id));
 
-    logger.info('A guestbook entry has been updated');
+    logger.info('A frame entry has been updated');
 
     return NextResponse.json({});
   } catch (error) {
-    logger.error(error, 'An error occurred while updating a guestbook');
+    logger.error(error, 'An error occurred while updating a frame');
 
     return NextResponse.json({}, { status: 500 });
   }
@@ -62,22 +63,20 @@ export const PUT = async (request: Request) => {
 
 export const DELETE = async (request: Request) => {
   const json = await request.json();
-  const parse = DeleteGuestbookValidation.safeParse(json);
+  const parse = DeleteFrameValidation.safeParse(json);
 
   if (!parse.success) {
     return NextResponse.json(parse.error.format(), { status: 422 });
   }
 
   try {
-    await db
-      .delete(guestbookSchema)
-      .where(eq(guestbookSchema.id, parse.data.id));
+    await db.delete(frameSchema).where(eq(frameSchema.id, parse.data.id));
 
-    logger.info('A guestbook entry has been deleted');
+    logger.info('A frame entry has been deleted');
 
     return NextResponse.json({});
   } catch (error) {
-    logger.error(error, 'An error occurred while deleting a guestbook');
+    logger.error(error, 'An error occurred while deleting a frame');
 
     return NextResponse.json({}, { status: 500 });
   }
