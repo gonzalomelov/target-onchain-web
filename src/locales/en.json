@@ -25,7 +25,10 @@
   },
   "FrameForm": {
     "title": "Title",
+    "shop": "Shop",
     "image": "Image",
+    "button": "Button",
+    "matchingCriteria": "Matching Criteria",
     "save": "Save"
   },
   "Support": {

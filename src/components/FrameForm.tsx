@@ -64,6 +64,25 @@ const FrameForm = (props: IFrameFormProps) => {
       <div className="mt-3">
         <label
           className="text-sm font-bold text-gray-700"
+          htmlFor={`shop${props.edit ? `-${props.id}` : ''}`}
+        >
+          {t('shop')}
+          <input
+            id={`shop${props.edit ? `-${props.id}` : ''}`}
+            className="mt-2 w-full appearance-none rounded border px-3 py-2 leading-tight text-gray-700 focus:outline-none focus:ring focus:ring-blue-300/50"
+            {...register('shop')}
+          />
+        </label>
+        {errors.shop?.message && (
+          <div className="my-2 text-xs italic text-red-500">
+            {errors.shop?.message}
+          </div>
+        )}
+      </div>
+
+      <div className="mt-3">
+        <label
+          className="text-sm font-bold text-gray-700"
           htmlFor={`image${props.edit ? `-${props.id}` : ''}`}
         >
           {t('image')}
@@ -76,6 +95,44 @@ const FrameForm = (props: IFrameFormProps) => {
         {errors.image?.message && (
           <div className="my-2 text-xs italic text-red-500">
             {errors.image?.message}
+          </div>
+        )}
+      </div>
+
+      <div className="mt-3">
+        <label
+          className="text-sm font-bold text-gray-700"
+          htmlFor={`button${props.edit ? `-${props.id}` : ''}`}
+        >
+          {t('button')}
+          <input
+            id={`button${props.edit ? `-${props.id}` : ''}`}
+            className="mt-2 w-full appearance-none rounded border px-3 py-2 leading-tight text-gray-700 focus:outline-none focus:ring focus:ring-blue-300/50"
+            {...register('button')}
+          />
+        </label>
+        {errors.button?.message && (
+          <div className="my-2 text-xs italic text-red-500">
+            {errors.button?.message}
+          </div>
+        )}
+      </div>
+
+      <div className="mt-3">
+        <label
+          className="text-sm font-bold text-gray-700"
+          htmlFor={`button${props.edit ? `-${props.id}` : ''}`}
+        >
+          {t('matchingCriteria')}
+          <input
+            id={`matchingCriteria${props.edit ? `-${props.id}` : ''}`}
+            className="mt-2 w-full appearance-none rounded border px-3 py-2 leading-tight text-gray-700 focus:outline-none focus:ring focus:ring-blue-300/50"
+            {...register('matchingCriteria')}
+          />
+        </label>
+        {errors.matchingCriteria?.message && (
+          <div className="my-2 text-xs italic text-red-500">
+            {errors.matchingCriteria?.message}
           </div>
         )}
       </div>

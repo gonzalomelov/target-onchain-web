@@ -16,7 +16,14 @@ const FrameList = async () => {
         <div key={elt.id} className="mb-1 flex items-center gap-x-1">
           <DeleteFrameEntry id={elt.id} />
 
-          <EditableFrameEntry id={elt.id} title={elt.title} image={elt.image} />
+          <EditableFrameEntry
+            id={elt.id}
+            title={elt.title}
+            shop={elt.shop}
+            image={elt.image}
+            button={elt.button}
+            matchingCriteria={elt.matchingCriteria}
+          />
         </div>
       ))}
     </div>

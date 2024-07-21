@@ -1,13 +1,19 @@
 'use client';
 
 import { useState } from 'react';
+import type { z } from 'zod';
+
+import type { MatchingCriteriaEnum } from '@/validations/FrameValidation';
 
 import { FrameForm } from './FrameForm';
 
 const EditableFrameEntry = (props: {
   id: number;
   title: string;
+  shop: string;
   image: string;
+  button: string;
+  matchingCriteria: z.infer<typeof MatchingCriteriaEnum>;
 }) => {
   const [isEditing, setIsEditing] = useState(false);
 
@@ -43,7 +49,10 @@ const EditableFrameEntry = (props: {
             id={props.id}
             defaultValues={{
               title: props.title,
+              shop: props.shop,
               image: props.image,
+              button: props.button,
+              matchingCriteria: props.matchingCriteria,
             }}
             onValid={async (data) => {
               await fetch(`/api/frame`, {
@@ -63,7 +72,7 @@ const EditableFrameEntry = (props: {
         ) : (
           <>
             <span className="text-gray-500">{props.title}:</span>{' '}
-            <span className="text-gray-800">{props.image}</span>
+            <span className="text-gray-800">{props.shop}</span>
           </>
         )}
       </div>

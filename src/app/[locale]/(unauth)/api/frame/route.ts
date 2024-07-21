@@ -1,4 +1,4 @@
-import { eq, sql } from 'drizzle-orm';
+import { eq } from 'drizzle-orm';
 import { NextResponse } from 'next/server';
 
 import { db } from '@/libs/DB';
@@ -19,7 +19,6 @@ export const POST = async (request: Request) => {
   }
 
   try {
-    // @ts-ignore
     const frame = await db.insert(frameSchema).values(parse.data);
 
     logger.info('A new frame has been created');
@@ -47,7 +46,7 @@ export const PUT = async (request: Request) => {
       .update(frameSchema)
       .set({
         ...parse.data,
-        updatedAt: sql`(strftime('%s', 'now'))`,
+        // updatedAt: sql`(strftime('%s', 'now'))`,
       })
       .where(eq(frameSchema.id, parse.data.id));
 
