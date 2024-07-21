@@ -40,7 +40,7 @@ export const frameSchema = mysqlTable('Frame', {
     'COINBASE_ONCHAIN_VERIFICATIONS_ONE',
     'POAPS_OWNED',
     'ALL',
-  ]),
+  ]).notNull(),
 });
 
 export const productSchema = mysqlTable('Product', {
