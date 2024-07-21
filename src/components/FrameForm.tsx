@@ -14,10 +14,12 @@ type IFrameFormProps =
       id: number;
       defaultValues: z.infer<typeof FrameValidation>;
       onValid: SubmitHandler<z.infer<typeof FrameValidation>>;
+      shopOptions?: string[];
     }
   | {
       edit?: false;
       onValid: SubmitHandler<z.infer<typeof FrameValidation>>;
+      shopOptions?: string[];
     };
 
 const FrameForm = (props: IFrameFormProps) => {
@@ -67,11 +69,25 @@ const FrameForm = (props: IFrameFormProps) => {
           htmlFor={`shop${props.edit ? `-${props.id}` : ''}`}
         >
           {t('shop')}
-          <input
-            id={`shop${props.edit ? `-${props.id}` : ''}`}
-            className="mt-2 w-full appearance-none rounded border px-3 py-2 leading-tight text-gray-700 focus:outline-none focus:ring focus:ring-blue-300/50"
-            {...register('shop')}
-          />
+          {props.shopOptions ? (
+            <select
+              id={`shop${props.edit ? `-${props.id}` : ''}`}
+              className="mt-2 w-full appearance-none rounded border px-3 py-2 leading-tight text-gray-700 focus:outline-none focus:ring focus:ring-blue-300/50"
+              {...register('shop')}
+            >
+              {props.shopOptions.map((shop) => (
+                <option key={shop} value={shop}>
+                  {shop}
+                </option>
+              ))}
+            </select>
+          ) : (
+            <input
+              id={`shop${props.edit ? `-${props.id}` : ''}`}
+              className="mt-2 w-full appearance-none rounded border px-3 py-2 leading-tight text-gray-700 focus:outline-none focus:ring focus:ring-blue-300/50"
+              {...register('shop')}
+            />
+          )}
         </label>
         {errors.shop?.message && (
           <div className="my-2 text-xs italic text-red-500">
@@ -121,7 +137,7 @@ const FrameForm = (props: IFrameFormProps) => {
       <div className="mt-3">
         <label
           className="text-sm font-bold text-gray-700"
-          htmlFor={`button${props.edit ? `-${props.id}` : ''}`}
+          htmlFor={`matchingCriteria${props.edit ? `-${props.id}` : ''}`}
         >
           {t('matchingCriteria')}
           <input
