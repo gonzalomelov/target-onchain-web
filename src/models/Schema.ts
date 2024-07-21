@@ -29,7 +29,6 @@ export const frameSchema = mysqlTable('Frame', {
   id: int('id').primaryKey().autoincrement().notNull(),
   title: varchar('title', { length: 255 }).notNull(),
   shop: varchar('shop', { length: 255 }).notNull(),
-  destination: varchar('destination', { length: 255 }).notNull(),
   createdAt: int('createdAt').default(0).notNull(),
   updatedAt: int('updatedAt').default(0).notNull(),
   image: varchar('image', { length: 255 }).notNull(),
