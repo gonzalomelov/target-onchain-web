@@ -31,7 +31,7 @@ export const frameSchema = mysqlTable('Frame', {
   shop: varchar('shop', { length: 255 }).notNull(),
   createdAt: int('createdAt').default(0).notNull(),
   updatedAt: int('updatedAt').default(0).notNull(),
-  image: varchar('image', { length: 255 }).notNull(),
+  image: varchar('image', { length: 512 }).notNull(),
   button: varchar('button', { length: 255 }).notNull(),
   matchingCriteria: mysqlEnum('matchingCriteria', [
     'RECEIPTS_XYZ_ALL_TIME_RUNNING',
