@@ -1,6 +1,6 @@
 import { z } from 'zod';
 
-export const MatchingCriteriaEnum = z.enum([
+export const MatchingCriteriaEnumSchema = z.enum([
   'RECEIPTS_XYZ_ALL_TIME_RUNNING',
   'COINBASE_ONCHAIN_VERIFICATIONS_COUNTRY',
   'COINBASE_ONCHAIN_VERIFICATIONS_ACCOUNT',
@@ -9,12 +9,14 @@ export const MatchingCriteriaEnum = z.enum([
   'ALL',
 ]);
 
+export type MatchingCriteriaEnum = z.infer<typeof MatchingCriteriaEnumSchema>;
+
 export const FrameValidation = z.object({
   title: z.string().min(1),
   shop: z.string().min(1),
   image: z.string().min(1),
   button: z.string().min(1),
-  matchingCriteria: MatchingCriteriaEnum,
+  matchingCriteria: MatchingCriteriaEnumSchema,
 });
 
 export const EditFrameValidation = z.object({
@@ -23,7 +25,7 @@ export const EditFrameValidation = z.object({
   shop: z.string().min(1),
   image: z.string().min(1),
   button: z.string().min(1),
-  matchingCriteria: MatchingCriteriaEnum,
+  matchingCriteria: MatchingCriteriaEnumSchema,
 });
 
 export const DeleteFrameValidation = z.object({

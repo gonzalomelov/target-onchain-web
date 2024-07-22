@@ -6,7 +6,10 @@ import { useTranslations } from 'next-intl';
 import { type SubmitHandler, useForm } from 'react-hook-form';
 import type { z } from 'zod';
 
-import { FrameValidation } from '@/validations/FrameValidation';
+import {
+  FrameValidation,
+  MatchingCriteriaEnumSchema,
+} from '@/validations/FrameValidation';
 
 type IFrameFormProps =
   | {
@@ -140,11 +143,17 @@ const FrameForm = (props: IFrameFormProps) => {
           htmlFor={`matchingCriteria${props.edit ? `-${props.id}` : ''}`}
         >
           {t('matchingCriteria')}
-          <input
+          <select
             id={`matchingCriteria${props.edit ? `-${props.id}` : ''}`}
             className="mt-2 w-full appearance-none rounded border px-3 py-2 leading-tight text-gray-700 focus:outline-none focus:ring focus:ring-blue-300/50"
             {...register('matchingCriteria')}
-          />
+          >
+            {MatchingCriteriaEnumSchema.options.map((matchingCriteria) => (
+              <option key={matchingCriteria} value={matchingCriteria}>
+                {matchingCriteria}
+              </option>
+            ))}
+          </select>
         </label>
         {errors.matchingCriteria?.message && (
           <div className="my-2 text-xs italic text-red-500">

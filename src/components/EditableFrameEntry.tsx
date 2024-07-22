@@ -3,7 +3,7 @@
 import { useState } from 'react';
 import type { z } from 'zod';
 
-import type { MatchingCriteriaEnum } from '@/validations/FrameValidation';
+import type { MatchingCriteriaEnumSchema } from '@/validations/FrameValidation';
 
 import { FrameForm } from './FrameForm';
 
@@ -13,7 +13,7 @@ const EditableFrameEntry = (props: {
   shop: string;
   image: string;
   button: string;
-  matchingCriteria: z.infer<typeof MatchingCriteriaEnum>;
+  matchingCriteria: z.infer<typeof MatchingCriteriaEnumSchema>;
 }) => {
   const [isEditing, setIsEditing] = useState(false);
 
