@@ -55,7 +55,7 @@ export const productSchema = mysqlTable('Product', {
   }).notNull(),
   alt: text('alt').notNull(),
   image: varchar('image', { length: 255 }).notNull(),
-  createdAt: int('createdAt').default(0).notNull(),
+  createdAt: datetime('createdAt'),
 });
 
 export const groupProfileSchema = mysqlTable('GroupProfile', {

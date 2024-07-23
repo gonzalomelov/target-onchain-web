@@ -24,12 +24,13 @@
     "error_reporting_powered_by": "Error reporting powered by"
   },
   "FrameForm": {
+    "creator": "Slice Store Creator",
     "title": "Title",
-    "shop": "Shop",
+    "shop": "Slice Store",
     "image": "Image",
     "button": "Button",
     "matchingCriteria": "Matching Criteria",
-    "save": "Save"
+    "create": "Create"
   },
   "Support": {
     "meta_title": "Support",

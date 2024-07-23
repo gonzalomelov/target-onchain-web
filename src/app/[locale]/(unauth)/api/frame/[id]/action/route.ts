@@ -423,19 +423,6 @@ export const POST = async (req: Request) => {
 
   const [frame] = frames;
 
-  const sessions = await db
-    .select()
-    .from(sessionSchema)
-    .where(eq(sessionSchema.shop, frame!.shop))
-    .limit(1);
-
-  if (sessions.length === 0) {
-    logger.info('Session not found', { shop: frame!.shop });
-    return new NextResponse(defaultErrorFrame);
-  }
-
-  const [session] = sessions;
-
   // Get onchain data
   const { valid, explanation, data } = await processVerification(
     frame?.matchingCriteria!,
@@ -571,26 +558,55 @@ export const POST = async (req: Request) => {
     customExplanation = `No onchain data or matching product found for ${accountAddress}. A random product is recommended.`;
   }
 
-  const buttons: [FrameButtonMetadata, ...FrameButtonMetadata[]] = [
-    {
-      action: 'link',
-      label: 'View',
-      target: `https://${frame!.shop}/products/${recommendedProduct!.handle}`,
-    },
-  ];
+  let buttons: [FrameButtonMetadata, ...FrameButtonMetadata[]];
 
-  if (recommendedProduct!.variantId) {
-    let target = `https://${frame!.shop}/cart/${recommendedProduct!.variantId}:1`;
+  const eCommerce = frame!.shop.startsWith('https://slice.so')
+    ? 'Slice'
+    : 'Shopify';
 
-    if (session!.storefrontAccessToken) {
-      target += `?access_token=${session!.storefrontAccessToken}`;
+  if (eCommerce === 'Shopify') {
+    const sessions = await db
+      .select()
+      .from(sessionSchema)
+      .where(eq(sessionSchema.shop, frame!.shop))
+      .limit(1);
+
+    if (sessions.length === 0) {
+      logger.info('Session not found', { shop: frame!.shop });
+      return new NextResponse(defaultErrorFrame);
     }
 
-    buttons.push({
-      action: 'link',
-      label: 'Buy',
-      target,
-    });
+    const [session] = sessions;
+
+    buttons = [
+      {
+        action: 'link',
+        label: 'View',
+        target: `https://${frame!.shop}/products/${recommendedProduct!.handle}`,
+      },
+    ];
+
+    if (recommendedProduct!.variantId) {
+      let target = `https://${frame!.shop}/cart/${recommendedProduct!.variantId}:1`;
+
+      if (session!.storefrontAccessToken) {
+        target += `?access_token=${session!.storefrontAccessToken}`;
+      }
+
+      buttons.push({
+        action: 'link',
+        label: 'Buy',
+        target,
+      });
+    }
+  } else {
+    buttons = [
+      {
+        action: 'link',
+        label: 'View',
+        target: `${frame!.shop}/products/${recommendedProduct!.handle}?ref=${accountAddress}`,
+      },
+    ];
   }
 
   if (dev) {

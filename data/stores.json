@@ -1,0 +1,3277 @@
+[
+  {
+    "id": 848,
+    "name": "Simple Hair and Skin",
+    "tags": "Company",
+    "description": "Step into Simple Hair and Skin and discover a world where your natural beauty is celebrated.\n\nSpecializing in foil highlighting techniques like foilayage and babylights, Simple can create subtle or dramatic changes that enhance your unique features. For those seeking smooth, frizz-free hair, our keratin smoothing treatment is a game changer.\n\nSimple skincare experts are dedicated to bringing out your natural glow. With a focus on anti-aging, our treatments are designed to rejuvenate, refresh, and restore your skin.\n\nExperience the wonder of Rezenerate, a revolutionary skincare treatment that uses nanotechnology to dramatically improve skin tone and texture.\n\nAt Simple Hair and Skin, we understand that beauty is more than skin deep. It's about feeling confident, empowered, and comfortable in your own skin. So, why wait? Discover the simple, stunning beauty that's uniquely yours.",
+    "config": {
+      "sponsors": true,
+      "creatorMetadata": false
+    },
+    "image": "https://gvlinweehfwzdcdxkkan.supabase.co/storage/v1/object/public/slicer-images/848/main_h0ai68d3l.png",
+    "slicerConfig": {
+      "id": 208,
+      "customPath": "simplehairandskin",
+      "storefrontUrl": null,
+      "bannerImage": null,
+      "isRelayerActive": true,
+      "refs": [],
+      "slicerId": 848
+    },
+    "creatorAddress": "0x226a22889b7f842fb1426b3e81130b461abda8a5"
+  },
+  {
+    "id": 845,
+    "name": "Hoodieshop",
+    "tags": "Merch",
+    "description": "",
+    "config": {
+      "sponsors": true,
+      "creatorMetadata": false
+    },
+    "image": "https://gvlinweehfwzdcdxkkan.supabase.co/storage/v1/object/public/slicer-images/845/main_82yeo75m.png",
+    "slicerConfig": {
+      "id": 206,
+      "customPath": null,
+      "storefrontUrl": null,
+      "bannerImage": null,
+      "isRelayerActive": false,
+      "refs": [],
+      "slicerId": 845
+    },
+    "creatorAddress": "0x361fd8769c1295eb75f4e8f51015bc074eb937b2"
+  },
+  {
+    "id": 839,
+    "name": "ICE&FROST Printed T-Shirts",
+    "tags": "Merch",
+    "description": "Printed T-Shirt \n\nYou can purchase here or on the website iceandfrost.com \n\nSend your size and delivery info to\nicefrostcoin@gmail.com",
+    "config": {
+      "sponsors": true,
+      "creatorMetadata": false
+    },
+    "image": "https://gvlinweehfwzdcdxkkan.supabase.co/storage/v1/object/public/slicer-images/839/main_8dy41peej.jpg",
+    "slicerConfig": {
+      "id": 205,
+      "customPath": null,
+      "storefrontUrl": null,
+      "bannerImage": null,
+      "isRelayerActive": false,
+      "refs": [],
+      "slicerId": 839
+    },
+    "creatorAddress": "0x2f6a7bafeeaae2d1de859759793ab9d66c87e402"
+  },
+  {
+    "id": 838,
+    "name": "Base God's Official Merch Store",
+    "tags": "Merch",
+    "description": "Official Base God Merch Store. Join the Disciples of B as we follow Big B to eternal salvation and spread His commandments onchain and offchain.\n\nWebsite: basegod.fun\nThe store is operated by BA5ED Merch Store: https://x.com/basedmerchstore",
+    "config": {
+      "sponsors": true,
+      "creatorMetadata": false
+    },
+    "image": "https://gvlinweehfwzdcdxkkan.supabase.co/storage/v1/object/public/slicer-images/838/main_zzqz6qkfn.png",
+    "slicerConfig": {
+      "id": 204,
+      "customPath": "basegod",
+      "storefrontUrl": null,
+      "bannerImage": null,
+      "isRelayerActive": false,
+      "refs": [],
+      "slicerId": 838
+    },
+    "creatorAddress": "0x26a3737261178eed0e66a70967f2dbdd9798afb0"
+  },
+  {
+    "id": 836,
+    "name": "Ultraviolet",
+    "tags": "Merch",
+    "description": "Initial slice distribution follows the Protocol Guild Pledge (https://tim.mirror.xyz/srVdVopOFhD_ZoRDR50x8n5wmW3aRJIrNEAkpyQ4_ng) & also splits equally out to Purple DAO. the aim of this storefront is to offer tools for Farcaster & the broader crypto ecosystem.",
+    "config": {
+      "sponsors": true,
+      "creatorMetadata": false
+    },
+    "image": "https://gvlinweehfwzdcdxkkan.supabase.co/storage/v1/object/public/slicer-images/836/main_9j1doyyy7.png",
+    "slicerConfig": {
+      "id": 203,
+      "customPath": "purplest",
+      "storefrontUrl": null,
+      "bannerImage": null,
+      "isRelayerActive": false,
+      "refs": [],
+      "slicerId": 836
+    },
+    "creatorAddress": "0xb03f5438f9a243de5c3b830b7841ec315034cd5f"
+  },
+  {
+    "id": 835,
+    "name": "Onchain Summer Bali '24",
+    "tags": "Merch",
+    "description": "☀️🏝️🍸🍹",
+    "config": {
+      "sponsors": true,
+      "creatorMetadata": false
+    },
+    "image": "https://gvlinweehfwzdcdxkkan.supabase.co/storage/v1/object/public/slicer-images/835/main_90xyp8a5n.jpeg",
+    "slicerConfig": {
+      "id": 202,
+      "customPath": "bali",
+      "storefrontUrl": null,
+      "bannerImage": null,
+      "isRelayerActive": false,
+      "refs": ["Main", "Main"],
+      "slicerId": 835
+    },
+    "creatorAddress": "0x7c68f729f331fab8c436b2d4b54d7c07c36b1d41"
+  },
+  {
+    "id": 834,
+    "name": "EIC Shop",
+    "tags": "Project",
+    "description": "ETH Investors Club is a community-driven media org celebrating Ethereum, ETH, and onchain culture.",
+    "config": {
+      "sponsors": true,
+      "creatorMetadata": false
+    },
+    "image": "https://gvlinweehfwzdcdxkkan.supabase.co/storage/v1/object/public/slicer-images/834/main_a1kvkrz1c.png",
+    "slicerConfig": {
+      "id": 201,
+      "customPath": "EIC",
+      "storefrontUrl": null,
+      "bannerImage": null,
+      "isRelayerActive": false,
+      "refs": [],
+      "slicerId": 834
+    },
+    "creatorAddress": "0xb15e97eb6028a412a34a7796bbe99b77f524c31c"
+  },
+  {
+    "id": 832,
+    "name": "Orange Hat and Merch Shop",
+    "tags": "Merch",
+    "description": "kool hats and more!",
+    "config": {
+      "sponsors": true,
+      "creatorMetadata": false
+    },
+    "image": "https://gvlinweehfwzdcdxkkan.supabase.co/storage/v1/object/public/slicer-images/832/main_rtjkj9ni.png",
+    "slicerConfig": {
+      "id": 200,
+      "customPath": "orangehatshop",
+      "storefrontUrl": null,
+      "bannerImage": null,
+      "isRelayerActive": false,
+      "refs": [],
+      "slicerId": 832
+    },
+    "creatorAddress": "0xa82f07d8c117dfcd6986fb41a4f89a370552c0d7"
+  },
+  {
+    "id": 827,
+    "name": "Bicycle Coffee",
+    "tags": "Company",
+    "description": "https://www.bicyclecoffeeco.com/pages/locations",
+    "config": {
+      "sponsors": true,
+      "creatorMetadata": false,
+      "maxTotalQuantity": 1
+    },
+    "image": "https://gvlinweehfwzdcdxkkan.supabase.co/storage/v1/object/public/slicer-images/827/main_vy8jeir0l.webp",
+    "slicerConfig": {
+      "id": 194,
+      "customPath": "bicycle-coffee",
+      "storefrontUrl": null,
+      "bannerImage": null,
+      "isRelayerActive": true,
+      "refs": [],
+      "slicerId": 827
+    },
+    "creatorAddress": "0xcd3e2237f4e9275fef664d7c9bfa81cd5613c95b"
+  },
+  {
+    "id": 826,
+    "name": "Smart Myk Store",
+    "tags": "",
+    "description": "I'm just experimenting and trying things",
+    "config": {
+      "sponsors": true,
+      "creatorMetadata": false
+    },
+    "image": "https://gvlinweehfwzdcdxkkan.supabase.co/storage/v1/object/public/slicer-images/826/main_g19eb7qm.png",
+    "slicerConfig": {
+      "id": 193,
+      "customPath": "smart-myk",
+      "storefrontUrl": null,
+      "bannerImage": null,
+      "isRelayerActive": false,
+      "refs": [],
+      "slicerId": 826
+    },
+    "creatorAddress": "0xfd72ae8ff5cc18849d83f13a252a0d8fd99eb0ac"
+  },
+  {
+    "id": 822,
+    "name": "Myk's Shop",
+    "tags": "",
+    "description": "",
+    "config": {
+      "sponsors": true,
+      "creatorMetadata": false
+    },
+    "image": "https://gvlinweehfwzdcdxkkan.supabase.co/storage/v1/object/public/slicer-images/822/main_j29fj1l9.jpeg",
+    "slicerConfig": {
+      "id": 192,
+      "customPath": "myk",
+      "storefrontUrl": null,
+      "bannerImage": null,
+      "isRelayerActive": false,
+      "refs": [],
+      "slicerId": 822
+    },
+    "creatorAddress": "0x653ff253b0c7c1cc52f484e891b71f9f1f010bfb"
+  },
+  {
+    "id": 815,
+    "name": "Lion's Milk",
+    "tags": "Company",
+    "description": "https://www.lionsmilkbk.com/",
+    "config": {
+      "sponsors": true,
+      "creatorMetadata": false,
+      "maxTotalQuantity": 1
+    },
+    "image": "https://gvlinweehfwzdcdxkkan.supabase.co/storage/v1/object/public/slicer-images/815/main_eh826sgzb.png",
+    "slicerConfig": {
+      "id": 191,
+      "customPath": "lionsmilk",
+      "storefrontUrl": null,
+      "bannerImage": null,
+      "isRelayerActive": true,
+      "refs": [],
+      "slicerId": 815
+    },
+    "creatorAddress": "0xcd3e2237f4e9275fef664d7c9bfa81cd5613c95b"
+  },
+  {
+    "id": 812,
+    "name": "TroupeSpace PortalMart",
+    "tags": "Artwork",
+    "description": "Who knows? None of this is real anyway, it’s all a joke. Who cares, let’s have fun and get weird. \nwww.troupeinc.com ",
+    "config": {
+      "sponsors": true,
+      "creatorMetadata": false
+    },
+    "image": "https://gvlinweehfwzdcdxkkan.supabase.co/storage/v1/object/public/slicer-images/812/main_vfi36dszf.jpeg",
+    "slicerConfig": {
+      "id": 189,
+      "customPath": "portalmart1",
+      "storefrontUrl": null,
+      "bannerImage": null,
+      "isRelayerActive": false,
+      "refs": [],
+      "slicerId": 812
+    },
+    "creatorAddress": "0x2daed086e6e84e9ee38e4b37ab3eaf625d80b657"
+  },
+  {
+    "id": 809,
+    "name": "The blockchain experience with Meta-David",
+    "tags": "Merch",
+    "description": "",
+    "config": {
+      "sponsors": true,
+      "creatorMetadata": false
+    },
+    "image": "https://gvlinweehfwzdcdxkkan.supabase.co/storage/v1/object/public/slicer-images/809/main_ycgzpji3p.jpeg",
+    "slicerConfig": {
+      "id": 188,
+      "customPath": null,
+      "storefrontUrl": null,
+      "bannerImage": null,
+      "isRelayerActive": false,
+      "refs": [],
+      "slicerId": 809
+    },
+    "creatorAddress": "0x6aefc7893d290c2e1bd7e9475b50a222d818154e"
+  },
+  {
+    "id": 806,
+    "name": "Ape Balm Company",
+    "tags": "Company",
+    "description": "Welcome to the Ape Balm Company - Unleash your inner ape, protect your body, renew your chapped lips. \n\nhttps://www.apebalm.com",
+    "config": {
+      "sponsors": true,
+      "creatorMetadata": false
+    },
+    "image": "https://gvlinweehfwzdcdxkkan.supabase.co/storage/v1/object/public/slicer-images/806/main_42zqt2f69.png",
+    "slicerConfig": {
+      "id": 186,
+      "customPath": "apebalm",
+      "storefrontUrl": null,
+      "bannerImage": null,
+      "isRelayerActive": false,
+      "refs": [],
+      "slicerId": 806
+    },
+    "creatorAddress": "0x6c8ce61acf1ced69b00d35306ec4b82f882465da"
+  },
+  {
+    "id": 805,
+    "name": "Base Cafe",
+    "tags": "Private",
+    "description": "Order Coffee. Pay for Coffee. Get Coffee.",
+    "config": {
+      "sponsors": true,
+      "creatorMetadata": false,
+      "maxTotalQuantity": 1,
+      "onsiteCustomSuccessMessage": "Pickup your coffee at the ETH CC Street Faire outside."
+    },
+    "image": "https://gvlinweehfwzdcdxkkan.supabase.co/storage/v1/object/public/slicer-images/805/main_6j25kd0y.png",
+    "slicerConfig": {
+      "id": 185,
+      "customPath": "basecafe-ethcc",
+      "storefrontUrl": null,
+      "bannerImage": null,
+      "isRelayerActive": true,
+      "refs": [],
+      "slicerId": 805
+    },
+    "creatorAddress": "0xae009d532328ff09e09e5d506ab5bbec3c25c0ff"
+  },
+  {
+    "id": 802,
+    "name": "Test from script",
+    "tags": "",
+    "description": "Test from script",
+    "config": {
+      "sponsors": true,
+      "creatorMetadata": false
+    },
+    "image": "https://gvlinweehfwzdcdxkkan.supabase.co/storage/v1/object/public/slicer-images/802/products/Testfromscriptjpg_27xsq5g2.jpg",
+    "slicerConfig": {
+      "id": 182,
+      "customPath": null,
+      "storefrontUrl": null,
+      "bannerImage": null,
+      "isRelayerActive": false,
+      "refs": [],
+      "slicerId": 802
+    },
+    "creatorAddress": "0x4d5d7d63989bbe6358a3352a2449d59aa5a08267"
+  },
+  {
+    "id": 799,
+    "name": "Prevail Coffee",
+    "tags": "Company",
+    "description": "https://prevailcoffee.com/pages/about-us",
+    "config": {
+      "sponsors": true,
+      "creatorMetadata": false,
+      "maxTotalQuantity": 1
+    },
+    "image": "https://gvlinweehfwzdcdxkkan.supabase.co/storage/v1/object/public/slicer-images/799/main_9ahjl1ku.avif",
+    "slicerConfig": {
+      "id": 180,
+      "customPath": "prevail-coffee",
+      "storefrontUrl": null,
+      "bannerImage": null,
+      "isRelayerActive": true,
+      "refs": [],
+      "slicerId": 799
+    },
+    "creatorAddress": "0xcd3e2237f4e9275fef664d7c9bfa81cd5613c95b"
+  },
+  {
+    "id": 795,
+    "name": "Crypto Summer Week",
+    "tags": "Merch",
+    "description": "Crypto Summer Week 2024 on-chain merch store powered by Cryptoplaza.",
+    "config": {
+      "sponsors": true
+    },
+    "image": "https://gvlinweehfwzdcdxkkan.supabase.co/storage/v1/object/public/slicer-images/795/main_0bfsgrswm.png",
+    "slicerConfig": {
+      "id": 181,
+      "customPath": "cryptoplaza-summer-week-2024",
+      "storefrontUrl": null,
+      "bannerImage": null,
+      "isRelayerActive": false,
+      "refs": ["TEST"],
+      "slicerId": 795
+    },
+    "creatorAddress": "0x43ef5625d09cbb25d79aacb78af592272bdfe231"
+  },
+  {
+    "id": 790,
+    "name": "builders brunch club",
+    "tags": "Merch",
+    "description": "",
+    "config": {
+      "sponsors": true,
+      "creatorMetadata": false
+    },
+    "image": "https://gvlinweehfwzdcdxkkan.supabase.co/storage/v1/object/public/slicer-images/790/main_oaea71ro4.jpg",
+    "slicerConfig": {
+      "id": 179,
+      "customPath": "buildersbrunch",
+      "storefrontUrl": null,
+      "bannerImage": null,
+      "isRelayerActive": false,
+      "refs": [],
+      "slicerId": 790
+    },
+    "creatorAddress": "0x4aed006c0235312a56da3bce1dab9cae0f3f95a9"
+  },
+  {
+    "id": 784,
+    "name": "Higher Athletics",
+    "tags": "Merch",
+    "description": "Uniform for Those Pursuing Their Higher Selves\n\nhttps://warpcast.com/~/channel/higher\n\nhttps://warpcast.com/~/channel/higher-athletics",
+    "config": {
+      "sponsors": true,
+      "creatorMetadata": false
+    },
+    "image": "https://gvlinweehfwzdcdxkkan.supabase.co/storage/v1/object/public/slicer-images/784/main_ofwipkxr.png",
+    "slicerConfig": {
+      "id": 177,
+      "customPath": "higherathletics",
+      "storefrontUrl": null,
+      "bannerImage": null,
+      "isRelayerActive": false,
+      "refs": [],
+      "slicerId": 784
+    },
+    "creatorAddress": "0x0cb57e00757a09d4c4289a4b2e4a70c7ce56903a"
+  },
+  {
+    "id": 777,
+    "name": "Base Cafe - State of Crypto",
+    "tags": "Private",
+    "description": "",
+    "config": {
+      "sponsors": true,
+      "creatorMetadata": false
+    },
+    "image": "https://gvlinweehfwzdcdxkkan.supabase.co/storage/v1/object/public/slicer-images/42/main_dgicsrhag.png",
+    "slicerConfig": {
+      "id": 175,
+      "customPath": "basecafe-stateofcrypto",
+      "storefrontUrl": null,
+      "bannerImage": null,
+      "isRelayerActive": true,
+      "refs": [],
+      "slicerId": 777
+    },
+    "creatorAddress": "0xae009d532328ff09e09e5d506ab5bbec3c25c0ff"
+  },
+  {
+    "id": 772,
+    "name": "Fungi",
+    "tags": "Private",
+    "description": "Get some fungi merch ",
+    "config": {
+      "sponsors": true,
+      "creatorMetadata": false
+    },
+    "image": "https://gvlinweehfwzdcdxkkan.supabase.co/storage/v1/object/public/slicer-images/772/main_zecctqt1.jpeg",
+    "slicerConfig": {
+      "id": 174,
+      "customPath": "fungi",
+      "storefrontUrl": null,
+      "bannerImage": null,
+      "isRelayerActive": false,
+      "refs": [],
+      "slicerId": 772
+    },
+    "creatorAddress": "0x9c77233bbd235a3ed219daa051e0a3de5ce03c3e"
+  },
+  {
+    "id": 768,
+    "name": "2137AD Store",
+    "tags": "Artwork",
+    "description": "Artwork from the 2137AD Decentralised Cinematic Universe",
+    "config": {
+      "sponsors": true,
+      "creatorMetadata": false
+    },
+    "image": "https://gvlinweehfwzdcdxkkan.supabase.co/storage/v1/object/public/slicer-images/768/main_kbkxgpw8.png",
+    "slicerConfig": {
+      "id": 173,
+      "customPath": "2137AD",
+      "storefrontUrl": null,
+      "bannerImage": null,
+      "isRelayerActive": false,
+      "refs": [],
+      "slicerId": 768
+    },
+    "creatorAddress": "0xfed0133ff51b896f705a4bfee03dfb14eaa379f5"
+  },
+  {
+    "id": 767,
+    "name": "Garden of Babel",
+    "tags": "Merch",
+    "description": "Garden of Babel is a collective movement that values individuality, diversity, and community.\nWe are here to disrupt the status quo, inspire radical self-expression, and ignite a passion for fashion that transcends boundaries.\nMerge your creativity and explore our world where everyone is free to be their authentic selves and celebrate their unique identities.",
+    "config": {
+      "sponsors": true,
+      "creatorMetadata": false
+    },
+    "image": "https://gvlinweehfwzdcdxkkan.supabase.co/storage/v1/object/public/slicer-images/767/main_inhxvnk3q.png",
+    "slicerConfig": {
+      "id": 172,
+      "customPath": "gardenofbabel",
+      "storefrontUrl": null,
+      "bannerImage": null,
+      "isRelayerActive": false,
+      "refs": [],
+      "slicerId": 767
+    },
+    "creatorAddress": "0xf3c03a3516396b95c1de1c22832d8ca71069a517"
+  },
+  {
+    "id": 766,
+    "name": "Piccolo Caffe e Vino",
+    "tags": "Company",
+    "description": "https://www.piccolocaffe.ca/",
+    "config": {
+      "sponsors": true,
+      "creatorMetadata": false,
+      "maxTotalQuantity": 1
+    },
+    "image": "https://gvlinweehfwzdcdxkkan.supabase.co/storage/v1/object/public/slicer-images/766/main_msbge27fd.png",
+    "slicerConfig": {
+      "id": 171,
+      "customPath": "piccolocaffe-ca",
+      "storefrontUrl": null,
+      "bannerImage": null,
+      "isRelayerActive": true,
+      "refs": [],
+      "slicerId": 766
+    },
+    "creatorAddress": "0xbea0be636529dd2cefa5eb5945d3e1088cc1d335"
+  },
+  {
+    "id": 764,
+    "name": "Crypto Cave",
+    "tags": "Merch",
+    "description": "High-quality merchandise inspired by the exciting world of Cryptocurrencies.",
+    "config": {
+      "sponsors": true,
+      "creatorMetadata": false
+    },
+    "image": "https://gvlinweehfwzdcdxkkan.supabase.co/storage/v1/object/public/slicer-images/764/main_wkvq5br5.png",
+    "slicerConfig": {
+      "id": 170,
+      "customPath": "cryptocave",
+      "storefrontUrl": null,
+      "bannerImage": null,
+      "isRelayerActive": false,
+      "refs": [],
+      "slicerId": 764
+    },
+    "creatorAddress": "0xdbb794a3d244f0ed08e6d7e0eaf0e9230e825280"
+  },
+  {
+    "id": 761,
+    "name": "HIGHER NYC",
+    "tags": "Merch",
+    "description": "an unofficial onchain commerce experiment for the higher community ↑",
+    "config": {
+      "sponsors": true,
+      "creatorMetadata": false
+    },
+    "image": "https://gvlinweehfwzdcdxkkan.supabase.co/storage/v1/object/public/slicer-images/761/main_ygopffqj.png",
+    "slicerConfig": {
+      "id": 165,
+      "customPath": "higher-nyc",
+      "storefrontUrl": null,
+      "bannerImage": null,
+      "isRelayerActive": false,
+      "refs": [],
+      "slicerId": 761
+    },
+    "creatorAddress": "0x28b4de9c45af6cb1a5a46c19909108f2bb74a2be"
+  },
+  {
+    "id": 750,
+    "name": "Nouns Supplements ⌐◨-◨",
+    "tags": "Company",
+    "description": "Welcome to Nouns Supplements, the world's first on-chain supplement company, where the future of health is NOUns! Offering a diverse range of products, from daily vitamins and protein powders to hangover remedies, we are revolutionizing wellness with cutting-edge, blockchain-powered solutions. With the aim of Noggles making the world healthier. Discover the next generation of health and elevate your well-being with Nouns Supplements.",
+    "config": {
+      "sponsors": true,
+      "creatorMetadata": false
+    },
+    "image": "https://gvlinweehfwzdcdxkkan.supabase.co/storage/v1/object/public/slicer-images/750/main_9kvis5pkh.jpg",
+    "slicerConfig": {
+      "id": 162,
+      "customPath": "health",
+      "storefrontUrl": null,
+      "bannerImage": null,
+      "isRelayerActive": false,
+      "refs": [],
+      "slicerId": 750
+    },
+    "creatorAddress": "0x75c83356987c8d813829d9fbb5de504b547750a6"
+  },
+  {
+    "id": 748,
+    "name": "NOUNS SUUPLEMENTS ⌐◨-◨",
+    "tags": "Company",
+    "description": "The Future of Health is NOUns! ⌐◨-◨",
+    "config": {
+      "sponsors": true,
+      "creatorMetadata": false
+    },
+    "image": "https://gvlinweehfwzdcdxkkan.supabase.co/storage/v1/object/public/slicer-images/748/main_00975uoc7.png",
+    "slicerConfig": {
+      "id": 161,
+      "customPath": "supplements",
+      "storefrontUrl": null,
+      "bannerImage": null,
+      "isRelayerActive": false,
+      "refs": [],
+      "slicerId": 748
+    },
+    "creatorAddress": "0xe883cd7adfe55cd84798a8129468e106b32cdc7a"
+  },
+  {
+    "id": 737,
+    "name": "Base Era",
+    "tags": "Merch",
+    "description": "Base Era",
+    "config": {
+      "sponsors": true,
+      "creatorMetadata": false
+    },
+    "image": "https://gvlinweehfwzdcdxkkan.supabase.co/storage/v1/object/public/slicer-images/737/main_po8plhuca.png",
+    "slicerConfig": {
+      "id": 160,
+      "customPath": "baseera",
+      "storefrontUrl": null,
+      "bannerImage": null,
+      "isRelayerActive": false,
+      "refs": [],
+      "slicerId": 737
+    },
+    "creatorAddress": "0xe883cd7adfe55cd84798a8129468e106b32cdc7a"
+  },
+  {
+    "id": 733,
+    "name": "AF",
+    "tags": "Merch",
+    "description": "[AF online](https://www.artsfighters.com/)",
+    "config": {
+      "sponsors": true,
+      "creatorMetadata": false
+    },
+    "image": "https://gvlinweehfwzdcdxkkan.supabase.co/storage/v1/object/public/slicer-images/733/main_j05dsk566.png",
+    "slicerConfig": {
+      "id": 159,
+      "customPath": "AF",
+      "storefrontUrl": null,
+      "bannerImage": null,
+      "isRelayerActive": false,
+      "refs": [],
+      "slicerId": 733
+    },
+    "creatorAddress": "0x6aefc7893d290c2e1bd7e9475b50a222d818154e"
+  },
+  {
+    "id": 731,
+    "name": "Crypto Drip",
+    "tags": "Merch",
+    "description": "Fire merch creations from the Crypto world",
+    "config": {
+      "sponsors": true,
+      "creatorMetadata": false
+    },
+    "image": "https://gvlinweehfwzdcdxkkan.supabase.co/storage/v1/object/public/slicer-images/731/main_qbfq3qttw.png",
+    "slicerConfig": {
+      "id": 158,
+      "customPath": "cryptodrip",
+      "storefrontUrl": null,
+      "bannerImage": null,
+      "isRelayerActive": false,
+      "refs": [],
+      "slicerId": 731
+    },
+    "creatorAddress": "0x500364d2bbdc7ca29c9b936b0877d3d1d1f47594"
+  },
+  {
+    "id": 710,
+    "name": "Yoni Alter",
+    "tags": "Artwork",
+    "description": "ABOUT YONI ALTER\n\nYoni Alter is a multimedia artist exploring the threshold between art and design. His vibrantly coloured works segue between the figurative, the abstract, form, and space, always challenging viewers to look twice.Guided by experimentation and semiotics, Yoni passionately seeks new ways of creating visual representations, working across sculpture, painting, print, and digital media.\n\n \n\nYONI ALTER‘S EARLY CAREER AND INFLUENCES\n\n\nAlter studied Art and Design in Jerusalem before completing his MA in Graphic Design at the University of the Arts London. London ceaselessly functions as a source of inspiration for the artist. For example, his debut London show at Kemistry Gallery creatively abstracted London architecture and the surrounding urban landscape. Yoni synthesises sharp silhouettes, bold colouring, and Pop Art iconography, reflecting the seductive creative vibe of London city.\n\nCOLLABORATIONS AND DESIGN\n\n\nYoni also designs graphic works for iconic brands, with past collaborations including projects with Karl Lagerfeld and Hermes. He is also behind a best-selling merchandise range for Tate. You may have seen his work covering double-decker buses; on a 25m long banner in Shoreditch and on a 25m tall LED tree in Wembley. His art was part of the acclaimed 100 Years of Graphic Design exhibition. Press features include The Guardian, Phaidon, Campaign, The Atlantic, and My Modern Met, to name a few.",
+    "config": {
+      "sponsors": true,
+      "creatorMetadata": false
+    },
+    "image": "https://gvlinweehfwzdcdxkkan.supabase.co/storage/v1/object/public/slicer-images/710/main_vp9b0tqbe.gif",
+    "slicerConfig": {
+      "id": 156,
+      "customPath": "YoniAlter",
+      "storefrontUrl": null,
+      "bannerImage": null,
+      "isRelayerActive": false,
+      "refs": [],
+      "slicerId": 710
+    },
+    "creatorAddress": "0xea15b1a379709c7f44067e7225ff337d844d6e06"
+  },
+  {
+    "id": 708,
+    "name": "WE ARE NOT MADE FOR OURSELVES",
+    "tags": "Project",
+    "description": "VISUAL PROVOCATIONS INTENDED TO EXPLORE THE THE ABSURD RELATIONSHIP BETWEEN TECHNOLOGY AND OUR EMOTIONAL LANDSCAPE.",
+    "config": {
+      "sponsors": true,
+      "creatorMetadata": false
+    },
+    "image": "https://gvlinweehfwzdcdxkkan.supabase.co/storage/v1/object/public/slicer-images/708/main_k8muq95r6.png",
+    "slicerConfig": {
+      "id": 155,
+      "customPath": "WANMFO",
+      "storefrontUrl": null,
+      "bannerImage": null,
+      "isRelayerActive": false,
+      "refs": [],
+      "slicerId": 708
+    },
+    "creatorAddress": "0xe883cd7adfe55cd84798a8129468e106b32cdc7a"
+  },
+  {
+    "id": 703,
+    "name": "Made From Fire",
+    "tags": "Artwork",
+    "description": "Silver and bronze casting from the mountains of Utah. \nSpecialize in belt buckles, architectural hardware, and small run custom fine art metal casting. ",
+    "config": {
+      "sponsors": true,
+      "creatorMetadata": false
+    },
+    "image": "https://gvlinweehfwzdcdxkkan.supabase.co/storage/v1/object/public/slicer-images/703/main_iaqb0cqz9.jpg",
+    "slicerConfig": {
+      "id": 153,
+      "customPath": "madefromfire",
+      "storefrontUrl": null,
+      "bannerImage": null,
+      "isRelayerActive": false,
+      "refs": [],
+      "slicerId": 703
+    },
+    "creatorAddress": "0xe79c027a97c7816b4036d6409095867bfa65b7c6"
+  },
+  {
+    "id": 702,
+    "name": "tmophoto",
+    "tags": "Artwork",
+    "description": "Photography by Thomas O'Brien\ntmophoto",
+    "config": {
+      "sponsors": true,
+      "creatorMetadata": false
+    },
+    "image": "https://gvlinweehfwzdcdxkkan.supabase.co/storage/v1/object/public/slicer-images/702/main_rll5i7k2e.jpg",
+    "slicerConfig": {
+      "id": 152,
+      "customPath": "tmophoto",
+      "storefrontUrl": null,
+      "bannerImage": null,
+      "isRelayerActive": false,
+      "refs": [],
+      "slicerId": 702
+    },
+    "creatorAddress": "0xe79c027a97c7816b4036d6409095867bfa65b7c6"
+  },
+  {
+    "id": 698,
+    "name": "Coinbase Pizza",
+    "tags": "Private",
+    "description": "This Bitcoin Pizza Day, we’re celebrating how far crypto has come since 2010 in helping to create a cheaper, faster system.\n\nWashington Square Park, NYC\n12-5PM EST",
+    "config": {
+      "sponsors": true,
+      "creatorMetadata": false
+    },
+    "image": "https://gvlinweehfwzdcdxkkan.supabase.co/storage/v1/object/public/slicer-images/698/main_6rl9du4en.png",
+    "slicerConfig": {
+      "id": 151,
+      "customPath": "coinbase-pizza",
+      "storefrontUrl": null,
+      "bannerImage": null,
+      "isRelayerActive": true,
+      "refs": ["Test"],
+      "slicerId": 698
+    },
+    "creatorAddress": "0xae009d532328ff09e09e5d506ab5bbec3c25c0ff"
+  },
+  {
+    "id": 691,
+    "name": "futuro",
+    "tags": "Artwork",
+    "description": "",
+    "config": {
+      "sponsors": true,
+      "creatorMetadata": false
+    },
+    "image": "https://gvlinweehfwzdcdxkkan.supabase.co/storage/v1/object/public/slicer-images/691/main_3iu8nwjjp.png",
+    "slicerConfig": {
+      "id": 154,
+      "customPath": null,
+      "storefrontUrl": null,
+      "bannerImage": null,
+      "isRelayerActive": false,
+      "refs": [],
+      "slicerId": 691
+    },
+    "creatorAddress": "0xe883cd7adfe55cd84798a8129468e106b32cdc7a"
+  },
+  {
+    "id": 681,
+    "name": "LEWYV",
+    "tags": "Artwork",
+    "description": "This is the web3 link to our store. Here you can purchase items using crypto.",
+    "config": {
+      "sponsors": true,
+      "creatorMetadata": false
+    },
+    "image": "https://gvlinweehfwzdcdxkkan.supabase.co/storage/v1/object/public/slicer-images/681/main_lppgv025i.png",
+    "slicerConfig": {
+      "id": 150,
+      "customPath": "lewyv",
+      "storefrontUrl": null,
+      "bannerImage": null,
+      "isRelayerActive": false,
+      "refs": [],
+      "slicerId": 681
+    },
+    "creatorAddress": "0xb92b87a226cc740b3c5934047d3481fa87474de4"
+  },
+  {
+    "id": 674,
+    "name": "Bones & Butterflies",
+    "tags": "Company",
+    "description": "Merch / Art / Music / Life",
+    "config": {
+      "sponsors": true,
+      "creatorMetadata": false
+    },
+    "image": "https://gvlinweehfwzdcdxkkan.supabase.co/storage/v1/object/public/slicer-images/674/main_ibns1gnoq.png",
+    "slicerConfig": {
+      "id": 148,
+      "customPath": "bones3butterflies",
+      "storefrontUrl": null,
+      "bannerImage": null,
+      "isRelayerActive": false,
+      "refs": [],
+      "slicerId": 674
+    },
+    "creatorAddress": "0xe883cd7adfe55cd84798a8129468e106b32cdc7a"
+  },
+  {
+    "id": 663,
+    "name": "The blockchain experience with Meta-David",
+    "tags": "Merch",
+    "description": "",
+    "config": {
+      "sponsors": true,
+      "creatorMetadata": false
+    },
+    "image": "https://gvlinweehfwzdcdxkkan.supabase.co/storage/v1/object/public/slicer-images/663/main_jd7dih3h.jpeg",
+    "slicerConfig": {
+      "id": 147,
+      "customPath": "META-DAVID",
+      "storefrontUrl": null,
+      "bannerImage": null,
+      "isRelayerActive": false,
+      "refs": [],
+      "slicerId": 663
+    },
+    "creatorAddress": "0xa40f02d6b3780e4891aa0a6fe9b23d9ff6f4b79d"
+  },
+  {
+    "id": 662,
+    "name": "Rektpapi",
+    "tags": "Merch",
+    "description": "",
+    "config": {
+      "sponsors": true,
+      "creatorMetadata": false
+    },
+    "image": "https://gvlinweehfwzdcdxkkan.supabase.co/storage/v1/object/public/slicer-images/662/main_w5anzbbea.gif",
+    "slicerConfig": {
+      "id": 149,
+      "customPath": "Rektpapi",
+      "storefrontUrl": null,
+      "bannerImage": null,
+      "isRelayerActive": false,
+      "refs": [],
+      "slicerId": 662
+    },
+    "creatorAddress": "0xa40f02d6b3780e4891aa0a6fe9b23d9ff6f4b79d"
+  },
+  {
+    "id": 658,
+    "name": "Troupe Inc. Art",
+    "tags": "Artwork",
+    "description": "This store is strictly dedicated to the tokenization and collaborations of\nZIG ZAG + Troupe Inc. x Artists. Stay tuned for new artwork! \n\nAll stay tuned for updates!\nwww.troupeinc.com/art",
+    "config": {
+      "sponsors": true,
+      "creatorMetadata": false
+    },
+    "image": "https://gvlinweehfwzdcdxkkan.supabase.co/storage/v1/object/public/slicer-images/658/main_4t3rcuqq.jpeg",
+    "slicerConfig": {
+      "id": 144,
+      "customPath": "arttroupe",
+      "storefrontUrl": null,
+      "bannerImage": null,
+      "isRelayerActive": false,
+      "refs": [],
+      "slicerId": 658
+    },
+    "creatorAddress": "0xbc06b45a8e20ff0dc7ef1397d5feaa46a05af390"
+  },
+  {
+    "id": 655,
+    "name": "KEYTI CAT",
+    "tags": "",
+    "description": "",
+    "config": {
+      "sponsors": true,
+      "creatorMetadata": false
+    },
+    "image": "https://gvlinweehfwzdcdxkkan.supabase.co/storage/v1/object/public/slicer-images/655/main_sgh6u4ya7.jpg",
+    "slicerConfig": {
+      "id": 143,
+      "customPath": null,
+      "storefrontUrl": null,
+      "bannerImage": null,
+      "isRelayerActive": false,
+      "refs": [],
+      "slicerId": 655
+    },
+    "creatorAddress": "0x29212d50cb9e4b62e70145b0627a6b7b0fb7bac5"
+  },
+  {
+    "id": 654,
+    "name": "Troupe Inc. - Collectibles Shop",
+    "tags": "Company",
+    "description": "IN THIS NEIGHBORHOOD, YOU'LL FIND ALL SORTS OF COLLECTIBLE MERCHANDISE FOR SALE/TRADE!\nWE WILL DROP NEW ITEMS RANDOMLY AND RIDICULOUSLY,\nAND YOU NEVER KNOW WHAT MAY SHOW UP HERE.\n\nWe specialize in trading cards, action figures, Star Wars and Marvel. We’re always looking to buy items as well so hit us up!\n\nwww.troupeinc.com/collectibles ",
+    "config": {
+      "sponsors": true,
+      "creatorMetadata": false
+    },
+    "image": "https://gvlinweehfwzdcdxkkan.supabase.co/storage/v1/object/public/slicer-images/654/main_6cdw6wmqr.jpeg",
+    "slicerConfig": {
+      "id": 142,
+      "customPath": "collectiblestroupe",
+      "storefrontUrl": null,
+      "bannerImage": null,
+      "isRelayerActive": false,
+      "refs": [],
+      "slicerId": 654
+    },
+    "creatorAddress": "0xbc06b45a8e20ff0dc7ef1397d5feaa46a05af390"
+  },
+  {
+    "id": 653,
+    "name": "Slow Rodeo",
+    "tags": "",
+    "description": "",
+    "config": {
+      "sponsors": true,
+      "creatorMetadata": false
+    },
+    "image": "https://gvlinweehfwzdcdxkkan.supabase.co/storage/v1/object/public/slicer-images/653/main_cuke6e1w8.png",
+    "slicerConfig": {
+      "id": 141,
+      "customPath": "slow-rodeo",
+      "storefrontUrl": null,
+      "bannerImage": null,
+      "isRelayerActive": true,
+      "refs": [],
+      "slicerId": 653
+    },
+    "creatorAddress": "0x4d5d7d63989bbe6358a3352a2449d59aa5a08267"
+  },
+  {
+    "id": 652,
+    "name": "Based Collectibles",
+    "tags": "Company",
+    "description": "Nostalgic collectibles onchain",
+    "config": {
+      "sponsors": true,
+      "creatorMetadata": false
+    },
+    "image": "https://gvlinweehfwzdcdxkkan.supabase.co/storage/v1/object/public/slicer-images/652/main_ofmsy73h.png",
+    "slicerConfig": {
+      "id": 140,
+      "customPath": "basedcollectibles",
+      "storefrontUrl": null,
+      "bannerImage": null,
+      "isRelayerActive": false,
+      "refs": [],
+      "slicerId": 652
+    },
+    "creatorAddress": "0x2117bf88b4cb0186eaa87500a045fc998290e42a"
+  },
+  {
+    "id": 644,
+    "name": "Hazard Pay",
+    "tags": "Company",
+    "description": "Hazard Pay is an innovative software dev startup focused on utilizing AI to assist with legal proceedings, litigation coaching, and even document preparation. At present,  We are focusing on an app designed to aid people who have disabilities and even more for those who suffer from Cognitive disabilities, as we never know when the need to navigate the legal rigmarole will arise!   More to come so stay tuned!",
+    "config": {
+      "sponsors": true,
+      "creatorMetadata": false
+    },
+    "image": "https://gvlinweehfwzdcdxkkan.supabase.co/storage/v1/object/public/slicer-images/644/main_9i9p1sc5d.png",
+    "slicerConfig": {
+      "id": 139,
+      "customPath": "hazard-pay",
+      "storefrontUrl": null,
+      "bannerImage": null,
+      "isRelayerActive": false,
+      "refs": [],
+      "slicerId": 644
+    },
+    "creatorAddress": "0xe883cd7adfe55cd84798a8129468e106b32cdc7a"
+  },
+  {
+    "id": 642,
+    "name": "Fairly",
+    "tags": "Artwork",
+    "description": "Welcome to my little universe of inspiration and creation! I am a vintage fabric addict and flea market junkie. My etsy shop offers a range of hand-made bags and home accessories, as well as a few clothing items, all designed and sewn by me. As I get enthusiastic about too many lovely things, you may also encounter some favourite flea market finds and a range of beautiful vintage textiles in my shop!\n\nI am no expert seamstress, nor am I a trained designer. However, I have always had a slumbering passion for beautiful textiles (especially colorful ones!) which would awake every once in a while.\n\nThe key awakening happened one sunny day at the fleamarket in Old Jaffa: I stumbled upon my first Kantha quilt ever. Fascinated by these hand-stitched, layered and amazingly colourful textiles, I set out to find more of them.\n\nMy Kantha quilt (and other textile) passion, combined with some sewing skills (mainly acquired during elementary school sewing lessons), eventually led me to start my own little artisan venture, Fairly.\n\nI started out making Kantha bags and pouches, and from there my creativity evolved to embrace other types of fabrics. I got addicted to South East Asian hill tribe textiles - painstakingly hand-embroidered rainbow baby carriers and wonderful, hand-woven indigo fabric rolls. From there, I moved to gorgeous Guatemalan huipils and Mexican Otomi fabrcis. I am still discovering new, precious textiles, always trying to turn them into special bags or home accessories.\n\nAll the while, my passion for Kantha quilts hasn't waned, and I found a production partner in Bangladesh, who creates lovely quilts, baby blankets and scarves for me. My production partner is a Bangladeshi NGO that supports women in need. It helps them make a respectable living by stitching those gorgeous quilts.\n\nCreating things has taught me a lot about myself and about the way of life I would really like to lead. It has taught me respect for material things and their scarcity, as well as appreciation for all things hand-made in our fast-paced world.",
+    "config": {
+      "sponsors": true,
+      "creatorMetadata": false
+    },
+    "image": "https://gvlinweehfwzdcdxkkan.supabase.co/storage/v1/object/public/slicer-images/642/main_8nvn1h15r.jpeg",
+    "slicerConfig": {
+      "id": 138,
+      "customPath": "fairly",
+      "storefrontUrl": null,
+      "bannerImage": null,
+      "isRelayerActive": false,
+      "refs": [],
+      "slicerId": 642
+    },
+    "creatorAddress": "0xea15b1a379709c7f44067e7225ff337d844d6e06"
+  },
+  {
+    "id": 639,
+    "name": "Base Farcon",
+    "tags": "Merch",
+    "description": "",
+    "config": {
+      "sponsors": true,
+      "creatorMetadata": false
+    },
+    "image": "https://gvlinweehfwzdcdxkkan.supabase.co/storage/v1/object/public/slicer-images/639/main_85mxkii4r.png",
+    "slicerConfig": {
+      "id": 137,
+      "customPath": "base-farcon",
+      "storefrontUrl": null,
+      "bannerImage": "https://res.cloudinary.com/ddhzes4so/image/upload/v1714514272/basedmerch_banner_1_t2svha.png",
+      "isRelayerActive": true,
+      "refs": ["Coffee", "Base", "Slice", "Bar", "Slice shop", "Coffee 2"],
+      "slicerId": 639
+    },
+    "creatorAddress": "0xae009d532328ff09e09e5d506ab5bbec3c25c0ff"
+  },
+  {
+    "id": 638,
+    "name": "OP merch",
+    "tags": "Merch",
+    "description": "",
+    "config": {
+      "sponsors": true,
+      "creatorMetadata": false
+    },
+    "image": "https://gvlinweehfwzdcdxkkan.supabase.co/storage/v1/object/public/slicer-images/638/main_0iyjn4snk.png",
+    "slicerConfig": {
+      "id": 135,
+      "customPath": "op-merch",
+      "storefrontUrl": null,
+      "bannerImage": null,
+      "isRelayerActive": false,
+      "refs": [],
+      "slicerId": 638
+    },
+    "creatorAddress": "0xae009d532328ff09e09e5d506ab5bbec3c25c0ff"
+  },
+  {
+    "id": 637,
+    "name": "The Ball",
+    "tags": "Merch",
+    "description": "",
+    "config": {
+      "sponsors": true,
+      "creatorMetadata": false
+    },
+    "image": "https://gvlinweehfwzdcdxkkan.supabase.co/storage/v1/object/public/slicer-images/637/main_rd3u5row.png",
+    "slicerConfig": {
+      "id": 136,
+      "customPath": "the-ball",
+      "storefrontUrl": null,
+      "bannerImage": null,
+      "isRelayerActive": false,
+      "refs": [],
+      "slicerId": 637
+    },
+    "creatorAddress": "0xb17e447d0eb15c444789886f2bff6a4907140bc5"
+  },
+  {
+    "id": 634,
+    "name": "232rewrewr",
+    "tags": "Artwork",
+    "description": "",
+    "config": {
+      "sponsors": true,
+      "creatorMetadata": false
+    },
+    "image": "https://gvlinweehfwzdcdxkkan.supabase.co/storage/v1/object/public/slicer-images/634/main_8vjevq33b.png",
+    "slicerConfig": {
+      "id": 133,
+      "customPath": "werwer",
+      "storefrontUrl": null,
+      "bannerImage": null,
+      "isRelayerActive": false,
+      "refs": [],
+      "slicerId": 634
+    },
+    "creatorAddress": "0xfccac95430745050e440d61cc3dd48a40ea4f913"
+  },
+  {
+    "id": 633,
+    "name": "jewnrwenkr",
+    "tags": "Artwork",
+    "description": "jknwejrwe",
+    "config": {
+      "sponsors": true,
+      "creatorMetadata": false
+    },
+    "image": "https://gvlinweehfwzdcdxkkan.supabase.co/storage/v1/object/public/slicer-images/633/main_7rdxx0cfk.jpg",
+    "slicerConfig": {
+      "id": 132,
+      "customPath": "nweijrnwijnrwejk",
+      "storefrontUrl": null,
+      "bannerImage": null,
+      "isRelayerActive": false,
+      "refs": [],
+      "slicerId": 633
+    },
+    "creatorAddress": "0xe883cd7adfe55cd84798a8129468e106b32cdc7a"
+  },
+  {
+    "id": 628,
+    "name": "Boot Sale",
+    "tags": "Private",
+    "description": "Second hand boot sale. And shoes. Boots and shoes. Boot sale.",
+    "config": {
+      "sponsors": true,
+      "creatorMetadata": false
+    },
+    "image": "https://gvlinweehfwzdcdxkkan.supabase.co/storage/v1/object/public/slicer-images/628/main_d60hwrmxs.jpeg",
+    "slicerConfig": {
+      "id": 129,
+      "customPath": "bootsale",
+      "storefrontUrl": null,
+      "bannerImage": null,
+      "isRelayerActive": false,
+      "refs": [],
+      "slicerId": 628
+    },
+    "creatorAddress": "0xe883cd7adfe55cd84798a8129468e106b32cdc7a"
+  },
+  {
+    "id": 627,
+    "name": "Gil Alter's Printshop",
+    "tags": "Artwork",
+    "description": "Welcome to my print shop! ",
+    "config": {
+      "sponsors": true,
+      "creatorMetadata": false
+    },
+    "image": "https://gvlinweehfwzdcdxkkan.supabase.co/storage/v1/object/public/slicer-images/627/main_be8io8qm.jpg",
+    "slicerConfig": {
+      "id": 128,
+      "customPath": "gilalter",
+      "storefrontUrl": null,
+      "bannerImage": null,
+      "isRelayerActive": false,
+      "refs": [],
+      "slicerId": 627
+    },
+    "creatorAddress": "0xea15b1a379709c7f44067e7225ff337d844d6e06"
+  },
+  {
+    "id": 620,
+    "name": "BOARDS.WTF",
+    "tags": "Merch",
+    "description": "BOARDS.WTF is an online store showcasing artwork from crypto culture on skateboards. Express yourself through the artistry of your ride.",
+    "config": {
+      "sponsors": true,
+      "creatorMetadata": false
+    },
+    "image": "https://gvlinweehfwzdcdxkkan.supabase.co/storage/v1/object/public/slicer-images/620/main_myjanzhl.png",
+    "slicerConfig": {
+      "id": 126,
+      "customPath": "boards",
+      "storefrontUrl": null,
+      "bannerImage": null,
+      "isRelayerActive": false,
+      "refs": [],
+      "slicerId": 620
+    },
+    "creatorAddress": "0xe883cd7adfe55cd84798a8129468e106b32cdc7a"
+  },
+  {
+    "id": 617,
+    "name": "Apollo",
+    "tags": "Merch",
+    "description": "This is what we do.",
+    "config": {
+      "sponsors": true,
+      "creatorMetadata": false
+    },
+    "image": "https://gvlinweehfwzdcdxkkan.supabase.co/storage/v1/object/public/slicer-images/617/main_8tn54rg4u.png",
+    "slicerConfig": {
+      "id": 125,
+      "customPath": "apollo",
+      "storefrontUrl": null,
+      "bannerImage": null,
+      "isRelayerActive": false,
+      "refs": [],
+      "slicerId": 617
+    },
+    "creatorAddress": "0xc2f0422acc2dda6e15947cf994cdc2946c539bb6"
+  },
+  {
+    "id": 610,
+    "name": "Sensu by Checkin Caster (Japanese Hand Fan)",
+    "tags": "Merch",
+    "description": "Experience traditional Japanese elegance with our Sensu fans at Farcon!\nWe will also write your name or your favorite Kanji characters on the back of the Sensu, for your own one-of-a-kind Sensu!",
+    "config": {
+      "sponsors": true,
+      "creatorMetadata": false
+    },
+    "image": "https://gvlinweehfwzdcdxkkan.supabase.co/storage/v1/object/public/slicer-images/610/main_pgvv5bzv8.png",
+    "slicerConfig": {
+      "id": 124,
+      "customPath": "checkin",
+      "storefrontUrl": null,
+      "bannerImage": null,
+      "isRelayerActive": false,
+      "refs": [],
+      "slicerId": 610
+    },
+    "creatorAddress": "0x568b9bfff4a3a7c7351db84ec2f4ad4ca147a1d0"
+  },
+  {
+    "id": 608,
+    "name": "Farcastea",
+    "tags": "Merch",
+    "description": "Farcastea: From Community Idea to First Onchain Tea Brand\n\nWebsite: https://farcastea.xyz/",
+    "config": {
+      "sponsors": true,
+      "creatorMetadata": false
+    },
+    "image": "https://gvlinweehfwzdcdxkkan.supabase.co/storage/v1/object/public/slicer-images/608/main_1axm6n2hk.svg",
+    "slicerConfig": {
+      "id": 123,
+      "customPath": "farcastea",
+      "storefrontUrl": null,
+      "bannerImage": null,
+      "isRelayerActive": false,
+      "refs": [],
+      "slicerId": 608
+    },
+    "creatorAddress": "0x27e97d199f2af1830ce90b60d05d1331c16e2838"
+  },
+  {
+    "id": 606,
+    "name": "The Howard",
+    "tags": "Private",
+    "description": "",
+    "config": {
+      "sponsors": true,
+      "creatorMetadata": false,
+      "maxTotalQuantity": 2,
+      "maxTotalQuantityCutoffTimestamp": 1719416247000
+    },
+    "image": "https://gvlinweehfwzdcdxkkan.supabase.co/storage/v1/object/public/slicer-images/606/main_rvt9zba7o.png",
+    "slicerConfig": {
+      "id": 122,
+      "customPath": null,
+      "storefrontUrl": null,
+      "bannerImage": null,
+      "isRelayerActive": true,
+      "refs": ["Main", "Secondary"],
+      "slicerId": 606
+    },
+    "creatorAddress": "0xae009d532328ff09e09e5d506ab5bbec3c25c0ff"
+  },
+  {
+    "id": 604,
+    "name": "UFO",
+    "tags": "Merch",
+    "description": "UFO is an onchain radio station and club for music, arts and ideas.",
+    "config": {
+      "sponsors": true,
+      "creatorMetadata": false
+    },
+    "image": "https://gvlinweehfwzdcdxkkan.supabase.co/storage/v1/object/public/slicer-images/604/main_716pq5bse.jpg",
+    "slicerConfig": {
+      "id": 121,
+      "customPath": "ufo",
+      "storefrontUrl": null,
+      "bannerImage": null,
+      "isRelayerActive": false,
+      "refs": [],
+      "slicerId": 604
+    },
+    "creatorAddress": "0xf32dd1bd55bd14d929218499a2e7d106f72f79c7"
+  },
+  {
+    "id": 563,
+    "name": "Yayoism - Yayo Merch",
+    "tags": "Merch",
+    "description": "VIOLENCE ENERGY PERFORMANCE RELENTLESSNESS DRIVE ANNIHILATION VICTORY STRENGTH CONQUEST INFLUENCE ANGER VELOCITY IMMORTAL OVERKILL EXOTIC IMPACT AMBITION LIGHTNING DELIBERATION EXPLOSION LUXURY PRIDE INVINCIBILITY BRUTALITY DOMINATION ULTIMATE OCEAN SUPERIORITY TURBOCHARGE LION EXCELLENCE VOLCANO INTENSITY FIRE BEAUTY VENGEANCE PRIMAL SHARPNESS SUN FORCE PRECISION INDUSTRY SAVAGE UNSTOPPABLE PERFECTION FIREARMS LETHALITY DANGER OMNIPOTENCE WARRIOR INSANITY TORQUE ANIMALISM DRAGON ABSOLUTE TSUNAMI MURDER FORTUNE DEFIANCE TESTOSTERONE RESILIENCE JAGUAR SLAUGHTER WRATH STEEL VEHICLE SHOCK SAMURAI AUTHORITY TIGER COMBAT VITALITY HYPERSONIC MASTERY TORNADO BLOOD HARDNESS CRIME AGGRESSION MAGNIFICENCE BERSERKER EAGLE THUNDER ANCIENT NUCLEAR CONFIDENCE REFLEX EXTREME IRONCLAD DEFINITE FINAL OBLITERATION VIOLENCE ENERGY PERFORMANCE RELENTLESSNESS DRIVE ANNIHILATION VICTORY STRENGTH CONQUEST INFLUENCE ANGER VELOCITY IMMORTAL OVERKILL EXOTIC IMPACT AMBITION LIGHTNING DELIBERATION EXPLOSION LUXURY PRIDE INVINCIBILITY BRUTALITY DOMINATION ULTIMATE OCEAN SUPERIORITY TURBOCHARGE LION EXCELLENCE VOLCANO INTENSITY FIRE BEAUTY VENGEANCE PRIMAL SHARPNESS SUN FORCE PRECISION INDUSTRY SAVAGE UNSTOPPABLE PERFECTION FIREARMS LETHALITY DANGER OMNIPOTENCE WARRIOR INSANITY TORQUE ANIMALISM DRAGON ABSOLUTE TSUNAMI MURDER FORTUNE DEFIANCE TESTOSTERONE RESILIENCE JAGUAR SLAUGHTER WRATH STEEL VEHICLE SHOCK SAMURAI AUTHORITY TIGER COMBAT VITALITY HYPERSONIC MASTERY TORNADO BLOOD HARDNESS CRIME AGGRESSION MAGNIFICENCE BERSERKER EAGLE THUNDER ANCIENT NUCLEAR CONFIDENCE REFLEX EXTREME IRONCLAD DEFINITE FINAL OBLITERATION VIOLENCE ENERGY PERFORMANCE RELENTLESSNESS DRIVE ANNIHILATION VICTORY STRENGTH CONQUEST INFLUENCE ANGER VELOCITY IMMORTAL OVERKILL EXOTIC IMPACT AMBITION LIGHTNING DELIBERATION EXPLOSION LUXURY PRIDE INVINCIBILITY BRUTALITY DOMINATION ULTIMATE OCEAN SUPERIORITY TURBOCHARGE LION EXCELLENCE VOLCANO INTENSITY FIRE BEAUTY VENGEANCE PRIMAL SHARPNESS SUN FORCE PRECISION INDUSTRY SAVAGE UNSTOPPABLE PERFECTION FIREARMS LETHALITY DANGER OMNIPOTENCE WARRIOR INSANITY TORQUE ANIMALISM DRAGON ABSOLUTE TSUNAMI MURDER FORTUNE DEFIANCE TESTOSTERONE RESILIENCE JAGUAR SLAUGHTER WRATH STEEL VEHICLE SHOCK SAMURAI AUTHORITY TIGER COMBAT VITALITY HYPERSONIC MASTERY TORNADO BLOOD HARDNESS CRIME AGGRESSION MAGNIFICENCE BERSERKER EAGLE THUNDER ANCIENT NUCLEAR CONFIDENCE REFLEX EXTREME IRONCLAD DEFINITE FINAL OBLITERATION VIOLENCE ENERGY PERFORMANCE RELENTLESSNESS DRIVE ANNIHILATION VICTORY STRENGTH CONQUEST INFLUENCE ANGER VELOCITY IMMORTAL OVERKILL EXOTIC IMPACT AMBITION LIGHTNING DELIBERATION EXPLOSION LUXURY PRIDE INVINCIBILITY BRUTALITY DOMINATION ULTIMATE OCEAN SUPERIORITY TURBOCHARGE LION EXCELLENCE VOLCANO INTENSITY FIRE BEAUTY VENGEANCE PRIMAL SHARPNESS SUN FORCE PRECISION INDUSTRY SAVAGE UNSTOPPABLE PERFECTION FIREARMS LETHALITY DANGER OMNIPOTENCE WARRIOR INSANITY TORQUE ANIMALISM DRAGON ABSOLUTE TSUNAMI MURDER FORTUNE DEFIANCE TESTOSTERONE RESILIENCE JAGUAR SLAUGHTER WRATH STEEL VEHICLE SHOCK SAMURAI AUTHORITY TIGER COMBAT VITALITY HYPERSONIC MASTERY TORNADO BLOOD HARDNESS CRIME AGGRESSION MAGNIFICENCE BERSERKER EAGLE THUNDER ANCIENT NUCLEAR CONFIDENCE REFLEX EXTREME IRONCLAD DEFINITE FINAL OBLITERATION\n",
+    "config": {
+      "sponsors": true
+    },
+    "image": "https://gvlinweehfwzdcdxkkan.supabase.co/storage/v1/object/public/slicer-images/563/main_kknrnfdzs.png",
+    "slicerConfig": {
+      "id": 119,
+      "customPath": "yayo",
+      "storefrontUrl": null,
+      "bannerImage": null,
+      "isRelayerActive": false,
+      "refs": [],
+      "slicerId": 563
+    },
+    "creatorAddress": "0xe883cd7adfe55cd84798a8129468e106b32cdc7a"
+  },
+  {
+    "id": 532,
+    "name": "Farcon merch",
+    "tags": "Merch",
+    "description": "Missed Farcon merch? We got you",
+    "config": {
+      "sponsors": true,
+      "creatorMetadata": false
+    },
+    "image": "https://gvlinweehfwzdcdxkkan.supabase.co/storage/v1/object/public/slicer-images/532/main_u4td812y1.jpg",
+    "slicerConfig": {
+      "id": 127,
+      "customPath": "farcon-merch",
+      "storefrontUrl": null,
+      "bannerImage": null,
+      "isRelayerActive": true,
+      "refs": [],
+      "slicerId": 532
+    },
+    "creatorAddress": "0xf32dd1bd55bd14d929218499a2e7d106f72f79c7"
+  },
+  {
+    "id": 530,
+    "name": "Test Store",
+    "tags": "Private",
+    "description": "",
+    "config": {
+      "sponsors": true,
+      "creatorMetadata": false
+    },
+    "image": "https://gvlinweehfwzdcdxkkan.supabase.co/storage/v1/object/public/slicer-images/530/main_0kf3f6hz7.jpeg",
+    "slicerConfig": {
+      "id": 116,
+      "customPath": "testme",
+      "storefrontUrl": null,
+      "bannerImage": null,
+      "isRelayerActive": false,
+      "refs": [],
+      "slicerId": 530
+    },
+    "creatorAddress": "0xe883cd7adfe55cd84798a8129468e106b32cdc7a"
+  },
+  {
+    "id": 529,
+    "name": "Store Tempula ",
+    "tags": "Private",
+    "description": "This is a test flight.",
+    "config": {
+      "sponsors": true,
+      "creatorMetadata": false
+    },
+    "image": "https://gvlinweehfwzdcdxkkan.supabase.co/storage/v1/object/public/slicer-images/529/main_ibwbhldvq.jpg",
+    "slicerConfig": {
+      "id": 115,
+      "customPath": "tempula",
+      "storefrontUrl": null,
+      "bannerImage": null,
+      "isRelayerActive": false,
+      "refs": [],
+      "slicerId": 529
+    },
+    "creatorAddress": "0x37944c66f365c3f094bb9831a1ece94978ea66a5"
+  },
+  {
+    "id": 526,
+    "name": "Gallery",
+    "tags": "Artwork",
+    "description": "Gallery [001}",
+    "config": {
+      "sponsors": true,
+      "creatorMetadata": false
+    },
+    "image": "https://gvlinweehfwzdcdxkkan.supabase.co/storage/v1/object/public/slicer-images/526/main_1o344japd.png",
+    "slicerConfig": {
+      "id": 114,
+      "customPath": "gallery",
+      "storefrontUrl": null,
+      "bannerImage": null,
+      "isRelayerActive": false,
+      "refs": [],
+      "slicerId": 526
+    },
+    "creatorAddress": "0xe883cd7adfe55cd84798a8129468e106b32cdc7a"
+  },
+  {
+    "id": 522,
+    "name": "Crypster Club",
+    "tags": "",
+    "description": "",
+    "config": {
+      "sponsors": true,
+      "storefrontUrl": "https://crypsterclub.slice.so",
+      "creatorMetadata": false
+    },
+    "image": "https://gvlinweehfwzdcdxkkan.supabase.co/storage/v1/object/public/slicer-images/522/main_h2lup7gmk.png",
+    "slicerConfig": {
+      "id": 113,
+      "customPath": "crypster-club",
+      "storefrontUrl": null,
+      "bannerImage": null,
+      "isRelayerActive": false,
+      "refs": [],
+      "slicerId": 522
+    },
+    "creatorAddress": "0x4d5d7d63989bbe6358a3352a2449d59aa5a08267"
+  },
+  {
+    "id": 512,
+    "name": "C.M.B Jewelry",
+    "tags": "Company",
+    "description": "C.M.B Jewelry specializes in connecting customers with the highest quality gold chains and pendants available in 10KT, 14KT, and 18K gold for the lowest price compared to MSRP. \n\n*you must buy a slice of ownership for 0eth on opensea to be eligible to purchase*\n\nhttps://opensea.io/assets/base/0x5cef0380ce0ad3daeefef8bdb85dbded7965adf9/512/\n\n",
+    "config": {
+      "sponsors": true,
+      "creatorMetadata": false
+    },
+    "image": "https://gvlinweehfwzdcdxkkan.supabase.co/storage/v1/object/public/slicer-images/512/main_mo2kfw24n.png",
+    "slicerConfig": {
+      "id": 112,
+      "customPath": "cmbjewelry",
+      "storefrontUrl": null,
+      "bannerImage": null,
+      "isRelayerActive": false,
+      "refs": [],
+      "slicerId": 512
+    },
+    "creatorAddress": "0x64bdf8237c1394d3f292affe4ecdf638f3a37ce2"
+  },
+  {
+    "id": 508,
+    "name": "BA5ED Merch Store",
+    "tags": "Merch",
+    "description": "BA5ED Merch Store is here to help bring people onchain. Buy BA5ED Merch in the store and support creators on Base.\n\nFollow us: https://twitter.com/ba5edmerchstore",
+    "config": {
+      "sponsors": true,
+      "creatorMetadata": false
+    },
+    "image": "https://gvlinweehfwzdcdxkkan.supabase.co/storage/v1/object/public/slicer-images/508/main_f12lm9bi.png",
+    "slicerConfig": {
+      "id": 111,
+      "customPath": "ba5edmerchstore",
+      "storefrontUrl": null,
+      "bannerImage": null,
+      "isRelayerActive": false,
+      "refs": [],
+      "slicerId": 508
+    },
+    "creatorAddress": "0xabe4976624c9a6c6ce0d382447e49b7feb639565"
+  },
+  {
+    "id": 470,
+    "name": "Higher ↑",
+    "tags": "Merch",
+    "description": "Limited run higher ↑ merch",
+    "config": {
+      "sponsors": true,
+      "creatorMetadata": false
+    },
+    "image": "https://gvlinweehfwzdcdxkkan.supabase.co/storage/v1/object/public/slicer-images/470/main_jc5sd4ie5.png",
+    "slicerConfig": {
+      "id": 109,
+      "customPath": null,
+      "storefrontUrl": null,
+      "bannerImage": null,
+      "isRelayerActive": false,
+      "refs": [],
+      "slicerId": 470
+    },
+    "creatorAddress": "0xe883cd7adfe55cd84798a8129468e106b32cdc7a"
+  },
+  {
+    "id": 469,
+    "name": "The A Line",
+    "tags": "Merch",
+    "description": "The Higher store for optimists ",
+    "config": {
+      "sponsors": true,
+      "creatorMetadata": false
+    },
+    "image": "https://gvlinweehfwzdcdxkkan.supabase.co/storage/v1/object/public/slicer-images/469/main_lmamy21v5.jpg",
+    "slicerConfig": {
+      "id": 106,
+      "customPath": "thealine",
+      "storefrontUrl": null,
+      "bannerImage": null,
+      "isRelayerActive": false,
+      "refs": [],
+      "slicerId": 469
+    },
+    "creatorAddress": "0xac8d20ccc20174779d94963aa706b6e7f86cec07"
+  },
+  {
+    "id": 468,
+    "name": "The A Line",
+    "tags": "Merch",
+    "description": "Higher Collective mech for the optimist",
+    "config": {
+      "sponsors": true,
+      "creatorMetadata": false
+    },
+    "image": "https://gvlinweehfwzdcdxkkan.supabase.co/storage/v1/object/public/slicer-images/468/main_gxz6tfcf.jpg",
+    "slicerConfig": {
+      "id": 105,
+      "customPath": "TheAline",
+      "storefrontUrl": null,
+      "bannerImage": null,
+      "isRelayerActive": false,
+      "refs": [],
+      "slicerId": 468
+    },
+    "creatorAddress": "0xac8d20ccc20174779d94963aa706b6e7f86cec07"
+  },
+  {
+    "id": 467,
+    "name": "NounsWatch Store",
+    "tags": "Project",
+    "description": "NounsWatch official Slice store",
+    "config": {
+      "sponsors": true,
+      "creatorMetadata": false
+    },
+    "image": "https://gvlinweehfwzdcdxkkan.supabase.co/storage/v1/object/public/slicer-images/467/main_lbjsud3zk.png",
+    "slicerConfig": {
+      "id": 104,
+      "customPath": "nounswatch",
+      "storefrontUrl": null,
+      "bannerImage": null,
+      "isRelayerActive": false,
+      "refs": [],
+      "slicerId": 467
+    },
+    "creatorAddress": "0x4c5f5fe036e1ce48aa12d42a56182fe61d764a14"
+  },
+  {
+    "id": 460,
+    "name": "Sid's store",
+    "tags": "Merch",
+    "description": "This is a merch store. ",
+    "config": {
+      "sponsors": true,
+      "creatorMetadata": false
+    },
+    "image": "https://gvlinweehfwzdcdxkkan.supabase.co/storage/v1/object/public/slicer-images/460/main_cb4w2d2cg.jpg",
+    "slicerConfig": {
+      "id": 103,
+      "customPath": "sid",
+      "storefrontUrl": null,
+      "bannerImage": null,
+      "isRelayerActive": false,
+      "refs": [],
+      "slicerId": 460
+    },
+    "creatorAddress": "0xe883cd7adfe55cd84798a8129468e106b32cdc7a"
+  },
+  {
+    "id": 458,
+    "name": "Slicer #458",
+    "tags": "",
+    "description": "",
+    "config": {
+      "sponsors": true,
+      "creatorMetadata": false
+    },
+    "image": "https://gvlinweehfwzdcdxkkan.supabase.co/storage/v1/object/public/slicer-images/458/main_mfm3lypnf.png",
+    "slicerConfig": {
+      "id": 101,
+      "customPath": null,
+      "storefrontUrl": null,
+      "bannerImage": null,
+      "isRelayerActive": false,
+      "refs": [],
+      "slicerId": 458
+    },
+    "creatorAddress": "0xe883cd7adfe55cd84798a8129468e106b32cdc7a"
+  },
+  {
+    "id": 455,
+    "name": "Slicer #455",
+    "tags": "",
+    "description": "",
+    "config": {
+      "sponsors": true,
+      "creatorMetadata": false
+    },
+    "image": "https://gvlinweehfwzdcdxkkan.supabase.co/storage/v1/object/public/slicer-images/455/main_fbtdtjpk7.jpeg",
+    "slicerConfig": {
+      "id": 100,
+      "customPath": null,
+      "storefrontUrl": null,
+      "bannerImage": null,
+      "isRelayerActive": false,
+      "refs": [],
+      "slicerId": 455
+    },
+    "creatorAddress": "0xe883cd7adfe55cd84798a8129468e106b32cdc7a"
+  },
+  {
+    "id": 454,
+    "name": "Slicer #454",
+    "tags": "",
+    "description": "Abc",
+    "config": {
+      "sponsors": true,
+      "creatorMetadata": false
+    },
+    "image": "https://gvlinweehfwzdcdxkkan.supabase.co/storage/v1/object/public/slicer-images/454/main_lowigq6vb.png",
+    "slicerConfig": {
+      "id": 99,
+      "customPath": null,
+      "storefrontUrl": null,
+      "bannerImage": null,
+      "isRelayerActive": false,
+      "refs": [],
+      "slicerId": 454
+    },
+    "creatorAddress": "0xe883cd7adfe55cd84798a8129468e106b32cdc7a"
+  },
+  {
+    "id": 450,
+    "name": "Resume Wind",
+    "tags": "Company",
+    "description": "Beautiful and modern resume templates built in HTML. Easy to edit, easy to share and mobile friendly.",
+    "config": {
+      "sponsors": true,
+      "creatorMetadata": false
+    },
+    "image": "https://gvlinweehfwzdcdxkkan.supabase.co/storage/v1/object/public/slicer-images/450/main_vj6opwx4n.png",
+    "slicerConfig": {
+      "id": 97,
+      "customPath": "resume-wind",
+      "storefrontUrl": null,
+      "bannerImage": null,
+      "isRelayerActive": false,
+      "refs": [],
+      "slicerId": 450
+    },
+    "creatorAddress": "0xe883cd7adfe55cd84798a8129468e106b32cdc7a"
+  },
+  {
+    "id": 447,
+    "name": "Yoddha",
+    "tags": "Merch",
+    "description": "Creating Warrior and Nounish Jewels for a Nounified World.",
+    "config": {
+      "sponsors": true,
+      "creatorMetadata": false
+    },
+    "image": "https://gvlinweehfwzdcdxkkan.supabase.co/storage/v1/object/public/slicer-images/447/main_teaf0apbl.JPG",
+    "slicerConfig": {
+      "id": 96,
+      "customPath": "yoddha",
+      "storefrontUrl": null,
+      "bannerImage": null,
+      "isRelayerActive": false,
+      "refs": [],
+      "slicerId": 447
+    },
+    "creatorAddress": "0xdafbd3231e06e7f2e9a73d8b2afe2d3b1bcccd50"
+  },
+  {
+    "id": 443,
+    "name": "Tavlius.eth",
+    "tags": "Artwork",
+    "description": "",
+    "config": {
+      "sponsors": true,
+      "creatorMetadata": false
+    },
+    "image": "https://gvlinweehfwzdcdxkkan.supabase.co/storage/v1/object/public/slicer-images/443/main_93t5qugjo.png",
+    "slicerConfig": {
+      "id": 95,
+      "customPath": "Tavlius",
+      "storefrontUrl": null,
+      "bannerImage": null,
+      "isRelayerActive": false,
+      "refs": [],
+      "slicerId": 443
+    },
+    "creatorAddress": "0xe883cd7adfe55cd84798a8129468e106b32cdc7a"
+  },
+  {
+    "id": 442,
+    "name": "local soap",
+    "tags": "Merch",
+    "description": "organic products done the old school way",
+    "config": {
+      "sponsors": true,
+      "creatorMetadata": false
+    },
+    "image": "https://gvlinweehfwzdcdxkkan.supabase.co/storage/v1/object/public/slicer-images/442/main_b12zta4fe.jpeg",
+    "slicerConfig": {
+      "id": 94,
+      "customPath": "localsoap",
+      "storefrontUrl": null,
+      "bannerImage": null,
+      "isRelayerActive": false,
+      "refs": [],
+      "slicerId": 442
+    },
+    "creatorAddress": "0x83dc36adcbe7264a5b22db38a7fced5d9d3a39ed"
+  },
+  {
+    "id": 437,
+    "name": "Slicer #437",
+    "tags": "Merch",
+    "description": "NOUNWORKS is the place for nounish people to shop for the absolute best in nounish things.\n\nMade for you with pride by your friends at bigshot.wtf",
+    "config": {
+      "sponsors": true,
+      "creatorMetadata": false
+    },
+    "image": "https://gvlinweehfwzdcdxkkan.supabase.co/storage/v1/object/public/slicer-images/437/main_lrtaxe17.webp",
+    "slicerConfig": {
+      "id": 91,
+      "customPath": null,
+      "storefrontUrl": null,
+      "bannerImage": null,
+      "isRelayerActive": false,
+      "refs": [],
+      "slicerId": 437
+    },
+    "creatorAddress": "0xe883cd7adfe55cd84798a8129468e106b32cdc7a"
+  },
+  {
+    "id": 435,
+    "name": "Austins Swag Shop",
+    "tags": "Merch",
+    "description": "this awesome zebra",
+    "config": {
+      "sponsors": true,
+      "creatorMetadata": false
+    },
+    "image": "https://gvlinweehfwzdcdxkkan.supabase.co/storage/v1/object/public/slicer-images/435/main_bggpcl4n.svg",
+    "slicerConfig": {
+      "id": 90,
+      "customPath": null,
+      "storefrontUrl": null,
+      "bannerImage": null,
+      "isRelayerActive": false,
+      "refs": [],
+      "slicerId": 435
+    },
+    "creatorAddress": "0x34aa3f359a9d614239015126635ce7732c18fdf3"
+  },
+  {
+    "id": 430,
+    "name": "NOUNWORKS ",
+    "tags": "Merch",
+    "description": "NOUNWORKS is the place for nounish people to shop for the absolute best in nounish things. \n\nMade for you with pride by your friends at bigshot.wtf ",
+    "config": {
+      "sponsors": true,
+      "creatorMetadata": false
+    },
+    "image": "https://gvlinweehfwzdcdxkkan.supabase.co/storage/v1/object/public/slicer-images/430/main_ci1fjc50u.jpg",
+    "slicerConfig": {
+      "id": 89,
+      "customPath": "NOUNWORKS",
+      "storefrontUrl": null,
+      "bannerImage": null,
+      "isRelayerActive": false,
+      "refs": [],
+      "slicerId": 430
+    },
+    "creatorAddress": "0xe883cd7adfe55cd84798a8129468e106b32cdc7a"
+  },
+  {
+    "id": 429,
+    "name": "Higher Merch",
+    "tags": "Merch",
+    "description": "[higher](https://warpcast.com/~/channel/higher) is a lifestyle",
+    "config": {
+      "sponsors": true,
+      "creatorMetadata": false
+    },
+    "image": "https://gvlinweehfwzdcdxkkan.supabase.co/storage/v1/object/public/slicer-images/429/main_yl71hkp6b.png",
+    "slicerConfig": {
+      "id": 87,
+      "customPath": "higher",
+      "storefrontUrl": null,
+      "bannerImage": null,
+      "isRelayerActive": false,
+      "refs": [],
+      "slicerId": 429
+    },
+    "creatorAddress": "0x01a29134723ef72a968838cb1df498bc4f910bec"
+  },
+  {
+    "id": 426,
+    "name": "Compass Coffee UTS",
+    "tags": "Private",
+    "description": "",
+    "config": {
+      "logo": "https://compasscoffee.slice.so/compassLogo.png",
+      "sponsors": true,
+      "accentColor": "#E97B3F",
+      "primaryColor": "#143767",
+      "storefrontUrl": "https://compasscoffeeuts.slice.so",
+      "creatorMetadata": false
+    },
+    "image": "https://gvlinweehfwzdcdxkkan.supabase.co/storage/v1/object/public/slicer-images/426/main_8wpczq7s9.png",
+    "slicerConfig": {
+      "id": 85,
+      "customPath": "compasscoffeeuts",
+      "storefrontUrl": null,
+      "bannerImage": null,
+      "isRelayerActive": true,
+      "refs": [],
+      "slicerId": 426
+    },
+    "creatorAddress": "0xae009d532328ff09e09e5d506ab5bbec3c25c0ff"
+  },
+  {
+    "id": 425,
+    "name": "Compass Coffee",
+    "tags": "Private",
+    "description": "",
+    "config": {
+      "logo": "https://compasscoffee.slice.so/compassLogo.png",
+      "sponsors": true,
+      "accentColor": "#E97B3F",
+      "primaryColor": "#143767",
+      "storefrontUrl": "https://compasscoffee.slice.so",
+      "creatorMetadata": false
+    },
+    "image": "https://gvlinweehfwzdcdxkkan.supabase.co/storage/v1/object/public/slicer-images/425/main_wzmjx3xg.png",
+    "slicerConfig": {
+      "id": 84,
+      "customPath": "compasscoffee",
+      "storefrontUrl": null,
+      "bannerImage": null,
+      "isRelayerActive": true,
+      "refs": ["Terminal 1", "Terminal 2", "Terminal 3"],
+      "slicerId": 425
+    },
+    "creatorAddress": "0xae009d532328ff09e09e5d506ab5bbec3c25c0ff"
+  },
+  {
+    "id": 416,
+    "name": "Singapore Base Frames Hackathon",
+    "tags": "",
+    "description": "Exclusive event merch for Singapore Base Frames Hackathon.\n\nBuidl to earn!",
+    "config": {
+      "sponsors": true,
+      "creatorMetadata": false
+    },
+    "image": "https://gvlinweehfwzdcdxkkan.supabase.co/storage/v1/object/public/slicer-images/416/main_rollt6ybf.png",
+    "slicerConfig": {
+      "id": 83,
+      "customPath": "sgbfh",
+      "storefrontUrl": null,
+      "bannerImage": null,
+      "isRelayerActive": false,
+      "refs": [],
+      "slicerId": 416
+    },
+    "creatorAddress": "0x4d120d7d8019c7616d4e14249fb696c6a5fe0b6b"
+  },
+  {
+    "id": 414,
+    "name": "Nouniqlo",
+    "tags": "Private",
+    "description": "Nouniqlo - your nouns basics store",
+    "config": {
+      "sponsors": true,
+      "creatorMetadata": false
+    },
+    "image": "https://gvlinweehfwzdcdxkkan.supabase.co/storage/v1/object/public/slicer-images/414/main_fffd49lm.jpeg",
+    "slicerConfig": {
+      "id": 86,
+      "customPath": "nouniqlo",
+      "storefrontUrl": null,
+      "bannerImage": null,
+      "isRelayerActive": false,
+      "refs": [],
+      "slicerId": 414
+    },
+    "creatorAddress": "0xde30040413b26d7aa2b6fc4761d80eb35dcf97ad"
+  },
+  {
+    "id": 400,
+    "name": "Collectables, Artwork & NFTs  slicer #400 ",
+    "tags": "Artwork",
+    "description": "Vinyl Records, Artwork, NFTs and other things for sale ",
+    "config": {
+      "sponsors": true,
+      "creatorMetadata": false
+    },
+    "image": "https://gvlinweehfwzdcdxkkan.supabase.co/storage/v1/object/public/slicer-images/400/main_h3i58jux.jpeg",
+    "slicerConfig": {
+      "id": 82,
+      "customPath": "SlicerStore400",
+      "storefrontUrl": null,
+      "bannerImage": null,
+      "isRelayerActive": false,
+      "refs": [],
+      "slicerId": 400
+    },
+    "creatorAddress": "0x0544dd5edbc9ee8a565accb57a0d75a7fa8fe9fe"
+  },
+  {
+    "id": 381,
+    "name": "AllThingsLab Merch",
+    "tags": "Company",
+    "description": "AllThingsLab Official Merch Store",
+    "config": {
+      "sponsors": true,
+      "creatorMetadata": false
+    },
+    "image": "https://gvlinweehfwzdcdxkkan.supabase.co/storage/v1/object/public/slicer-images/381/main_4mrt7ztnv.avif",
+    "slicerConfig": {
+      "id": 81,
+      "customPath": "labs",
+      "storefrontUrl": null,
+      "bannerImage": null,
+      "isRelayerActive": false,
+      "refs": [],
+      "slicerId": 381
+    },
+    "creatorAddress": "0xeb5c346f17cff8ab4b04d4618776b481a83daacf"
+  },
+  {
+    "id": 379,
+    "name": "GXILD",
+    "tags": "Merch",
+    "description": "Guild is a premium brand of on-chain clothing. Each unit is tied to its own specific NFT. 90% of the proceeds of the Guild brand go to $CASTER holders.",
+    "config": {
+      "sponsors": true,
+      "creatorMetadata": false
+    },
+    "image": "https://gvlinweehfwzdcdxkkan.supabase.co/storage/v1/object/public/slicer-images/379/main_4yur9e20w.png",
+    "slicerConfig": {
+      "id": 79,
+      "customPath": "Guild",
+      "storefrontUrl": null,
+      "bannerImage": null,
+      "isRelayerActive": false,
+      "refs": [],
+      "slicerId": 379
+    },
+    "creatorAddress": "0xe883cd7adfe55cd84798a8129468e106b32cdc7a"
+  },
+  {
+    "id": 365,
+    "name": "Own The Doge",
+    "tags": "Merch",
+    "description": "",
+    "config": {
+      "sponsors": true,
+      "creatorMetadata": false
+    },
+    "image": "https://gvlinweehfwzdcdxkkan.supabase.co/storage/v1/object/public/slicer-images/365/main_ko53g7b69.png",
+    "slicerConfig": {
+      "id": 77,
+      "customPath": "doge",
+      "storefrontUrl": null,
+      "bannerImage": null,
+      "isRelayerActive": false,
+      "refs": [],
+      "slicerId": 365
+    },
+    "creatorAddress": "0x52c8ff44260056f896e20d8a43610dd88f05701b"
+  },
+  {
+    "id": 355,
+    "name": "Based Vape Shop",
+    "tags": "Merch",
+    "description": "Onchain vape shop",
+    "config": {
+      "sponsors": true,
+      "creatorMetadata": false
+    },
+    "image": "https://gvlinweehfwzdcdxkkan.supabase.co/storage/v1/object/public/slicer-images/355/main_lnwlp1x6g.jpeg",
+    "slicerConfig": {
+      "id": 130,
+      "customPath": "vape",
+      "storefrontUrl": null,
+      "bannerImage": null,
+      "isRelayerActive": false,
+      "refs": [],
+      "slicerId": 355
+    },
+    "creatorAddress": "0x0df79cf2ecb17d3f89625f7015cf805ee2cfad92"
+  },
+  {
+    "id": 354,
+    "name": "Jonny Fiat",
+    "tags": "Merch",
+    "description": "",
+    "config": {
+      "sponsors": true,
+      "creatorMetadata": false
+    },
+    "image": "https://gvlinweehfwzdcdxkkan.supabase.co/storage/v1/object/public/slicer-images/354/main_24s1fghy.png",
+    "slicerConfig": {
+      "id": 75,
+      "customPath": "jonnyfiat",
+      "storefrontUrl": null,
+      "bannerImage": null,
+      "isRelayerActive": false,
+      "refs": [],
+      "slicerId": 354
+    },
+    "creatorAddress": "0x56176778b638e7ccff5053e40f3935b5e354d2f2"
+  },
+  {
+    "id": 349,
+    "name": "hopisaurus.dev",
+    "tags": "Merch",
+    "description": "Soon ™️",
+    "config": {
+      "sponsors": true,
+      "creatorMetadata": false
+    },
+    "image": "https://gvlinweehfwzdcdxkkan.supabase.co/storage/v1/object/public/slicer-images/349/main_w5u78j7n.jpeg",
+    "slicerConfig": {
+      "id": 74,
+      "customPath": "hopisaurus.dev",
+      "storefrontUrl": null,
+      "bannerImage": null,
+      "isRelayerActive": false,
+      "refs": [],
+      "slicerId": 349
+    },
+    "creatorAddress": "0x7951843f1b19ff81ded67aadede5927da4f1aaca"
+  },
+  {
+    "id": 345,
+    "name": "The Yellow Collective Shop",
+    "tags": "Merch",
+    "description": "Official Slicer Shop for The Yellow Collective on BASE. YellowCollective.xyz",
+    "config": {
+      "sponsors": true,
+      "creatorMetadata": false
+    },
+    "image": "https://gvlinweehfwzdcdxkkan.supabase.co/storage/v1/object/public/slicer-images/345/main_2iqfihyg.webp",
+    "slicerConfig": {
+      "id": 73,
+      "customPath": "basedandyellow",
+      "storefrontUrl": null,
+      "bannerImage": null,
+      "isRelayerActive": false,
+      "refs": [],
+      "slicerId": 345
+    },
+    "creatorAddress": "0x5d802e2fe48392c104ce0401c7eca8a4456f1f16"
+  },
+  {
+    "id": 337,
+    "name": "Simpsons",
+    "tags": "Artwork",
+    "description": "Them Simpsons Crypto",
+    "config": {
+      "sponsors": true,
+      "creatorMetadata": false
+    },
+    "image": "https://gvlinweehfwzdcdxkkan.supabase.co/storage/v1/object/public/slicer-images/337/main_7uiit3nz.png",
+    "slicerConfig": {
+      "id": 72,
+      "customPath": "simpsons",
+      "storefrontUrl": null,
+      "bannerImage": null,
+      "isRelayerActive": false,
+      "refs": [],
+      "slicerId": 337
+    },
+    "creatorAddress": "0xe883cd7adfe55cd84798a8129468e106b32cdc7a"
+  },
+  {
+    "id": 336,
+    "name": "Harmon",
+    "tags": "Artwork",
+    "description": "Buy my Artwork.",
+    "config": {
+      "sponsors": true,
+      "creatorMetadata": false
+    },
+    "image": "https://gvlinweehfwzdcdxkkan.supabase.co/storage/v1/object/public/slicer-images/336/main_hmhggzbe.jpg",
+    "slicerConfig": {
+      "id": 71,
+      "customPath": "harmon",
+      "storefrontUrl": null,
+      "bannerImage": null,
+      "isRelayerActive": false,
+      "refs": [],
+      "slicerId": 336
+    },
+    "creatorAddress": "0xe883cd7adfe55cd84798a8129468e106b32cdc7a"
+  },
+  {
+    "id": 335,
+    "name": "Koala Day",
+    "tags": "Project",
+    "description": "Koalas will have Their Day.",
+    "config": {
+      "sponsors": true,
+      "creatorMetadata": false
+    },
+    "image": "https://gvlinweehfwzdcdxkkan.supabase.co/storage/v1/object/public/slicer-images/335/main_pk0jelpya.png",
+    "slicerConfig": {
+      "id": 70,
+      "customPath": "koala",
+      "storefrontUrl": null,
+      "bannerImage": null,
+      "isRelayerActive": false,
+      "refs": [],
+      "slicerId": 335
+    },
+    "creatorAddress": "0xe883cd7adfe55cd84798a8129468e106b32cdc7a"
+  },
+  {
+    "id": 334,
+    "name": "milady",
+    "tags": "Project",
+    "description": "Milady",
+    "config": {
+      "sponsors": true,
+      "creatorMetadata": false
+    },
+    "image": "https://gvlinweehfwzdcdxkkan.supabase.co/storage/v1/object/public/slicer-images/334/main_v6w2up1z4.png",
+    "slicerConfig": {
+      "id": 69,
+      "customPath": "milady",
+      "storefrontUrl": null,
+      "bannerImage": null,
+      "isRelayerActive": false,
+      "refs": [],
+      "slicerId": 334
+    },
+    "creatorAddress": "0xe883cd7adfe55cd84798a8129468e106b32cdc7a"
+  },
+  {
+    "id": 333,
+    "name": "DARC",
+    "tags": "Company",
+    "description": "Decentralized Autonomous Coffee Roasting",
+    "config": {
+      "sponsors": true,
+      "creatorMetadata": false
+    },
+    "image": "https://gvlinweehfwzdcdxkkan.supabase.co/storage/v1/object/public/slicer-images/333/main_5flqkqrw.png",
+    "slicerConfig": {
+      "id": 67,
+      "customPath": "darc",
+      "storefrontUrl": null,
+      "bannerImage": null,
+      "isRelayerActive": false,
+      "refs": [],
+      "slicerId": 333
+    },
+    "creatorAddress": "0xe883cd7adfe55cd84798a8129468e106b32cdc7a"
+  },
+  {
+    "id": 318,
+    "name": "Bitcoin",
+    "tags": "Project",
+    "description": "Bitcoin",
+    "config": {
+      "sponsors": true,
+      "creatorMetadata": false
+    },
+    "image": "https://gvlinweehfwzdcdxkkan.supabase.co/storage/v1/object/public/slicer-images/318/main_afe0fh9xa.png",
+    "slicerConfig": {
+      "id": 65,
+      "customPath": "bitcoin",
+      "storefrontUrl": null,
+      "bannerImage": null,
+      "isRelayerActive": false,
+      "refs": [],
+      "slicerId": 318
+    },
+    "creatorAddress": "0xe883cd7adfe55cd84798a8129468e106b32cdc7a"
+  },
+  {
+    "id": 314,
+    "name": "Onchain Cookies",
+    "tags": "Private",
+    "description": "Support the Girl Scouts of Colorado Troop",
+    "config": {
+      "sponsors": true,
+      "storefrontUrl": "https://onchaincookies.slice.so",
+      "creatorMetadata": false
+    },
+    "image": "https://gvlinweehfwzdcdxkkan.supabase.co/storage/v1/object/public/slicer-images/314/main_2fei1yiy.png",
+    "slicerConfig": {
+      "id": 63,
+      "customPath": "onchaincookies",
+      "storefrontUrl": null,
+      "bannerImage": null,
+      "isRelayerActive": false,
+      "refs": [],
+      "slicerId": 314
+    },
+    "creatorAddress": "0xae009d532328ff09e09e5d506ab5bbec3c25c0ff"
+  },
+  {
+    "id": 308,
+    "name": "cryptorastas",
+    "tags": "Merch",
+    "description": "buy CryptoRastas merch onchain",
+    "config": {
+      "sponsors": true,
+      "creatorMetadata": false
+    },
+    "image": "https://gvlinweehfwzdcdxkkan.supabase.co/storage/v1/object/public/slicer-images/308/main_xfxy82ax.png",
+    "slicerConfig": {
+      "id": 62,
+      "customPath": "cryptorastas",
+      "storefrontUrl": null,
+      "bannerImage": null,
+      "isRelayerActive": false,
+      "refs": [],
+      "slicerId": 308
+    },
+    "creatorAddress": "0xe883cd7adfe55cd84798a8129468e106b32cdc7a"
+  },
+  {
+    "id": 305,
+    "name": "DEGRAQ",
+    "tags": "Artwork",
+    "description": "Tim Degraq's Artwork Fine Art Prints",
+    "config": {
+      "sponsors": true,
+      "creatorMetadata": false
+    },
+    "image": "https://gvlinweehfwzdcdxkkan.supabase.co/storage/v1/object/public/slicer-images/305/main_doj5r7ne9.png",
+    "slicerConfig": {
+      "id": 61,
+      "customPath": "degraq",
+      "storefrontUrl": null,
+      "bannerImage": null,
+      "isRelayerActive": false,
+      "refs": [],
+      "slicerId": 305
+    },
+    "creatorAddress": "0x3f5029cb819fe2055dabb8664388525a2c3f58b8"
+  },
+  {
+    "id": 303,
+    "name": "LunaVibes.eth",
+    "tags": "Merch",
+    "description": "Making music, art, and community in Austin, TX. Minting video/music/merch onchain.\nCustom t-shirts and merch with DTG technology with no-minimums and fast turnaround.",
+    "config": {
+      "sponsors": true,
+      "creatorMetadata": false
+    },
+    "image": "https://gvlinweehfwzdcdxkkan.supabase.co/storage/v1/object/public/slicer-images/303/main_922j4dbmd.png",
+    "slicerConfig": {
+      "id": 60,
+      "customPath": "lunavibes",
+      "storefrontUrl": null,
+      "bannerImage": null,
+      "isRelayerActive": false,
+      "refs": [],
+      "slicerId": 303
+    },
+    "creatorAddress": "0xe883cd7adfe55cd84798a8129468e106b32cdc7a"
+  },
+  {
+    "id": 298,
+    "name": "Bright Moments Venice",
+    "tags": "Private",
+    "description": "",
+    "config": {
+      "sponsors": true,
+      "storefrontUrl": "https://brtmoments.slice.so",
+      "creatorMetadata": false
+    },
+    "image": "https://gvlinweehfwzdcdxkkan.supabase.co/storage/v1/object/public/slicer-images/298/main_srv3100f.png",
+    "slicerConfig": {
+      "id": 59,
+      "customPath": "brtmoments-cafe",
+      "storefrontUrl": "https://brtmoments.slice.so",
+      "bannerImage": null,
+      "isRelayerActive": true,
+      "refs": [],
+      "slicerId": 298
+    },
+    "creatorAddress": "0xae009d532328ff09e09e5d506ab5bbec3c25c0ff"
+  },
+  {
+    "id": 294,
+    "name": "DEGEN x Farcon 2024 by @welcometodegen",
+    "tags": "Merch",
+    "description": "Adjustable six-panel baseball cap with a unique embroidery celebrating DEGEN at Farcon 2024. Crafted in Chile, this limited edition cap is exclusively available at the event.",
+    "config": {
+      "sponsors": true,
+      "creatorMetadata": false
+    },
+    "image": "https://gvlinweehfwzdcdxkkan.supabase.co/storage/v1/object/public/slicer-images/294/main_69z2fu7p1i.gif",
+    "slicerConfig": {
+      "id": 134,
+      "customPath": "dgnfc2024",
+      "storefrontUrl": null,
+      "bannerImage": null,
+      "isRelayerActive": false,
+      "refs": [],
+      "slicerId": 294
+    },
+    "creatorAddress": "0xe883cd7adfe55cd84798a8129468e106b32cdc7a"
+  },
+  {
+    "id": 293,
+    "name": "OG DEGENS",
+    "tags": "Artwork",
+    "description": "OG DEGENS",
+    "config": {
+      "sponsors": true,
+      "creatorMetadata": false
+    },
+    "image": "https://gvlinweehfwzdcdxkkan.supabase.co/storage/v1/object/public/slicer-images/293/main_wvec3mwgw.jpeg",
+    "slicerConfig": {
+      "id": 57,
+      "customPath": "ogdegens",
+      "storefrontUrl": null,
+      "bannerImage": null,
+      "isRelayerActive": false,
+      "refs": [],
+      "slicerId": 293
+    },
+    "creatorAddress": "0x714cf897170e756a3d2b735d3f8830057d89ac38"
+  },
+  {
+    "id": 290,
+    "name": "Patch",
+    "tags": "Merch",
+    "description": "A Farcaster Patch.",
+    "config": {
+      "sponsors": true,
+      "creatorMetadata": false
+    },
+    "image": "https://gvlinweehfwzdcdxkkan.supabase.co/storage/v1/object/public/slicer-images/290/main_f27yrf24.jpeg",
+    "slicerConfig": {
+      "id": 55,
+      "customPath": "patch",
+      "storefrontUrl": null,
+      "bannerImage": null,
+      "isRelayerActive": false,
+      "refs": [],
+      "slicerId": 290
+    },
+    "creatorAddress": "0xe883cd7adfe55cd84798a8129468e106b32cdc7a"
+  },
+  {
+    "id": 288,
+    "name": "winter",
+    "tags": "Artwork",
+    "description": "winter is great",
+    "config": {
+      "sponsors": true,
+      "creatorMetadata": false
+    },
+    "image": "https://gvlinweehfwzdcdxkkan.supabase.co/storage/v1/object/public/slicer-images/288/main_igd04usz.jpg",
+    "slicerConfig": {
+      "id": 52,
+      "customPath": null,
+      "storefrontUrl": null,
+      "bannerImage": null,
+      "isRelayerActive": false,
+      "refs": [],
+      "slicerId": 288
+    },
+    "creatorAddress": "0xe883cd7adfe55cd84798a8129468e106b32cdc7a"
+  },
+  {
+    "id": 287,
+    "name": "BDE",
+    "tags": "Project",
+    "description": "This slicer is making it possible for anyone to use the same BDE strategies as hedge funds. Big Delta Earnings for everyone! Farm, LP, Stake and short that shitcoin with a real time delta strategy, monitor in a dex - adjust position in a cex.",
+    "config": {
+      "sponsors": true,
+      "creatorMetadata": false
+    },
+    "image": "https://gvlinweehfwzdcdxkkan.supabase.co/storage/v1/object/public/slicer-images/287/main_aa93sdgxh.jpeg",
+    "slicerConfig": {
+      "id": 53,
+      "customPath": "Delta",
+      "storefrontUrl": null,
+      "bannerImage": null,
+      "isRelayerActive": false,
+      "refs": [],
+      "slicerId": 287
+    },
+    "creatorAddress": "0xe883cd7adfe55cd84798a8129468e106b32cdc7a"
+  },
+  {
+    "id": 276,
+    "name": "Fly Frogs Merch Store",
+    "tags": "Merch",
+    "description": "A merch store for Fly Frogs. Nice hoodie, ribbit.",
+    "config": {
+      "sponsors": true,
+      "creatorMetadata": false
+    },
+    "image": "https://gvlinweehfwzdcdxkkan.supabase.co/storage/v1/object/public/slicer-images/276/main_xjhwj5e9q.png",
+    "slicerConfig": {
+      "id": 80,
+      "customPath": "flyfrogs",
+      "storefrontUrl": null,
+      "bannerImage": null,
+      "isRelayerActive": false,
+      "refs": [],
+      "slicerId": 276
+    },
+    "creatorAddress": "0xc6d568bcf2df54b71f01fc4948a80d741d0f8db2"
+  },
+  {
+    "id": 272,
+    "name": "MIYA",
+    "tags": "Private",
+    "description": " miya. personal. girl. things. for sale",
+    "config": {
+      "sponsors": true,
+      "creatorMetadata": false
+    },
+    "image": "https://gvlinweehfwzdcdxkkan.supabase.co/storage/v1/object/public/slicer-images/272/main_nbhsexk4c.jpeg",
+    "slicerConfig": {
+      "id": 50,
+      "customPath": "miya",
+      "storefrontUrl": null,
+      "bannerImage": null,
+      "isRelayerActive": false,
+      "refs": [],
+      "slicerId": 272
+    },
+    "creatorAddress": "0xe883cd7adfe55cd84798a8129468e106b32cdc7a"
+  },
+  {
+    "id": 271,
+    "name": "A N G E L ",
+    "tags": "Writing",
+    "description": "Upcoming Writing Onchain ",
+    "config": {
+      "sponsors": true,
+      "creatorMetadata": false
+    },
+    "image": "https://gvlinweehfwzdcdxkkan.supabase.co/storage/v1/object/public/slicer-images/271/main_p7qgixtim.png",
+    "slicerConfig": {
+      "id": 49,
+      "customPath": "angel",
+      "storefrontUrl": null,
+      "bannerImage": null,
+      "isRelayerActive": false,
+      "refs": [],
+      "slicerId": 271
+    },
+    "creatorAddress": "0xe883cd7adfe55cd84798a8129468e106b32cdc7a"
+  },
+  {
+    "id": 270,
+    "name": "W H I T E",
+    "tags": "Artwork",
+    "description": "Unknown Creative Works on Base ",
+    "config": {
+      "sponsors": true,
+      "creatorMetadata": false
+    },
+    "image": "https://gvlinweehfwzdcdxkkan.supabase.co/storage/v1/object/public/slicer-images/270/main_jfmftqvujh.png",
+    "slicerConfig": {
+      "id": 48,
+      "customPath": "white",
+      "storefrontUrl": null,
+      "bannerImage": null,
+      "isRelayerActive": false,
+      "refs": [],
+      "slicerId": 270
+    },
+    "creatorAddress": "0xe883cd7adfe55cd84798a8129468e106b32cdc7a"
+  },
+  {
+    "id": 269,
+    "name": "FIRE",
+    "tags": "Merch",
+    "description": "Limited Edition Art and Merch ",
+    "config": {
+      "sponsors": true,
+      "creatorMetadata": false
+    },
+    "image": "https://gvlinweehfwzdcdxkkan.supabase.co/storage/v1/object/public/slicer-images/269/main_51b4twomw.png",
+    "slicerConfig": {
+      "id": 47,
+      "customPath": "fire",
+      "storefrontUrl": null,
+      "bannerImage": null,
+      "isRelayerActive": false,
+      "refs": [],
+      "slicerId": 269
+    },
+    "creatorAddress": "0xe883cd7adfe55cd84798a8129468e106b32cdc7a"
+  },
+  {
+    "id": 268,
+    "name": "Genesis Cast: The First Step",
+    "tags": "Artwork",
+    "description": "Own a piece of Farcaster history: my inaugural cast!",
+    "config": {
+      "sponsors": true,
+      "creatorMetadata": false
+    },
+    "image": "https://gvlinweehfwzdcdxkkan.supabase.co/storage/v1/object/public/slicer-images/268/main_8u8ktyhvh.png",
+    "slicerConfig": {
+      "id": 46,
+      "customPath": "GenesisCast",
+      "storefrontUrl": null,
+      "bannerImage": null,
+      "isRelayerActive": false,
+      "refs": [],
+      "slicerId": 268
+    },
+    "creatorAddress": "0xe883cd7adfe55cd84798a8129468e106b32cdc7a"
+  },
+  {
+    "id": 262,
+    "name": "test",
+    "tags": "Artwork",
+    "description": "",
+    "config": {
+      "sponsors": true,
+      "creatorMetadata": false
+    },
+    "image": "https://gvlinweehfwzdcdxkkan.supabase.co/storage/v1/object/public/slicer-images/262/main_99yk4zlp7.jpg",
+    "slicerConfig": {
+      "id": 45,
+      "customPath": "testing",
+      "storefrontUrl": null,
+      "bannerImage": null,
+      "isRelayerActive": false,
+      "refs": [],
+      "slicerId": 262
+    },
+    "creatorAddress": "0xcb3ed556582ed0ad86d9f9e4f776465f6326f384"
+  },
+  {
+    "id": 254,
+    "name": "TONBERI",
+    "tags": "Project",
+    "description": "TONBERI A collection of the healthiest berries to consume, such as strawberries, blueberries, blackberries, blackcurrants, raspberries, cranberries, bilberries ",
+    "config": {
+      "sponsors": true,
+      "creatorMetadata": false
+    },
+    "image": "https://gvlinweehfwzdcdxkkan.supabase.co/storage/v1/object/public/slicer-images/254/main_g2v3p73at.jpg",
+    "slicerConfig": {
+      "id": 44,
+      "customPath": "https://tan-vivid-monkey-928.mypinata.cloud/ipfs/QmeywA2SELZZxtktBAuucmsa2rPTKQ9RqLhut8fL4wK9Qj",
+      "storefrontUrl": null,
+      "bannerImage": null,
+      "isRelayerActive": false,
+      "refs": [],
+      "slicerId": 254
+    },
+    "creatorAddress": "0xa72455e75a2a123b93f22f39b28245eb294e8feb"
+  },
+  {
+    "id": 192,
+    "name": "DEFRAME",
+    "tags": "Company",
+    "description": "### [DEFRAME.it](https://deframe.it)",
+    "config": {
+      "sponsors": true,
+      "creatorMetadata": false
+    },
+    "image": "https://gvlinweehfwzdcdxkkan.supabase.co/storage/v1/object/public/slicer-images/192/main_zqvpmvrx.jpg",
+    "slicerConfig": {
+      "id": 42,
+      "customPath": "deframe",
+      "storefrontUrl": null,
+      "bannerImage": null,
+      "isRelayerActive": false,
+      "refs": [],
+      "slicerId": 192
+    },
+    "creatorAddress": "0xf32dd1bd55bd14d929218499a2e7d106f72f79c7"
+  },
+  {
+    "id": 188,
+    "name": "Crypt0Gods",
+    "tags": "Artwork",
+    "description": "\"CryptoGods\" – a groundbreaking NFT collection that pays homage to the visionary leaders who have shaped the landscape of the decentralized world. This unique collection features stunning digital renditions of the head monuments of three influential figures: Vitalik Buterin, the co-founder of Ethereum; Satoshi Nakamoto, the mysterious creator of Bitcoin; and Changpeng Zhao (CZ), the CEO of Binance",
+    "config": {
+      "sponsors": true,
+      "creatorMetadata": false
+    },
+    "image": "https://gvlinweehfwzdcdxkkan.supabase.co/storage/v1/object/public/slicer-images/188/main_2i43zmlg.jpeg",
+    "slicerConfig": {
+      "id": 40,
+      "customPath": "Crypt0Gods",
+      "storefrontUrl": null,
+      "bannerImage": null,
+      "isRelayerActive": false,
+      "refs": [],
+      "slicerId": 188
+    },
+    "creatorAddress": "0xe883cd7adfe55cd84798a8129468e106b32cdc7a"
+  },
+  {
+    "id": 184,
+    "name": "Japanese Snack Box",
+    "tags": "Merch",
+    "description": "Handcrafted Japanese Snack Box delivered from Tokyo.",
+    "config": {
+      "sponsors": true,
+      "creatorMetadata": false
+    },
+    "image": "https://gvlinweehfwzdcdxkkan.supabase.co/storage/v1/object/public/slicer-images/184/main_koqktivw.jpg",
+    "slicerConfig": {
+      "id": 39,
+      "customPath": "japanese-snack-box",
+      "storefrontUrl": null,
+      "bannerImage": null,
+      "isRelayerActive": false,
+      "refs": [],
+      "slicerId": 184
+    },
+    "creatorAddress": "0xe883cd7adfe55cd84798a8129468e106b32cdc7a"
+  },
+  {
+    "id": 180,
+    "name": "immanuel ghoul",
+    "tags": "Artwork",
+    "description": "for the ghoul in you.",
+    "config": {
+      "sponsors": true,
+      "creatorMetadata": false
+    },
+    "image": "https://gvlinweehfwzdcdxkkan.supabase.co/storage/v1/object/public/slicer-images/180/main_50ct5883v.png",
+    "slicerConfig": {
+      "id": 38,
+      "customPath": "immanuel",
+      "storefrontUrl": null,
+      "bannerImage": null,
+      "isRelayerActive": false,
+      "refs": [],
+      "slicerId": 180
+    },
+    "creatorAddress": "0xe883cd7adfe55cd84798a8129468e106b32cdc7a"
+  },
+  {
+    "id": 168,
+    "name": "Slicer historic",
+    "tags": "Artwork",
+    "description": "GM",
+    "config": {
+      "sponsors": true,
+      "creatorMetadata": false
+    },
+    "image": "https://gvlinweehfwzdcdxkkan.supabase.co/storage/v1/object/public/slicer-images/168/main_7lj4yuay.svg",
+    "slicerConfig": {
+      "id": 36,
+      "customPath": "historical",
+      "storefrontUrl": null,
+      "bannerImage": null,
+      "isRelayerActive": false,
+      "refs": [],
+      "slicerId": 168
+    },
+    "creatorAddress": "0xcb3ed556582ed0ad86d9f9e4f776465f6326f384"
+  },
+  {
+    "id": 160,
+    "name": "Farcastpunk",
+    "tags": "Project",
+    "description": "Punk?",
+    "config": {
+      "sponsors": true,
+      "creatorMetadata": false
+    },
+    "image": "https://gvlinweehfwzdcdxkkan.supabase.co/storage/v1/object/public/slicer-images/160/main_rdpghpek.png",
+    "slicerConfig": {
+      "id": 35,
+      "customPath": "Farcastpunk",
+      "storefrontUrl": null,
+      "bannerImage": null,
+      "isRelayerActive": false,
+      "refs": [],
+      "slicerId": 160
+    },
+    "creatorAddress": "0xe883cd7adfe55cd84798a8129468e106b32cdc7a"
+  },
+  {
+    "id": 159,
+    "name": "FrameCubz",
+    "tags": "Artwork",
+    "description": "",
+    "config": {
+      "sponsors": true,
+      "creatorMetadata": false
+    },
+    "image": "https://gvlinweehfwzdcdxkkan.supabase.co/storage/v1/object/public/slicer-images/159/main_6esnmgh03.jpg",
+    "slicerConfig": {
+      "id": 34,
+      "customPath": null,
+      "storefrontUrl": null,
+      "bannerImage": null,
+      "isRelayerActive": false,
+      "refs": [],
+      "slicerId": 159
+    },
+    "creatorAddress": "0x54ad0f349495ab6f28ed06a05b306978f92b2b1b"
+  },
+  {
+    "id": 158,
+    "name": "FrameLoveCubz",
+    "tags": "Artwork",
+    "description": "",
+    "config": {
+      "sponsors": true,
+      "creatorMetadata": false
+    },
+    "image": "https://gvlinweehfwzdcdxkkan.supabase.co/storage/v1/object/public/slicer-images/158/main_es5hyl0k.jpg",
+    "slicerConfig": {
+      "id": 33,
+      "customPath": null,
+      "storefrontUrl": null,
+      "bannerImage": null,
+      "isRelayerActive": false,
+      "refs": [],
+      "slicerId": 158
+    },
+    "creatorAddress": "0x54ad0f349495ab6f28ed06a05b306978f92b2b1b"
+  },
+  {
+    "id": 154,
+    "name": "Habadashery N' Such",
+    "tags": "Merch",
+    "description": "Collectables, Art, NFTs & Daydreams",
+    "config": {
+      "sponsors": true,
+      "creatorMetadata": false
+    },
+    "image": "https://gvlinweehfwzdcdxkkan.supabase.co/storage/v1/object/public/slicer-images/154/main_maoaw7aco.gif",
+    "slicerConfig": {
+      "id": 41,
+      "customPath": "undergroundSlice",
+      "storefrontUrl": null,
+      "bannerImage": null,
+      "isRelayerActive": false,
+      "refs": [],
+      "slicerId": 154
+    },
+    "creatorAddress": "0x0544dd5edbc9ee8a565accb57a0d75a7fa8fe9fe"
+  },
+  {
+    "id": 152,
+    "name": "HISTORIC FRAME",
+    "tags": "",
+    "description": "HISTORIC",
+    "config": {
+      "sponsors": true,
+      "creatorMetadata": false
+    },
+    "image": "https://gvlinweehfwzdcdxkkan.supabase.co/storage/v1/object/public/slicer-images/152/main_vla2805wm.svg",
+    "slicerConfig": {
+      "id": 32,
+      "customPath": "historic",
+      "storefrontUrl": null,
+      "bannerImage": null,
+      "isRelayerActive": false,
+      "refs": [],
+      "slicerId": 152
+    },
+    "creatorAddress": "0xe883cd7adfe55cd84798a8129468e106b32cdc7a"
+  },
+  {
+    "id": 140,
+    "name": "Facaster OG",
+    "tags": "Private",
+    "description": "",
+    "config": {
+      "sponsors": true,
+      "creatorMetadata": false
+    },
+    "image": "https://gvlinweehfwzdcdxkkan.supabase.co/storage/v1/object/public/slicer-images/140/main_tstsgku88.png",
+    "slicerConfig": {
+      "id": 30,
+      "customPath": "farcasterOG",
+      "storefrontUrl": null,
+      "bannerImage": null,
+      "isRelayerActive": false,
+      "refs": [],
+      "slicerId": 140
+    },
+    "creatorAddress": "0xe883cd7adfe55cd84798a8129468e106b32cdc7a"
+  },
+  {
+    "id": 103,
+    "name": "Pepe",
+    "tags": "",
+    "description": "$PEPE. The most memeable memecoin in existence.\n",
+    "config": {
+      "sponsors": true,
+      "creatorMetadata": false
+    },
+    "image": "https://gvlinweehfwzdcdxkkan.supabase.co/storage/v1/object/public/slicer-images/103/main_cmcva2gvb.jpg",
+    "slicerConfig": {
+      "id": 25,
+      "customPath": "pepe",
+      "storefrontUrl": null,
+      "bannerImage": null,
+      "isRelayerActive": false,
+      "refs": [],
+      "slicerId": 103
+    },
+    "creatorAddress": "0xe883cd7adfe55cd84798a8129468e106b32cdc7a"
+  },
+  {
+    "id": 102,
+    "name": "Base",
+    "tags": "Project",
+    "description": "Meet Base, an Ethereum L2 that offers a secure, low-cost, developer-friendly way for anyone, anywhere, to build decentralized apps.Mint ‘Base, Introduced’ to celebrate the testnet launch and join the broader Base community. We’re excited to build Base together with you.\n\n",
+    "config": {
+      "sponsors": true,
+      "creatorMetadata": false
+    },
+    "image": "https://gvlinweehfwzdcdxkkan.supabase.co/storage/v1/object/public/slicer-images/102/main_ifd9qb6cv.avif",
+    "slicerConfig": {
+      "id": 27,
+      "customPath": "Base",
+      "storefrontUrl": null,
+      "bannerImage": null,
+      "isRelayerActive": false,
+      "refs": [],
+      "slicerId": 102
+    },
+    "creatorAddress": "0xe883cd7adfe55cd84798a8129468e106b32cdc7a"
+  },
+  {
+    "id": 101,
+    "name": "Pizza",
+    "tags": "Charity",
+    "description": "",
+    "config": {
+      "sponsors": true,
+      "creatorMetadata": false
+    },
+    "image": "https://gvlinweehfwzdcdxkkan.supabase.co/storage/v1/object/public/slicer-images/101/main_y939oroh7.jpg",
+    "slicerConfig": {
+      "id": 28,
+      "customPath": "Pizza",
+      "storefrontUrl": null,
+      "bannerImage": null,
+      "isRelayerActive": false,
+      "refs": [],
+      "slicerId": 101
+    },
+    "creatorAddress": "0xe883cd7adfe55cd84798a8129468e106b32cdc7a"
+  },
+  {
+    "id": 100,
+    "name": "Mike Shupp",
+    "tags": "Music",
+    "description": "Music, Art and Merch | Slicer #100",
+    "config": {
+      "sponsors": true,
+      "creatorMetadata": false
+    },
+    "image": "https://gvlinweehfwzdcdxkkan.supabase.co/storage/v1/object/public/slicer-images/100/main_cwfr5jubg.png",
+    "slicerConfig": {
+      "id": 26,
+      "customPath": "mikeshupp",
+      "storefrontUrl": null,
+      "bannerImage": null,
+      "isRelayerActive": false,
+      "refs": [],
+      "slicerId": 100
+    },
+    "creatorAddress": "0x3f5602a8a9664817abc95bf0280a5a9f621f0287"
+  },
+  {
+    "id": 95,
+    "name": "ADOR",
+    "tags": "Artwork",
+    "description": "Immerse in creative expression ",
+    "config": {
+      "sponsors": true,
+      "creatorMetadata": false
+    },
+    "image": "https://gvlinweehfwzdcdxkkan.supabase.co/storage/v1/object/public/slicer-images/95/main_xf5m7a5wj.jpeg",
+    "slicerConfig": {
+      "id": 24,
+      "customPath": "ADOR",
+      "storefrontUrl": null,
+      "bannerImage": null,
+      "isRelayerActive": false,
+      "refs": [],
+      "slicerId": 95
+    },
+    "creatorAddress": "0x244b84ed1150d994774be96f71cdeca7bb16d4bc"
+  },
+  {
+    "id": 86,
+    "name": "$degen swag",
+    "tags": "Merch",
+    "description": "$degen merch (testnet)",
+    "config": {
+      "sponsors": true,
+      "creatorMetadata": false
+    },
+    "image": "https://gvlinweehfwzdcdxkkan.supabase.co/storage/v1/object/public/slicer-images/86/main_7o67fttm.png",
+    "slicerConfig": {
+      "id": 23,
+      "customPath": "degen",
+      "storefrontUrl": null,
+      "bannerImage": null,
+      "isRelayerActive": false,
+      "refs": [],
+      "slicerId": 86
+    },
+    "creatorAddress": "0x6a2cbc772ef44a80647e1ccb9aabb2e0ad837238"
+  },
+  {
+    "id": 83,
+    "name": "Degen Cafe",
+    "tags": "Artwork",
+    "description": "Place for Degens to enjoy some culture ",
+    "config": {
+      "sponsors": true,
+      "creatorMetadata": false
+    },
+    "image": "https://gvlinweehfwzdcdxkkan.supabase.co/storage/v1/object/public/slicer-images/83/main_prcouc4p6.jpeg",
+    "slicerConfig": {
+      "id": 22,
+      "customPath": "DegenCafe",
+      "storefrontUrl": null,
+      "bannerImage": null,
+      "isRelayerActive": false,
+      "refs": [],
+      "slicerId": 83
+    },
+    "creatorAddress": "0xe883cd7adfe55cd84798a8129468e106b32cdc7a"
+  },
+  {
+    "id": 72,
+    "name": "Town Mouse Coffee",
+    "tags": "Company",
+    "description": "First and foremost we are a coffee shop. Our mission is to deliver exceptional coffee from our first to our last cup.",
+    "config": {
+      "sponsors": true,
+      "creatorMetadata": false
+    },
+    "image": "https://gvlinweehfwzdcdxkkan.supabase.co/storage/v1/object/public/slicer-images/72/main_om5xdvu2f.png",
+    "slicerConfig": {
+      "id": 20,
+      "customPath": "tmc",
+      "storefrontUrl": null,
+      "bannerImage": null,
+      "isRelayerActive": false,
+      "refs": [],
+      "slicerId": 72
+    },
+    "creatorAddress": "0xe883cd7adfe55cd84798a8129468e106b32cdc7a"
+  },
+  {
+    "id": 56,
+    "name": "XP",
+    "tags": "Game",
+    "description": "### The gateway to a new generation of onchain games",
+    "config": {
+      "sponsors": true,
+      "creatorMetadata": false
+    },
+    "image": "https://gvlinweehfwzdcdxkkan.supabase.co/storage/v1/object/public/slicer-images/56/main_bitbvv2d.jpg",
+    "slicerConfig": {
+      "id": 18,
+      "customPath": "xp",
+      "storefrontUrl": null,
+      "bannerImage": null,
+      "isRelayerActive": false,
+      "refs": [],
+      "slicerId": 56
+    },
+    "creatorAddress": "0xae009d532328ff09e09e5d506ab5bbec3c25c0ff"
+  },
+  {
+    "id": 46,
+    "name": "MMAONCHAIN",
+    "tags": "Artwork",
+    "description": "MMA ",
+    "config": {
+      "sponsors": true,
+      "creatorMetadata": false
+    },
+    "image": "https://gvlinweehfwzdcdxkkan.supabase.co/storage/v1/object/public/slicer-images/46/main_41vpntm8e.png",
+    "slicerConfig": {
+      "id": 17,
+      "customPath": null,
+      "storefrontUrl": null,
+      "bannerImage": null,
+      "isRelayerActive": false,
+      "refs": [],
+      "slicerId": 46
+    },
+    "creatorAddress": "0xe883cd7adfe55cd84798a8129468e106b32cdc7a"
+  },
+  {
+    "id": 42,
+    "name": "Base Cafe",
+    "tags": "",
+    "description": "No FIAT allowed\n\nCaffeine. Merch. Utility.",
+    "config": {
+      "logo": "https://compasscoffee.slice.so/compassLogo.png",
+      "sponsors": true,
+      "accentColor": "#E97B3F",
+      "primaryColor": "#143767",
+      "storefrontUrl": "https://basecafe.slice.so",
+      "creatorMetadata": false
+    },
+    "image": "https://gvlinweehfwzdcdxkkan.supabase.co/storage/v1/object/public/slicer-images/42/main_dgicsrhag.png",
+    "slicerConfig": {
+      "id": 16,
+      "customPath": "basecafe",
+      "storefrontUrl": null,
+      "bannerImage": null,
+      "isRelayerActive": true,
+      "refs": ["Main"],
+      "slicerId": 42
+    },
+    "creatorAddress": "0xae009d532328ff09e09e5d506ab5bbec3c25c0ff"
+  },
+  {
+    "id": 37,
+    "name": "Satoshi's Stand",
+    "tags": "Private",
+    "description": "",
+    "config": {
+      "sponsors": true
+    },
+    "image": "https://gvlinweehfwzdcdxkkan.supabase.co/storage/v1/object/public/slicer-images/37/main_9pmihkxtl.png",
+    "slicerConfig": {
+      "id": 14,
+      "customPath": "satoshis-stand",
+      "storefrontUrl": null,
+      "bannerImage": null,
+      "isRelayerActive": false,
+      "refs": [],
+      "slicerId": 37
+    },
+    "creatorAddress": "0xae795fa6667eadf41746c384a758f2103649225b"
+  },
+  {
+    "id": 36,
+    "name": "Satoshis Stand",
+    "tags": "Private",
+    "description": "",
+    "config": {
+      "sponsors": true,
+      "creatorMetadata": false
+    },
+    "image": "https://gvlinweehfwzdcdxkkan.supabase.co/storage/v1/object/public/slicer-images/36/main_yl9yeb7fr.png",
+    "slicerConfig": {
+      "id": 13,
+      "customPath": "satoshisstand-tr20",
+      "storefrontUrl": null,
+      "bannerImage": null,
+      "isRelayerActive": false,
+      "refs": [],
+      "slicerId": 36
+    },
+    "creatorAddress": "0xae795fa6667eadf41746c384a758f2103649225b"
+  },
+  {
+    "id": 35,
+    "name": "sample test- another test",
+    "tags": "Private",
+    "description": "Onchain, all day, everyday",
+    "config": {
+      "sponsors": true,
+      "creatorMetadata": false
+    },
+    "image": "https://gvlinweehfwzdcdxkkan.supabase.co/storage/v1/object/public/slicer-images/35/main_899ermu68.png",
+    "slicerConfig": {
+      "id": 12,
+      "customPath": "anothertest",
+      "storefrontUrl": null,
+      "bannerImage": null,
+      "isRelayerActive": false,
+      "refs": [],
+      "slicerId": 35
+    },
+    "creatorAddress": "0xae795fa6667eadf41746c384a758f2103649225b"
+  },
+  {
+    "id": 32,
+    "name": "sample-beta-dont-use",
+    "tags": "Private",
+    "description": "sample",
+    "config": {
+      "sponsors": true,
+      "creatorMetadata": false
+    },
+    "image": "https://gvlinweehfwzdcdxkkan.supabase.co/storage/v1/object/public/slicer-images/32/main_zc08x7rl.png",
+    "slicerConfig": {
+      "id": 11,
+      "customPath": "sample-beta-dont-use",
+      "storefrontUrl": null,
+      "bannerImage": null,
+      "isRelayerActive": false,
+      "refs": [],
+      "slicerId": 32
+    },
+    "creatorAddress": "0xae795fa6667eadf41746c384a758f2103649225b"
+  },
+  {
+    "id": 8,
+    "name": "dlabs",
+    "tags": "Company",
+    "description": "[dlabs](https://dlabs.app) is the all-in-one solution for web3 development: smart contracts, web and dApp development, blockchain strategy, UX/UI design and more.\n\nPurchase the products below to get credits, then spend them on [dlabs.app](https://dlabs.app) to get requests done.",
+    "config": {
+      "sponsors": true,
+      "creatorMetadata": false
+    },
+    "image": "https://gvlinweehfwzdcdxkkan.supabase.co/storage/v1/object/public/slicer-images/8/main_15pxc4lii.png",
+    "slicerConfig": {
+      "id": 10,
+      "customPath": "dlabs",
+      "storefrontUrl": null,
+      "bannerImage": null,
+      "isRelayerActive": false,
+      "refs": [],
+      "slicerId": 8
+    },
+    "creatorAddress": "0xb05ba6660b9fade3634466bf7834cdfc76fa4886"
+  },
+  {
+    "id": 7,
+    "name": "Based Merch",
+    "tags": "",
+    "description": "An onchain store powered by Base.\n\nLimited edition merch drops.\n\nGo onchain.",
+    "config": {
+      "sponsors": true,
+      "storefrontUrl": "https://basedmerch.slice.so",
+      "creatorMetadata": false
+    },
+    "image": "https://gvlinweehfwzdcdxkkan.supabase.co/storage/v1/object/public/slicer-images/7/main_ig2349kla.jpg",
+    "slicerConfig": {
+      "id": 9,
+      "customPath": "basedmerch",
+      "storefrontUrl": null,
+      "bannerImage": null,
+      "isRelayerActive": false,
+      "refs": [],
+      "slicerId": 7
+    },
+    "creatorAddress": "0xf32dd1bd55bd14d929218499a2e7d106f72f79c7"
+  },
+  {
+    "id": 6,
+    "name": "MOOB STORE",
+    "tags": "Company",
+    "description": "",
+    "config": {
+      "sponsors": true
+    },
+    "image": "https://gvlinweehfwzdcdxkkan.supabase.co/storage/v1/object/public/slicer-images/6/main_m9ch8zc4.jpeg",
+    "slicerConfig": {
+      "id": 8,
+      "customPath": "MOOBS",
+      "storefrontUrl": null,
+      "bannerImage": null,
+      "isRelayerActive": false,
+      "refs": [],
+      "slicerId": 6
+    },
+    "creatorAddress": "0xcffe08bdf20918007f8ab268c32f8756494fc8d8"
+  },
+  {
+    "id": 2,
+    "name": "Onchain Summer Drops ☀️",
+    "tags": "Artwork",
+    "description": "Find all the onchain summer drops in one place, and get them all in a single swoop\n\nNo additional costs - actually each purchase also comes with some sweet SLC tokens ☀️",
+    "config": {
+      "sponsors": true,
+      "creatorMetadata": false
+    },
+    "image": "https://gvlinweehfwzdcdxkkan.supabase.co/storage/v1/object/public/slicer-images/2/main_fw3wn7jjhs.png",
+    "slicerConfig": {
+      "id": 7,
+      "customPath": "onchainsummer",
+      "storefrontUrl": null,
+      "bannerImage": null,
+      "isRelayerActive": false,
+      "refs": [],
+      "slicerId": 2
+    },
+    "creatorAddress": "0xae009d532328ff09e09e5d506ab5bbec3c25c0ff"
+  },
+  {
+    "id": 1,
+    "name": "Café Saint Victor",
+    "tags": "Private",
+    "description": "",
+    "config": {
+      "sponsors": true,
+      "creatorMetadata": false
+    },
+    "image": "https://gvlinweehfwzdcdxkkan.supabase.co/storage/v1/object/public/slicer-images/1/main_vz1f94ha4.webp",
+    "slicerConfig": {
+      "id": 2,
+      "customPath": "cafe-saint-victor",
+      "storefrontUrl": null,
+      "bannerImage": null,
+      "isRelayerActive": false,
+      "refs": [],
+      "slicerId": 1
+    },
+    "creatorAddress": "0xae009d532328ff09e09e5d506ab5bbec3c25c0ff"
+  },
+  {
+    "id": 0,
+    "name": "Slice store",
+    "tags": "Company",
+    "description": "The Slice decentralized store on Base.\n\n### Active sales\n- **Base Genesis NFT**: Available for a limited time, gives exclusive access to our upcoming deals and promotions. Mint it below by adding the product to the cart and checking out.",
+    "config": {
+      "sponsors": true,
+      "creatorMetadata": false
+    },
+    "image": "https://gvlinweehfwzdcdxkkan.supabase.co/storage/v1/object/public/slicer-images/0/main_s2eaoot1i.png",
+    "slicerConfig": {
+      "id": 1,
+      "customPath": "slice",
+      "storefrontUrl": null,
+      "bannerImage": null,
+      "isRelayerActive": false,
+      "refs": [],
+      "slicerId": 0
+    },
+    "creatorAddress": "0xae009d532328ff09e09e5d506ab5bbec3c25c0ff"
+  }
+]
