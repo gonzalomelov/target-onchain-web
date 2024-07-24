@@ -78,7 +78,7 @@ const FrameForm = (props: IFrameFormProps) => {
     { value: string; label: string; image: string }[]
   >([]);
   const [selectedOption, setSelectedOption] = useState(null);
-  const [imageURL, setImageURL] = useState('');
+  const [imageURL, setImageURL] = useState('/assets/images/placeholder.png');
   const [isImageLoading, setIsImageLoading] = useState(false);
   const [isAdditionalSettingsCollapsed, setIsAdditionalSettingsCollapsed] =
     useState(true);
@@ -135,7 +135,7 @@ const FrameForm = (props: IFrameFormProps) => {
         setValue('shop', initialSelection.value, { shouldValidate: true });
         setValue('title', initialSelection.label, { shouldValidate: true });
         setValue('image', initialSelection.image, { shouldValidate: true });
-        setImageURL(initialSelection.image);
+        setImageURL(initialSelection.image || '/assets/images/placeholder.png'); // Add the fallback to the placeholder
         setSelectedOption(initialSelection);
       }
     };
