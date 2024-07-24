@@ -85,6 +85,7 @@ const FrameForm = (props: IFrameFormProps) => {
 
   const creator = watch('creator');
   const selectedShop = watch('shop');
+  const buttonText = watch('button');
 
   const loadOptions = async (
     inputValue: string,
@@ -315,18 +316,34 @@ const FrameForm = (props: IFrameFormProps) => {
             htmlFor={`frame${props.edit ? `-${props.id}` : ''}`}
           >
             Frame
-            <div className="relative mx-5 mt-3">
-              {isImageLoading && (
-                <div className="absolute inset-0 flex items-center justify-center">
-                  <div className="size-8 animate-spin rounded-full border-y-2 border-gray-900" />
+            <div className="relative mx-5 mt-3 rounded">
+              <div className="relative">
+                {isImageLoading && (
+                  <div className="absolute inset-0 flex items-center justify-center">
+                    <div className="size-8 animate-spin rounded-full border-y-2 border-gray-900" />
+                  </div>
+                )}
+                {/* eslint-disable-next-line @next/next/no-img-element */}
+                <img
+                  src={imageURL}
+                  alt="Selected"
+                  className="h-auto w-full rounded-t-lg"
+                  onLoad={() => setIsImageLoading(false)}
+                />
+              </div>
+              {/* eslint-disable-next-line tailwindcss/migration-from-tailwind-2 */}
+              <div className="space-y-2 rounded-lg rounded-t-none border border-t-0 border-[#4c3a4e] border-opacity-50 bg-gray-100 px-4 py-2 dark:bg-[#2A2432]">
+                <div className="mt-1 w-full rounded border border-gray-900 bg-white p-2 px-[12px] py-[10px] text-xs font-thin text-gray-300 dark:bg-[#17101f]">
+                  Test wallet address
                 </div>
-              )}
-              <img
-                src={imageURL}
-                alt="Selected"
-                className="h-auto w-full rounded"
-                onLoad={() => setIsImageLoading(false)}
-              />
+                <div className="grid w-full grid-cols-1 grid-rows-1 items-center gap-[10px]">
+                  <div className="flex h-8 flex-row items-center justify-center rounded-lg bg-gray-200 px-4 py-2 text-xs font-semibold dark:bg-[#ffffff1a]">
+                    <span className="line-clamp-1 items-center text-xs font-normal text-gray-400">
+                      {buttonText}
+                    </span>
+                  </div>
+                </div>
+              </div>
             </div>
           </label>
         </div>
