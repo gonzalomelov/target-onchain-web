@@ -28,6 +28,12 @@ type IFrameFormProps =
       onValid: SubmitHandler<z.infer<typeof FrameValidation>>;
     };
 
+type OptionType = {
+  label: string;
+  value: string;
+  image: string;
+};
+
 const debounce = <T extends (...args: any[]) => void>(
   func: T,
   wait: number,
@@ -71,13 +77,11 @@ const FrameForm = (props: IFrameFormProps) => {
   });
   const router = useRouter();
   const t = useTranslations('FrameForm');
-  const [creatorShopOptions, setCreatorShopOptions] = useState<
-    { value: string; label: string; image: string }[]
-  >([]);
-  const [otherShopOptions, setOtherShopOptions] = useState<
-    { value: string; label: string; image: string }[]
-  >([]);
-  const [selectedOption, setSelectedOption] = useState(null);
+  const [creatorShopOptions, setCreatorShopOptions] = useState<OptionType[]>(
+    [],
+  );
+  const [otherShopOptions, setOtherShopOptions] = useState<OptionType[]>([]);
+  const [selectedOption, setSelectedOption] = useState<OptionType | null>(null);
   const [imageURL, setImageURL] = useState('/assets/images/placeholder.png');
   const [isImageLoading, setIsImageLoading] = useState(false);
   const [isAdditionalSettingsCollapsed, setIsAdditionalSettingsCollapsed] =
@@ -96,7 +100,7 @@ const FrameForm = (props: IFrameFormProps) => {
       (store: { id: string; name: string; image: string }) => ({
         value: `https://slice.so/slicer/${store.id}`,
         label: store.name,
-        image: `${getBaseUrl()}/api/og?title=${encodeURIComponent(store.name)}&subtitle=Click below for exclusive recommendations!&content=&url=${store.image}&width=600`,
+        image: store.image,
       }),
     );
     callback(options);
@@ -113,7 +117,7 @@ const FrameForm = (props: IFrameFormProps) => {
         (store: { id: string; name: string; image: string }) => ({
           value: `https://slice.so/slicer/${store.id}`,
           label: store.name,
-          image: `${getBaseUrl()}/api/og?title=${encodeURIComponent(store.name)}&subtitle=Click below for exclusive recommendations!&content=&url=${store.image}&width=600`,
+          image: store.image,
         }),
       );
 
@@ -121,21 +125,20 @@ const FrameForm = (props: IFrameFormProps) => {
         (store: { id: string; name: string; image: string }) => ({
           value: `https://slice.so/slicer/${store.id}`,
           label: store.name,
-          image: `${getBaseUrl()}/api/og?title=${encodeURIComponent(store.name)}&subtitle=Click below for exclusive recommendations!&content=&url=${store.image}&width=600`,
+          image: store.image,
         }),
       );
 
       setCreatorShopOptions(creatorOptions);
       setOtherShopOptions(otherOptions);
 
-      // Select the first user store if any, else use the first of the rest
       const initialSelection =
         creatorOptions.length > 0 ? creatorOptions[0] : otherOptions[0];
       if (initialSelection) {
         setValue('shop', initialSelection.value, { shouldValidate: true });
         setValue('title', initialSelection.label, { shouldValidate: true });
         setValue('image', initialSelection.image, { shouldValidate: true });
-        setImageURL(initialSelection.image || '/assets/images/placeholder.png'); // Add the fallback to the placeholder
+        setImageURL(initialSelection.image || '/assets/images/placeholder.png');
         setSelectedOption(initialSelection);
       }
     };
@@ -150,8 +153,14 @@ const FrameForm = (props: IFrameFormProps) => {
         otherShopOptions.find((shop) => shop.value === selectedShop);
       if (selected) {
         setValue('title', selected.label, { shouldValidate: true });
-        setValue('image', selected.image, { shouldValidate: true });
-        setImageURL(selected.image);
+        setValue(
+          'image',
+          `${getBaseUrl()}/api/og?title=${encodeURIComponent(selected.label)}&subtitle=Click below for exclusive recommendations!&content=&url=${selected.image}&width=600`,
+          { shouldValidate: true },
+        );
+        setImageURL(
+          `${getBaseUrl()}/api/og?title=${encodeURIComponent(selected.label)}&subtitle=Click below for exclusive recommendations!&content=&url=${selected.image}&width=600`,
+        );
       }
     }
   }, [selectedShop, setValue, creatorShopOptions, otherShopOptions]);
@@ -373,12 +382,27 @@ const FrameForm = (props: IFrameFormProps) => {
               htmlFor={`image${props.edit ? `-${props.id}` : ''}`}
             >
               {t('image')}
-              <input
+              <select
                 id={`image${props.edit ? `-${props.id}` : ''}`}
-                placeholder="Image for the frame"
                 className="mt-2 w-full appearance-none rounded border px-3 py-2 leading-tight text-gray-900 focus:outline-none focus:ring focus:ring-blue-300/50"
                 {...register('image')}
-              />
+              >
+                <option
+                  value={`${getBaseUrl()}/api/og?title=${encodeURIComponent(selectedOption!.label)}&subtitle=Click below for exclusive recommendations!&content=&url=${selectedOption?.image}&width=600`}
+                >
+                  Default Image
+                </option>
+                {/* <option
+                  value={`${getBaseUrl()}/api/gif?text=Click below for exclusive recommendations!&title=${encodeURIComponent(selectedOption!.label)}&subtitle=&content=&url=${selectedOption?.image}&width=600`}
+                >
+                  GIF Image
+                </option> */}
+                <option
+                  value={`${getBaseUrl()}/api/og?layoutType=fullWidth&title=${encodeURIComponent(selectedOption!.label)}&subtitle=Click below for exclusive recommendations!&content=&url=${selectedOption?.image}&width=600`}
+                >
+                  Full Width Image
+                </option>
+              </select>
             </label>
             {errors.image?.message && (
               <div className="my-2 text-xs italic text-red-500">
