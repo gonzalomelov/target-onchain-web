@@ -417,12 +417,17 @@ const FrameForm = (props: IFrameFormProps) => {
               htmlFor={`button${props.edit ? `-${props.id}` : ''}`}
             >
               {t('button')}
-              <input
+              <select
                 id={`button${props.edit ? `-${props.id}` : ''}`}
-                placeholder="Text for the call-to-action"
                 className="mt-2 w-full appearance-none rounded border px-3 py-2 leading-tight text-gray-900 focus:outline-none focus:ring focus:ring-blue-300/50"
                 {...register('button')}
-              />
+              >
+                <option value="Show">Show</option>
+                <option value="Present">Present</option>
+                <option value="Unveil">Unveil</option>
+                <option value="Recommend">Recommend</option>
+                <option value="Suggest">Suggest</option>
+              </select>
             </label>
             {errors.button?.message && (
               <div className="my-2 text-xs italic text-red-500">
