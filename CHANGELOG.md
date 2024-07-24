@@ -1,3 +1,10 @@
+## [1.20.1](https://github.com/gonzalomelov/target-onchain/compare/v1.20.0...v1.20.1) (2024-07-24)
+
+
+### Bug Fixes
+
+* light mode ([3c5f6ba](https://github.com/gonzalomelov/target-onchain/commit/3c5f6bae8d826a7f7af71647cbd304b1f91c5cf3))
+
 # [1.20.0](https://github.com/gonzalomelov/target-onchain/compare/v1.19.2...v1.20.0) (2024-07-21)
 
 
