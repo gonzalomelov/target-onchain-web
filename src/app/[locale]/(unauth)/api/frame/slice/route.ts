@@ -7,7 +7,7 @@ import { NextResponse } from 'next/server';
 import { db } from '@/libs/DB';
 import { logger } from '@/libs/Logger';
 import { frameSchema, productSchema } from '@/models/Schema';
-import { defaultErrorFrame } from '@/utils/Helpers';
+import { defaultErrorFrame, getBaseUrl } from '@/utils/Helpers';
 import { FrameValidation } from '@/validations/FrameValidation';
 
 const config = createConfig({
@@ -61,7 +61,8 @@ export const POST = async (request: Request) => {
           : product.productId.toString(),
         variantFormattedPrice: `${((product.price as unknown as number) / 1_000_000).toFixed(0)} USDC`,
         alt: product.name,
-        image: image!,
+        image:
+          image || `${getBaseUrl()}/assets/images/slice-product-default.png`,
         createdAt: new Date(),
       };
     });
