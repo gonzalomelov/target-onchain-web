@@ -349,7 +349,7 @@ const FrameForm = (props: IFrameFormProps) => {
         </div>
       )}
 
-      <div className="mt-3">
+      <div className="mt-5">
         <button
           type="button"
           onClick={() =>
