@@ -80,6 +80,8 @@ const FrameForm = (props: IFrameFormProps) => {
   const [selectedOption, setSelectedOption] = useState(null);
   const [imageURL, setImageURL] = useState('');
   const [isImageLoading, setIsImageLoading] = useState(false);
+  const [isAdditionalSettingsCollapsed, setIsAdditionalSettingsCollapsed] =
+    useState(true);
 
   const creator = watch('creator');
   const selectedShop = watch('shop');
@@ -224,6 +226,7 @@ const FrameForm = (props: IFrameFormProps) => {
                 setSelectedOption(selectedOptionValue); // Add this line
               }
             }}
+            className="mt-2"
             styles={{
               control: (base) => ({
                 ...base,
@@ -280,46 +283,6 @@ const FrameForm = (props: IFrameFormProps) => {
         )}
       </div>
 
-      <div className="mt-3">
-        <label
-          className="text-sm font-medium text-[var(--color-text-light)] dark:text-[var(--color-text-dark)]"
-          htmlFor={`image${props.edit ? `-${props.id}` : ''}`}
-        >
-          {t('image')}
-          <input
-            id={`image${props.edit ? `-${props.id}` : ''}`}
-            placeholder="Image for the frame"
-            className="mt-2 w-full appearance-none rounded border px-3 py-2 leading-tight text-gray-900 focus:outline-none focus:ring focus:ring-blue-300/50"
-            {...register('image')}
-          />
-        </label>
-        {errors.image?.message && (
-          <div className="my-2 text-xs italic text-red-500">
-            {errors.image?.message}
-          </div>
-        )}
-      </div>
-
-      <div className="mt-3">
-        <label
-          className="text-sm font-medium text-[var(--color-text-light)] dark:text-[var(--color-text-dark)]"
-          htmlFor={`button${props.edit ? `-${props.id}` : ''}`}
-        >
-          {t('button')}
-          <input
-            id={`button${props.edit ? `-${props.id}` : ''}`}
-            placeholder="Text for the call-to-action"
-            className="mt-2 w-full appearance-none rounded border px-3 py-2 leading-tight text-gray-900 focus:outline-none focus:ring focus:ring-blue-300/50"
-            {...register('button')}
-          />
-        </label>
-        {errors.button?.message && (
-          <div className="my-2 text-xs italic text-red-500">
-            {errors.button?.message}
-          </div>
-        )}
-      </div>
-
       <div className="mt-3" style={{ display: 'none' }}>
         <label
           className="text-sm font-medium text-[var(--color-text-light)] dark:text-[var(--color-text-dark)]"
@@ -366,6 +329,66 @@ const FrameForm = (props: IFrameFormProps) => {
               />
             </div>
           </label>
+        </div>
+      )}
+
+      <div className="mt-3">
+        <button
+          type="button"
+          onClick={() =>
+            setIsAdditionalSettingsCollapsed(!isAdditionalSettingsCollapsed)
+          }
+          className="flex w-full cursor-pointer items-center text-sm font-medium text-[var(--color-text-light)] dark:text-[var(--color-text-dark)]"
+          aria-expanded={!isAdditionalSettingsCollapsed}
+        >
+          Customize frame
+          <span className="ml-1">
+            {isAdditionalSettingsCollapsed ? '+' : '-'}
+          </span>
+        </button>
+      </div>
+
+      {!isAdditionalSettingsCollapsed && (
+        <div className="mt-3">
+          <div className="mt-3">
+            <label
+              className="text-sm font-medium text-[var(--color-text-light)] dark:text-[var(--color-text-dark)]"
+              htmlFor={`image${props.edit ? `-${props.id}` : ''}`}
+            >
+              {t('image')}
+              <input
+                id={`image${props.edit ? `-${props.id}` : ''}`}
+                placeholder="Image for the frame"
+                className="mt-2 w-full appearance-none rounded border px-3 py-2 leading-tight text-gray-900 focus:outline-none focus:ring focus:ring-blue-300/50"
+                {...register('image')}
+              />
+            </label>
+            {errors.image?.message && (
+              <div className="my-2 text-xs italic text-red-500">
+                {errors.image?.message}
+              </div>
+            )}
+          </div>
+
+          <div className="mt-3">
+            <label
+              className="text-sm font-medium text-[var(--color-text-light)] dark:text-[var(--color-text-dark)]"
+              htmlFor={`button${props.edit ? `-${props.id}` : ''}`}
+            >
+              {t('button')}
+              <input
+                id={`button${props.edit ? `-${props.id}` : ''}`}
+                placeholder="Text for the call-to-action"
+                className="mt-2 w-full appearance-none rounded border px-3 py-2 leading-tight text-gray-900 focus:outline-none focus:ring focus:ring-blue-300/50"
+                {...register('button')}
+              />
+            </label>
+            {errors.button?.message && (
+              <div className="my-2 text-xs italic text-red-500">
+                {errors.button?.message}
+              </div>
+            )}
+          </div>
         </div>
       )}
 
