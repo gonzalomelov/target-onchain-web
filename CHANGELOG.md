@@ -1,3 +1,10 @@
+## [1.20.2](https://github.com/gonzalomelov/target-onchain/compare/v1.20.1...v1.20.2) (2024-07-24)
+
+
+### Bug Fixes
+
+* default product image when there's none ([c2dc13b](https://github.com/gonzalomelov/target-onchain/commit/c2dc13ba703404e3e9d7f87572ffaa758c131a44))
+
 ## [1.20.1](https://github.com/gonzalomelov/target-onchain/compare/v1.20.0...v1.20.1) (2024-07-24)
 
 
