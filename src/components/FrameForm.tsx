@@ -103,8 +103,8 @@ const FrameForm = (props: IFrameFormProps) => {
 
   useEffect(() => {
     const fetchInitialStores = async () => {
-      const allStores = await fetchAllShops('');
       const creatorStores = creator ? await fetchCreatorShops(creator) : [];
+      const allStores = await fetchAllShops('');
 
       const creatorOptions = creatorStores.map(
         (store: { id: string; name: string; image: string }) => ({
