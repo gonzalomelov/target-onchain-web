@@ -5,9 +5,9 @@ import { getBaseUrl } from '@/utils/Helpers';
 export const GET = async () => {
   return NextResponse.json({
     type: 'composer',
-    name: 'Slice Store 🎯',
+    name: 'Slice',
     icon: 'meter',
-    description: 'Slice, Wallet-aware',
+    description: 'Earn with referrals',
     aboutUrl: getBaseUrl(),
     imageUrl: `${getBaseUrl()}/favicon-100x100.png`,
     action: {
