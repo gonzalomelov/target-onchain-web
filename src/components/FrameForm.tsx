@@ -316,8 +316,8 @@ const FrameForm = (props: IFrameFormProps) => {
             htmlFor={`frame${props.edit ? `-${props.id}` : ''}`}
           >
             Frame
-            <div className="relative mx-5 mt-3 rounded">
-              <div className="relative">
+            <div className="relative mx-5 mt-3">
+              <div className="relative rounded-t-lg border border-[#4c3a4e] border-opacity-10">
                 {isImageLoading && (
                   <div className="absolute inset-0 flex items-center justify-center">
                     <div className="size-8 animate-spin rounded-full border-y-2 border-gray-900" />
@@ -332,8 +332,8 @@ const FrameForm = (props: IFrameFormProps) => {
                 />
               </div>
               {/* eslint-disable-next-line tailwindcss/migration-from-tailwind-2 */}
-              <div className="space-y-2 rounded-lg rounded-t-none border border-t-0 border-[#4c3a4e] border-opacity-50 bg-gray-100 px-4 py-2 dark:bg-[#2A2432]">
-                <div className="mt-1 w-full rounded border border-gray-900 bg-white p-2 px-[12px] py-[10px] text-xs font-thin text-gray-300 dark:bg-[#17101f]">
+              <div className="space-y-2 rounded-lg rounded-t-none bg-gray-100 px-4 py-2 dark:bg-[#2A2432]">
+                <div className="mt-1 w-full rounded bg-white p-2 px-[12px] py-[10px] text-xs font-thin text-gray-300 dark:bg-[#17101f]">
                   Test wallet address
                 </div>
                 <div className="grid w-full grid-cols-1 grid-rows-1 items-center gap-[10px]">
