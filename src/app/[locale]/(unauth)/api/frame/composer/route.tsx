@@ -25,7 +25,7 @@ export const POST = async (req: Request) => {
 
   return NextResponse.json({
     type: 'form',
-    title: 'Create wallet-aware store',
+    title: 'Create Store Frame',
     url: `${getBaseUrl()}/frame/composer?creator=${accountAddress}`,
   });
 };
