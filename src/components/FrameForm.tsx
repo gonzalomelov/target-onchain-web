@@ -156,8 +156,8 @@ const FrameForm = (props: IFrameFormProps) => {
   }, [selectedShop, setValue, creatorShopOptions, otherShopOptions]);
 
   useEffect(() => {
-    const subscription = watch((value) => {
-      if (value.image) {
+    const subscription = watch((value, { name }) => {
+      if (name === 'image' && value.image) {
         setIsImageLoading(true);
         setImageURL(value.image);
       }
