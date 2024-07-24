@@ -25,7 +25,7 @@ export const POST = async (req: Request) => {
 
   return NextResponse.json({
     type: 'form',
-    title: 'Create Store Frame',
+    title: 'Create Slice Store',
     url: `${getBaseUrl()}/frame/composer?creator=${accountAddress}`,
   });
 };
