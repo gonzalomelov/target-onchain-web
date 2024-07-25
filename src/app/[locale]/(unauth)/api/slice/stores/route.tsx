@@ -27,11 +27,12 @@ const fetchShops = async (creator?: string, search?: string) => {
   // Create a new array with maxReferralFee added to each slicer
   const slicersWithReferralFee = filteredSlicers.map((slicer: any) => ({
     ...slicer,
-    maxReferralFee: Math.max(
-      ...slicer.products.map((product: any) =>
-        parseInt(product.referralFeeProduct || '0', 10),
-      ),
-    ),
+    maxReferralFee:
+      Math.max(
+        ...slicer.products.map((product: any) =>
+          parseInt(product.referralFeeProduct || '0', 10),
+        ),
+      ) / 100,
   }));
 
   // Sort the stores by the maximum referral fee

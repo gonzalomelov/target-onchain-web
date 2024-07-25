@@ -5,6 +5,7 @@ import { useRouter } from 'next/navigation';
 import { useTranslations } from 'next-intl';
 import { useEffect, useState } from 'react';
 import { type SubmitHandler, useForm } from 'react-hook-form';
+import { components } from 'react-select';
 import Select from 'react-select/async';
 import type { z } from 'zod';
 
@@ -32,6 +33,37 @@ type OptionType = {
   label: string;
   value: string;
   image: string;
+};
+
+const CustomGroupHeading = (props: any) => {
+  return (
+    <components.GroupHeading {...props}>
+      <div className="flex justify-between">
+        <span>Your Stores</span>
+        <span>Max Fee</span>
+      </div>
+    </components.GroupHeading>
+  );
+};
+
+const CustomOption = (props: any) => {
+  return (
+    <components.Option {...props}>
+      {props.data.maxReferralFee > 0 && (
+        <div className="flex justify-between">
+          <span>{props.data.label}</span>
+          <span className="rounded bg-gray-100 px-2 py-1">
+            {props.data.maxReferralFee}%
+          </span>
+        </div>
+      )}
+      {props.data.maxReferralFee === 0 && (
+        <div>
+          <span>{props.data.label}</span>
+        </div>
+      )}
+    </components.Option>
+  );
 };
 
 const debounce = <T extends (...args: any[]) => void>(
@@ -99,10 +131,16 @@ const FrameForm = (props: IFrameFormProps) => {
   ) => {
     const stores = await fetchAllShops(inputValue);
     const options = stores.map(
-      (store: { id: string; name: string; image: string }) => ({
+      (store: {
+        id: string;
+        name: string;
+        image: string;
+        maxReferralFee: string;
+      }) => ({
         value: `https://slice.so/slicer/${store.id}`,
         label: store.name,
         image: store.image,
+        maxReferralFee: store.maxReferralFee,
       }),
     );
     callback(options);
@@ -116,18 +154,30 @@ const FrameForm = (props: IFrameFormProps) => {
       const allStores = await fetchAllShops('');
 
       const creatorOptions = creatorStores.map(
-        (store: { id: string; name: string; image: string }) => ({
+        (store: {
+          id: string;
+          name: string;
+          image: string;
+          maxReferralFee: string;
+        }) => ({
           value: `https://slice.so/slicer/${store.id}`,
           label: store.name,
           image: store.image,
+          maxReferralFee: store.maxReferralFee,
         }),
       );
 
       const otherOptions = allStores.map(
-        (store: { id: string; name: string; image: string }) => ({
+        (store: {
+          id: string;
+          name: string;
+          image: string;
+          maxReferralFee: string;
+        }) => ({
           value: `https://slice.so/slicer/${store.id}`,
           label: store.name,
           image: store.image,
+          maxReferralFee: store.maxReferralFee,
         }),
       );
 
@@ -229,7 +279,7 @@ const FrameForm = (props: IFrameFormProps) => {
               { label: 'Your Stores', options: creatorShopOptions },
               { label: 'Other Stores', options: otherShopOptions },
             ]}
-            value={selectedOption} // Add this line
+            value={selectedOption}
             loadOptions={debouncedLoadOptions}
             onChange={(selectedOptionValue: any) => {
               if (selectedOptionValue && 'value' in selectedOptionValue) {
@@ -242,10 +292,14 @@ const FrameForm = (props: IFrameFormProps) => {
                 setValue('image', selectedOptionValue.image, {
                   shouldValidate: true,
                 });
-                setSelectedOption(selectedOptionValue); // Add this line
+                setSelectedOption(selectedOptionValue);
               }
             }}
             className="mt-2"
+            components={{
+              Option: CustomOption,
+              GroupHeading: CustomGroupHeading,
+            }}
             styles={{
               control: (base) => ({
                 ...base,
