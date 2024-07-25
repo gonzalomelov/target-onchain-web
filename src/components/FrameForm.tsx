@@ -282,7 +282,11 @@ const FrameForm = (props: IFrameFormProps) => {
             value={selectedOption}
             loadOptions={debouncedLoadOptions}
             onChange={(selectedOptionValue: any) => {
-              if (selectedOptionValue && 'value' in selectedOptionValue) {
+              if (
+                selectedOptionValue &&
+                'value' in selectedOptionValue &&
+                selectedOptionValue.value !== selectedOption?.value
+              ) {
                 setValue('shop', selectedOptionValue.value, {
                   shouldValidate: true,
                 });
