@@ -86,6 +86,8 @@ const FrameForm = (props: IFrameFormProps) => {
   const [isImageLoading, setIsImageLoading] = useState(false);
   const [isAdditionalSettingsCollapsed, setIsAdditionalSettingsCollapsed] =
     useState(true);
+  const [isSubmitDisabled, setIsSubmitDisabled] = useState(false);
+  const [isLoading, setIsLoading] = useState(false);
 
   const creator = watch('creator');
   const selectedShop = watch('shop');
@@ -177,10 +179,17 @@ const FrameForm = (props: IFrameFormProps) => {
 
   const handleCreate = handleSubmit(
     async ({ title, shop, image, button, matchingCriteria }) => {
-      await props.onValid({ title, shop, image, button, matchingCriteria });
+      setIsSubmitDisabled(true); // Disable the button
+      setIsLoading(true); // Show loading indicator
+      try {
+        await props.onValid({ title, shop, image, button, matchingCriteria });
 
-      reset();
-      router.refresh();
+        reset();
+        router.refresh();
+      } catch (error) {
+        setIsSubmitDisabled(false); // Re-enable the button if an error occurs
+        setIsLoading(false); // Hide loading indicator
+      }
     },
   );
 
@@ -441,12 +450,16 @@ const FrameForm = (props: IFrameFormProps) => {
       <div className="mt-5">
         <button
           type="submit"
-          disabled={!isValid}
+          disabled={!isValid || isSubmitDisabled}
           className={`w-full rounded px-4 py-2 transition duration-300 ${
-            isValid ? 'bg-violet-400' : 'cursor-not-allowed bg-gray-400'
+            isValid && !isSubmitDisabled
+              ? 'bg-violet-400'
+              : 'cursor-not-allowed bg-gray-400'
           }`}
         >
-          <span className="font-bold text-white">{t('create')}</span>
+          <span className="font-bold text-white">
+            {isLoading ? 'Creating...' : t('create')}
+          </span>
         </button>
       </div>
     </form>
