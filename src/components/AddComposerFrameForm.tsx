@@ -27,7 +27,7 @@ const AddComposerFrameForm = (props: { creator: string }) => (
           data: {
             cast: {
               text: 'Enter your wallet to discover what this Slice store has for you!',
-              embeds: [`${getBaseUrl()}/api/frame/${frame.id}/html?dev=true`],
+              embeds: [`${getBaseUrl()}/api/frame/${frame.id}/html`],
             },
           },
         },
