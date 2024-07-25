@@ -1,3 +1,10 @@
+## [1.20.3](https://github.com/gonzalomelov/target-onchain/compare/v1.20.2...v1.20.3) (2024-07-25)
+
+
+### Bug Fixes
+
+* issue when pressing the item that was already selected ([919a8a6](https://github.com/gonzalomelov/target-onchain/commit/919a8a6985a793075bb36c7838aef8e35cfbc665))
+
 ## [1.20.2](https://github.com/gonzalomelov/target-onchain/compare/v1.20.1...v1.20.2) (2024-07-24)
 
 
