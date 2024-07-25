@@ -40,7 +40,7 @@ const CustomGroupHeading = (props: any) => {
     <components.GroupHeading {...props}>
       <div className="flex justify-between">
         <span>Your Stores</span>
-        <span>Max Fee</span>
+        <span>Max Earnings per Sale</span>
       </div>
     </components.GroupHeading>
   );
