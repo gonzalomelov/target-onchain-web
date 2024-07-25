@@ -20,18 +20,18 @@ export const FrameValidation = z.object({
   matchingCriteria: MatchingCriteriaEnumSchema,
 });
 
-export const EditFrameValidation = z.object({
-  id: z.coerce.number(),
-  creator: z.string().min(1).optional(),
-  title: z.string().min(1),
-  shop: z.string().min(1),
-  image: z.string().min(1),
-  button: z.string().min(1),
-  matchingCriteria: MatchingCriteriaEnumSchema,
-});
+// export const EditFrameValidation = z.object({
+//   id: z.coerce.number(),
+//   creator: z.string().min(1).optional(),
+//   title: z.string().min(1),
+//   shop: z.string().min(1),
+//   image: z.string().min(1),
+//   button: z.string().min(1),
+//   matchingCriteria: MatchingCriteriaEnumSchema,
+// });
 
-export const DeleteFrameValidation = z.object({
-  id: z.coerce.number(),
-});
+// export const DeleteFrameValidation = z.object({
+//   id: z.coerce.number(),
+// });
 
 export const FrameDefaultValues = FrameValidation.partial();
