@@ -351,9 +351,6 @@ const FrameForm = (props: IFrameFormProps) => {
               </div>
               {/* eslint-disable-next-line tailwindcss/migration-from-tailwind-2 */}
               <div className="space-y-2 rounded-lg rounded-t-none bg-gray-100 px-4 py-2 dark:bg-[#2A2432]">
-                <div className="mt-1 w-full rounded bg-white p-2 px-[12px] py-[10px] text-xs font-thin text-gray-300 dark:bg-[#17101f]">
-                  Test wallet address
-                </div>
                 <div className="grid w-full grid-cols-1 grid-rows-1 items-center gap-[10px]">
                   <div className="flex h-8 flex-row items-center justify-center rounded-lg bg-gray-200 px-4 py-2 text-xs font-semibold dark:bg-[#ffffff1a]">
                     <span className="line-clamp-1 items-center text-xs font-normal text-gray-400">
