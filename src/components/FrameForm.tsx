@@ -35,11 +35,35 @@ type OptionType = {
   image: string;
 };
 
+const CustomSingleValue = (props: any) => {
+  return (
+    <components.SingleValue {...props}>
+      {props.data.maxReferralFee > 0 && (
+        <div className="flex items-center justify-between">
+          <span>{props.data.label}</span>
+          {props.data.maxReferralFee && (
+            <span className="rounded bg-gray-100 px-2 py-1">
+              {props.data.maxReferralFee}%
+            </span>
+          )}
+        </div>
+      )}
+      {props.data.maxReferralFee === 0 && (
+        <div>
+          <span>{props.data.label}</span>
+        </div>
+      )}
+    </components.SingleValue>
+  );
+};
+
 const CustomGroupHeading = (props: any) => {
+  const title =
+    props.children === 'Your Stores' ? 'Your Stores' : 'Other Stores';
   return (
     <components.GroupHeading {...props}>
       <div className="flex justify-between">
-        <span>Your Stores</span>
+        <span>{title}</span>
         <span>Max Earnings per Sale</span>
       </div>
     </components.GroupHeading>
@@ -50,7 +74,7 @@ const CustomOption = (props: any) => {
   return (
     <components.Option {...props}>
       {props.data.maxReferralFee > 0 && (
-        <div className="flex justify-between">
+        <div className="flex items-center justify-between">
           <span>{props.data.label}</span>
           <span className="rounded bg-gray-100 px-2 py-1">
             {props.data.maxReferralFee}%
@@ -303,6 +327,7 @@ const FrameForm = (props: IFrameFormProps) => {
             components={{
               Option: CustomOption,
               GroupHeading: CustomGroupHeading,
+              SingleValue: CustomSingleValue,
             }}
             styles={{
               control: (base) => ({
