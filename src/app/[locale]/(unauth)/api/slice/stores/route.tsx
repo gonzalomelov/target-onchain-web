@@ -24,7 +24,22 @@ const fetchShops = async (creator?: string, search?: string) => {
     );
   }
 
-  return filteredSlicers;
+  // Create a new array with maxReferralFee added to each slicer
+  const slicersWithReferralFee = filteredSlicers.map((slicer: any) => ({
+    ...slicer,
+    maxReferralFee: Math.max(
+      ...slicer.products.map((product: any) =>
+        parseInt(product.referralFeeProduct || '0', 10),
+      ),
+    ),
+  }));
+
+  // Sort the stores by the maximum referral fee
+  slicersWithReferralFee.sort(
+    (a: any, b: any) => b.maxReferralFee - a.maxReferralFee,
+  );
+
+  return slicersWithReferralFee;
 };
 
 export const GET = async (req: Request) => {
