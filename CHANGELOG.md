@@ -1,3 +1,10 @@
+## [1.20.4](https://github.com/gonzalomelov/target-onchain/compare/v1.20.3...v1.20.4) (2024-07-26)
+
+
+### Bug Fixes
+
+* price when currency is ethereum ([f790170](https://github.com/gonzalomelov/target-onchain/commit/f790170997d115c68a3ed4dcbc3b79de64e5f657))
+
 ## [1.20.3](https://github.com/gonzalomelov/target-onchain/compare/v1.20.2...v1.20.3) (2024-07-25)
 
 
