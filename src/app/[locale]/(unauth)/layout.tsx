@@ -26,22 +26,6 @@ export default function Layout(props: { children: React.ReactNode }) {
               {t('support_link')}
             </Link>
           </li>
-          {/* <li>
-            <Link
-              href="/guestbook/"
-              className="border-none text-gray-700 hover:text-gray-900"
-            >
-              {t('guestbook_link')}
-            </Link>
-          </li> */}
-          {/* <li>
-            <Link
-              href="/portfolio/"
-              className="border-none text-gray-700 hover:text-gray-900"
-            >
-              {t('portfolio_link')}
-            </Link>
-          </li> */}
           <li>
             <Link
               href="/termsAndConditions/"
@@ -49,15 +33,6 @@ export default function Layout(props: { children: React.ReactNode }) {
             >
               {t('terms_and_conditions_link')}
             </Link>
-          </li>
-          <li>
-            <a
-              className="border-none text-gray-700 hover:text-gray-900"
-              href="https://github.com/gonzalomelov/onchain-hyper-personalization"
-              target="_blank"
-            >
-              GitHub
-            </a>
           </li>
         </>
       }
