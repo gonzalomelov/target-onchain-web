@@ -1,3 +1,10 @@
+## [1.20.5](https://github.com/gonzalomelov/target-onchain/compare/v1.20.4...v1.20.5) (2024-07-26)
+
+
+### Bug Fixes
+
+* do not force storefront access token to be not null ([c3ce649](https://github.com/gonzalomelov/target-onchain/commit/c3ce649772be507e723c83dafd0491f5818b56e8))
+
 ## [1.20.4](https://github.com/gonzalomelov/target-onchain/compare/v1.20.3...v1.20.4) (2024-07-26)
 
 
