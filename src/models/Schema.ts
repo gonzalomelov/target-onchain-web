@@ -22,7 +22,7 @@ export const sessionSchema = mysqlTable('Session', {
   clerkDbJwt: text('clerkDbJwt'),
   storefrontAccessToken: varchar('storefrontAccessToken', {
     length: 255,
-  }).notNull(),
+  }),
 });
 
 export const frameSchema = mysqlTable('Frame', {
