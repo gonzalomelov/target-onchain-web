@@ -1,4 +1,4 @@
-import { getStoreProducts } from '@slicekit/core';
+import { getStoreProducts } from '@slicekit/core'; // TODO: Remove if moved to the recommender
 import { createConfig, http } from '@wagmi/core';
 import { base } from '@wagmi/core/chains';
 import { sql } from 'drizzle-orm';

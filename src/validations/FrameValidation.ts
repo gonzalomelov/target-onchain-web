@@ -12,7 +12,7 @@ export const MatchingCriteriaEnumSchema = z.enum([
 export type MatchingCriteriaEnum = z.infer<typeof MatchingCriteriaEnumSchema>;
 
 export const FrameValidation = z.object({
-  creator: z.string().min(1).optional(),
+  creator: z.string().min(1).optional(), // TODO: Use with commercePlatform. If not, delete
   title: z.string().min(1),
   shop: z.string().min(1),
   image: z.string().min(1),
@@ -22,7 +22,7 @@ export const FrameValidation = z.object({
 
 // export const EditFrameValidation = z.object({
 //   id: z.coerce.number(),
-//   creator: z.string().min(1).optional(),
+//   creator: z.string().min(1).optional(), // TODO: Use with commercePlatform. If not, delete
 //   title: z.string().min(1),
 //   shop: z.string().min(1),
 //   image: z.string().min(1),
