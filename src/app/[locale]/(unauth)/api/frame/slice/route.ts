@@ -49,6 +49,16 @@ export const POST = async (request: Request) => {
 
     const upsertOperations = products.cartProducts.map((product) => {
       const image = product.images.length > 0 ? product.images[0] : null;
+      const { currency } = product; // Assuming product.currency contains the currency address
+      let formattedPrice;
+
+      if (currency === '0x0000000000000000000000000000000000000000') {
+        formattedPrice = `${((product.price as unknown as number) / 10 ** 18).toFixed(2)} ETH`;
+      } else if (currency === '0x833589fcd6edb6e08f4c7c32d4f71b54bda02913') {
+        formattedPrice = `${((product.price as unknown as number) / 1_000_000).toFixed(2)} USDC`;
+      } else {
+        formattedPrice = `${((product.price as unknown as number) / 1_000_000).toFixed(2)} UNKNOWN`;
+      }
 
       return {
         id: `${slicerId.toString()}-${product.productId.toString()}`,
@@ -59,7 +69,7 @@ export const POST = async (request: Request) => {
         variantId: product.externalVariantId
           ? product.externalVariantId.toString()
           : product.productId.toString(),
-        variantFormattedPrice: `${((product.price as unknown as number) / 1_000_000).toFixed(0)} USDC`,
+        variantFormattedPrice: formattedPrice,
         alt: product.name,
         image:
           image || `${getBaseUrl()}/assets/images/slice-product-default.png`,
