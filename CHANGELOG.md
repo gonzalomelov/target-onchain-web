@@ -1,3 +1,10 @@
+## [1.20.6](https://github.com/gonzalomelov/target-onchain/compare/v1.20.5...v1.20.6) (2024-07-27)
+
+
+### Bug Fixes
+
+* encode parameters that could break image generation ([eb18038](https://github.com/gonzalomelov/target-onchain/commit/eb180387e16ee1883c1d9371bfc0a4248d090aeb))
+
 ## [1.20.5](https://github.com/gonzalomelov/target-onchain/compare/v1.20.4...v1.20.5) (2024-07-26)
 
 
