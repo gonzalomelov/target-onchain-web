@@ -448,7 +448,7 @@ export const POST = async (req: Request) => {
       );
 
       if (recommendedProduct) {
-        imageSrc = `${getBaseUrl()}/api/og?title=Congrats on your +10th run!&subtitle=You're now eligible to buy:&content=${recommendedProduct!.title}&url=${recommendedProduct!.image}&width=600`;
+        imageSrc = `${getBaseUrl()}/api/og?title=${encodeURIComponent('Congrats on your +10th run!')}&subtitle=${encodeURIComponent('You are now eligible to buy:')}&content=${encodeURIComponent(recommendedProduct!.title)}&url=${recommendedProduct!.image}&width=600`;
       }
     } else if (
       frame?.matchingCriteria === 'COINBASE_ONCHAIN_VERIFICATIONS_COUNTRY'
@@ -468,7 +468,7 @@ export const POST = async (req: Request) => {
         );
 
         if (recommendedProduct) {
-          imageSrc = `${getBaseUrl()}/api/og?title=${recommendedProduct!.title}&subtitle=${recommendedProduct!.description}&content=${recommendedProduct!.variantFormattedPrice}&url=${recommendedProduct!.image}&width=600`;
+          imageSrc = `${getBaseUrl()}/api/og?title=${encodeURIComponent(recommendedProduct!.title)}&subtitle=${encodeURIComponent(recommendedProduct!.description)}&content=${encodeURIComponent(recommendedProduct!.variantFormattedPrice)}&url=${recommendedProduct!.image}&width=600`;
 
           customExplanation = `Country of residence verified as ${country} for ${accountAddress} on Coinbase Onchain`;
         } else {
@@ -483,7 +483,7 @@ export const POST = async (req: Request) => {
       );
 
       if (recommendedProduct) {
-        imageSrc = `${getBaseUrl()}/api/og?title=${recommendedProduct!.title}&subtitle=${recommendedProduct!.description}&content=${recommendedProduct!.variantFormattedPrice}&url=${recommendedProduct!.image}&width=600`;
+        imageSrc = `${getBaseUrl()}/api/og?title=${encodeURIComponent(recommendedProduct!.title)}&subtitle=${encodeURIComponent(recommendedProduct!.description)}&content=${encodeURIComponent(recommendedProduct!.variantFormattedPrice)}&url=${recommendedProduct!.image}&width=600`;
       }
     } else if (
       frame?.matchingCriteria === 'COINBASE_ONCHAIN_VERIFICATIONS_ONE'
@@ -493,7 +493,7 @@ export const POST = async (req: Request) => {
       );
 
       if (recommendedProduct) {
-        imageSrc = `${getBaseUrl()}/api/og?title=${recommendedProduct!.title}&subtitle=${recommendedProduct!.description}&content=${recommendedProduct!.variantFormattedPrice}&url=${recommendedProduct!.image}&width=600`;
+        imageSrc = `${getBaseUrl()}/api/og?title=${encodeURIComponent(recommendedProduct!.title)}&subtitle=${encodeURIComponent(recommendedProduct!.description)}&content=${encodeURIComponent(recommendedProduct!.variantFormattedPrice)}&url=${recommendedProduct!.image}&width=600`;
       }
     } else if (frame?.matchingCriteria === 'POAPS_OWNED') {
       const { poaps } = data;
@@ -519,7 +519,7 @@ export const POST = async (req: Request) => {
           (p) => p.title === recommendedProducts[randomIndex]!.title,
         );
 
-        imageSrc = `${getBaseUrl()}/api/og?title=${recommendedProduct!.title}&subtitle=${recommendedProduct!.description}&content=${recommendedProduct!.variantFormattedPrice}&url=${recommendedProduct!.image}&width=600`;
+        imageSrc = `${getBaseUrl()}/api/og?title=${encodeURIComponent(recommendedProduct!.title)}&subtitle=${encodeURIComponent(recommendedProduct!.description)}&content=${encodeURIComponent(recommendedProduct!.variantFormattedPrice)}&url=${recommendedProduct!.image}&width=600`;
 
         customExplanation = `Product found from visited country on Poap ${recommendedProducts[randomIndex]!.title} for ${accountAddress} based on Poaps`;
       } else {
@@ -537,7 +537,7 @@ export const POST = async (req: Request) => {
         );
 
         if (recommendedProduct) {
-          imageSrc = `${getBaseUrl()}/api/gif?text=${encodeURIComponent(recommendedProducts[randomIndex]!.message)}&title=${recommendedProduct!.title}&subtitle=&content=${recommendedProduct!.variantFormattedPrice}&url=${recommendedProduct!.image}&width=600`;
+          imageSrc = `${getBaseUrl()}/api/gif?text=${encodeURIComponent(recommendedProducts[randomIndex]!.message)}&title=${encodeURIComponent(recommendedProduct!.title)}&subtitle=&content=${encodeURIComponent(recommendedProduct!.variantFormattedPrice)}&url=${recommendedProduct!.image}&width=600`;
         }
       } else {
         const randomIndex = Math.floor(Math.random() * products.length);
@@ -545,7 +545,7 @@ export const POST = async (req: Request) => {
         const quote =
           profileMessage ||
           'Hey champ! 🌟 We don’t know much about you. You should go onchain! While we don’t have a specific recommendation right now, we think you’ll love one of our iconic products. Grab Yours Now! 💪';
-        imageSrc = `${getBaseUrl()}/api/gif?text=${quote}&title=${recommendedProduct!.title}&subtitle=&content=${recommendedProduct!.variantFormattedPrice}&url=${recommendedProduct!.image}&width=600`;
+        imageSrc = `${getBaseUrl()}/api/gif?text=${encodeURIComponent(quote)}&title=${encodeURIComponent(recommendedProduct!.title)}&subtitle=&content=${encodeURIComponent(recommendedProduct!.variantFormattedPrice)}&url=${recommendedProduct!.image}&width=600`;
         customExplanation = `No onchain data or matching product found for ${accountAddress}. A random product is recommended.`;
       }
     }
@@ -554,7 +554,7 @@ export const POST = async (req: Request) => {
   if (!recommendedProduct) {
     const randomIndex = Math.floor(Math.random() * products.length);
     recommendedProduct = products[randomIndex];
-    imageSrc = `${getBaseUrl()}/api/og?title=${recommendedProduct!.title}&subtitle=${recommendedProduct!.description}&content=${recommendedProduct!.variantFormattedPrice}&url=${recommendedProduct!.image}&width=600`;
+    imageSrc = `${getBaseUrl()}/api/og?title=${encodeURIComponent(recommendedProduct!.title)}&subtitle=${encodeURIComponent(recommendedProduct!.description)}&content=${encodeURIComponent(recommendedProduct!.variantFormattedPrice)}&url=${recommendedProduct!.image}&width=600`;
     customExplanation = `No onchain data or matching product found for ${accountAddress}. A random product is recommended.`;
   }
 

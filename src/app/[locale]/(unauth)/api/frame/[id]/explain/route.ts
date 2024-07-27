@@ -40,7 +40,7 @@ export const POST = async (req: Request) => {
         },
       ],
       image: {
-        src: `${getBaseUrl()}/api/og?title=Why is this product recommended?&subtitle=${state.description}&content=&url=https://i.imgur.com/RHsQP4b.jpg`,
+        src: `${getBaseUrl()}/api/og?title=${encodeURIComponent('Why is this product recommended?')}&subtitle=${encodeURIComponent(state.description)}&content=&url=https://i.imgur.com/RHsQP4b.jpg`,
       },
       ogDescription: 'Target Onchain',
       ogTitle: 'Target Onchain',

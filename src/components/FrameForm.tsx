@@ -231,11 +231,11 @@ const FrameForm = (props: IFrameFormProps) => {
         setValue('title', selected.label, { shouldValidate: true });
         setValue(
           'image',
-          `${getBaseUrl()}/api/og?title=${encodeURIComponent(selected.label)}&subtitle=Click below for exclusive recommendations!&content=&url=${selected.image}&width=600`,
+          `${getBaseUrl()}/api/og?title=${encodeURIComponent(selected.label)}&subtitle=${encodeURIComponent('Click below for exclusive recommendations!')}&content=&url=${selected.image}&width=600`,
           { shouldValidate: true },
         );
         setImageURL(
-          `${getBaseUrl()}/api/og?title=${encodeURIComponent(selected.label)}&subtitle=Click below for exclusive recommendations!&content=&url=${selected.image}&width=600`,
+          `${getBaseUrl()}/api/og?title=${encodeURIComponent(selected.label)}&subtitle=${encodeURIComponent('Click below for exclusive recommendations!')}&content=&url=${selected.image}&width=600`,
         );
       }
     }
@@ -477,7 +477,7 @@ const FrameForm = (props: IFrameFormProps) => {
                 {...register('image')}
               >
                 <option
-                  value={`${getBaseUrl()}/api/og?title=${encodeURIComponent(selectedOption!.label)}&subtitle=Click below for exclusive recommendations!&content=&url=${selectedOption?.image}&width=600`}
+                  value={`${getBaseUrl()}/api/og?title=${encodeURIComponent(selectedOption!.label)}&subtitle=${encodeURIComponent('Click below for exclusive recommendations!')}&content=&url=${selectedOption?.image}&width=600`}
                 >
                   Default Image
                 </option>
@@ -487,7 +487,7 @@ const FrameForm = (props: IFrameFormProps) => {
                   GIF Image
                 </option> */}
                 <option
-                  value={`${getBaseUrl()}/api/og?layoutType=fullWidth&title=${encodeURIComponent(selectedOption!.label)}&subtitle=Click below for exclusive recommendations!&content=&url=${selectedOption?.image}&width=600`}
+                  value={`${getBaseUrl()}/api/og?layoutType=fullWidth&title=${encodeURIComponent(selectedOption!.label)}&subtitle=${encodeURIComponent('Click below for exclusive recommendations!')}&content=&url=${selectedOption?.image}&width=600`}
                 >
                   Full Width Image
                 </option>
