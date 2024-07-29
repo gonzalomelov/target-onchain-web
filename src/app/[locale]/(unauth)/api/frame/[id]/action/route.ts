@@ -395,8 +395,9 @@ export const POST = async (req: Request) => {
     message.input ?? message.interactor.verified_accounts?.[0] ?? '';
 
   casterAddress =
-    message.raw.action.cast.author.verifications?.[0] ??
-    message.raw.action.cast.author.custody_address;
+    message.raw.action.cast.author?.verifications?.[0] ??
+    message.raw.action.cast.author?.custody_address ??
+    '0x0000000000000000000000000000000000000000';
 
   // Get frame
   const url = new URL(req.url);
