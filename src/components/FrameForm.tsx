@@ -329,7 +329,7 @@ const FrameForm = (props: IFrameFormProps) => {
                 setSelectedOption(selectedOptionValue);
               }
             }}
-            className="mt-2"
+            className="mt-2 text-base"
             components={{
               Option: CustomOption,
               GroupHeading: CustomGroupHeading,
