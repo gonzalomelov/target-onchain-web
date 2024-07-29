@@ -213,8 +213,14 @@ const FrameForm = (props: IFrameFormProps) => {
       if (initialSelection) {
         setValue('shop', initialSelection.value, { shouldValidate: true });
         setValue('title', initialSelection.label, { shouldValidate: true });
-        setValue('image', initialSelection.image, { shouldValidate: true });
-        setImageURL(initialSelection.image || '/assets/images/placeholder.png');
+        setValue(
+          'image',
+          `${getBaseUrl()}/api/og?layoutType=fullWidth&title=${encodeURIComponent(initialSelection.label)}&subtitle=${encodeURIComponent('Click below for exclusive recommendations!')}&content=&url=${initialSelection.image}&width=600`,
+          { shouldValidate: true },
+        );
+        setImageURL(
+          `${getBaseUrl()}/api/og?layoutType=fullWidth&title=${encodeURIComponent(initialSelection.label)}&subtitle=${encodeURIComponent('Click below for exclusive recommendations!')}&content=&url=${initialSelection.image}&width=600`,
+        );
         setSelectedOption(initialSelection);
       }
     };
@@ -231,11 +237,11 @@ const FrameForm = (props: IFrameFormProps) => {
         setValue('title', selected.label, { shouldValidate: true });
         setValue(
           'image',
-          `${getBaseUrl()}/api/og?title=${encodeURIComponent(selected.label)}&subtitle=${encodeURIComponent('Click below for exclusive recommendations!')}&content=&url=${selected.image}&width=600`,
+          `${getBaseUrl()}/api/og?layoutType=fullWidth&title=${encodeURIComponent(selected.label)}&subtitle=${encodeURIComponent('Click below for exclusive recommendations!')}&content=&url=${selected.image}&width=600`,
           { shouldValidate: true },
         );
         setImageURL(
-          `${getBaseUrl()}/api/og?title=${encodeURIComponent(selected.label)}&subtitle=${encodeURIComponent('Click below for exclusive recommendations!')}&content=&url=${selected.image}&width=600`,
+          `${getBaseUrl()}/api/og?layoutType=fullWidth&title=${encodeURIComponent(selected.label)}&subtitle=${encodeURIComponent('Click below for exclusive recommendations!')}&content=&url=${selected.image}&width=600`,
         );
       }
     }
@@ -477,20 +483,20 @@ const FrameForm = (props: IFrameFormProps) => {
                 {...register('image')}
               >
                 <option
+                  value={`${getBaseUrl()}/api/og?layoutType=fullWidth&title=${encodeURIComponent(selectedOption!.label)}&subtitle=${encodeURIComponent('Click below for exclusive recommendations!')}&content=&url=${selectedOption?.image}&width=600`}
+                >
+                  Full Width Image
+                </option>
+                <option
                   value={`${getBaseUrl()}/api/og?title=${encodeURIComponent(selectedOption!.label)}&subtitle=${encodeURIComponent('Click below for exclusive recommendations!')}&content=&url=${selectedOption?.image}&width=600`}
                 >
-                  Default Image
+                  Left Image
                 </option>
                 {/* <option
                   value={`${getBaseUrl()}/api/gif?text=Click below for exclusive recommendations!&title=${encodeURIComponent(selectedOption!.label)}&subtitle=&content=&url=${selectedOption?.image}&width=600`}
                 >
                   GIF Image
                 </option> */}
-                <option
-                  value={`${getBaseUrl()}/api/og?layoutType=fullWidth&title=${encodeURIComponent(selectedOption!.label)}&subtitle=${encodeURIComponent('Click below for exclusive recommendations!')}&content=&url=${selectedOption?.image}&width=600`}
-                >
-                  Full Width Image
-                </option>
               </select>
             </label>
             {errors.image?.message && (
