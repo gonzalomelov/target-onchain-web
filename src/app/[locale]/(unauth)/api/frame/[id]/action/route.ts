@@ -374,8 +374,9 @@ const processVerification = async (
 };
 
 export const POST = async (req: Request) => {
-  // Validate frame and get account address
+  // Validate frame and get account address and caster verified address
   let accountAddress: string | undefined = '';
+  let casterAddress: string | undefined = '';
 
   const body: FrameRequest = await req.json();
 
@@ -392,6 +393,10 @@ export const POST = async (req: Request) => {
 
   accountAddress =
     message?.input ?? message?.interactor?.verified_accounts?.[0] ?? '';
+
+  casterAddress =
+    message.raw.action.cast.author.verifications?.[0] ??
+    message.raw.action.cast.author.custody_address;
 
   // Get frame
   const url = new URL(req.url);
@@ -604,7 +609,7 @@ export const POST = async (req: Request) => {
       {
         action: 'link',
         label: 'View',
-        target: `${frame!.shop}/products/${recommendedProduct!.handle}?ref=${accountAddress}`,
+        target: `${frame!.shop}/products/${recommendedProduct!.handle}?ref=${casterAddress}`,
       },
     ];
   }
