@@ -1,3 +1,10 @@
+## [1.20.8](https://github.com/gonzalomelov/target-onchain/compare/v1.20.7...v1.20.8) (2024-07-29)
+
+
+### Bug Fixes
+
+* mock for tests on frame validator ([bbdb88c](https://github.com/gonzalomelov/target-onchain/commit/bbdb88c44a5c10d608d4ee4da3bb5b76afee5ef0))
+
 ## [1.20.7](https://github.com/gonzalomelov/target-onchain/compare/v1.20.6...v1.20.7) (2024-07-29)
 
 
