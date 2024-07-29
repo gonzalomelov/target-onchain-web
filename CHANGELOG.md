@@ -1,3 +1,10 @@
+## [1.20.7](https://github.com/gonzalomelov/target-onchain/compare/v1.20.6...v1.20.7) (2024-07-29)
+
+
+### Bug Fixes
+
+* use caster address instead of interactor address for the referral ([78f1e7b](https://github.com/gonzalomelov/target-onchain/commit/78f1e7be539590b1c5792e2d68e1240f6dae644a))
+
 ## [1.20.6](https://github.com/gonzalomelov/target-onchain/compare/v1.20.5...v1.20.6) (2024-07-27)
 
 

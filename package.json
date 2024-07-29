@@ -1,6 +1,6 @@
 {
   "name": "target-onchain-app",
-  "version": "1.20.6",
+  "version": "1.20.7",
   "scripts": {
     "dev:spotlight": "spotlight-sidecar",
     "dev:next": "next dev",
