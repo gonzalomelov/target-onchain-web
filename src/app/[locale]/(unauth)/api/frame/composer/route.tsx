@@ -7,7 +7,7 @@ import { defaultErrorFrame, getBaseUrl } from '@/utils/Helpers';
 
 export const POST = async (req: Request) => {
   // Validate frame and get account address
-  let accountAddress: string | undefined = '';
+  let accountAddress: string = '';
 
   const body: FrameRequest = await req.json();
 
@@ -21,7 +21,7 @@ export const POST = async (req: Request) => {
   }
 
   accountAddress =
-    message?.input ?? message?.interactor?.verified_accounts?.[0] ?? '';
+    message.input ?? message.interactor.verified_accounts?.[0] ?? '';
 
   return NextResponse.json({
     type: 'form',

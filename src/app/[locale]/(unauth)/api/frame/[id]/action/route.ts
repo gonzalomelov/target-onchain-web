@@ -375,8 +375,8 @@ const processVerification = async (
 
 export const POST = async (req: Request) => {
   // Validate frame and get account address and caster verified address
-  let accountAddress: string | undefined = '';
-  let casterAddress: string | undefined = '';
+  let accountAddress: string = '';
+  let casterAddress: string = '';
 
   const body: FrameRequest = await req.json();
 
@@ -389,10 +389,10 @@ export const POST = async (req: Request) => {
     return new NextResponse(defaultErrorFrame);
   }
 
-  const dev = !!message?.input;
+  const dev = !!message.input;
 
   accountAddress =
-    message?.input ?? message?.interactor?.verified_accounts?.[0] ?? '';
+    message.input ?? message.interactor.verified_accounts?.[0] ?? '';
 
   casterAddress =
     message.raw.action.cast.author.verifications?.[0] ??
