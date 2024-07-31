@@ -8,6 +8,7 @@ const AddComposerFrameForm = (props: { creator: string }) => (
   <FrameForm
     defaultValues={{
       creator: props.creator,
+      matchingCriteria: 'ALL',
       button: 'Show',
     }}
     onValid={async (data) => {
