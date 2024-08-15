@@ -1,3 +1,10 @@
+# [1.21.0](https://github.com/gonzalomelov/target-onchain-web/compare/v1.20.8...v1.21.0) (2024-08-15)
+
+
+### Features
+
+* add NFTs Owned as onchain data source to recommend ([629da73](https://github.com/gonzalomelov/target-onchain-web/commit/629da733852eb5aafe6516ca38a439c7492d2441))
+
 ## [1.20.8](https://github.com/gonzalomelov/target-onchain/compare/v1.20.7...v1.20.8) (2024-07-29)
 
 
