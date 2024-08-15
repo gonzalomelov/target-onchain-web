@@ -57,6 +57,21 @@ interface PoapsQueryResponse {
   data: Data;
 }
 
+export type NftCollection = {
+  name: string;
+  description: string;
+  externalUrl: string;
+  bannerImageUrl: string;
+};
+
+interface NftCollectionData {
+  NftCollections: { NftCollection: NftCollection[] };
+}
+
+interface NftCollectionsQueryResponse {
+  nftCollectionData: NftCollectionData;
+}
+
 export type Product = {
   id: string;
   title: string;
@@ -175,6 +190,50 @@ const validPoaps = async (address: string): Promise<Poap[]> => {
   return poaps;
 };
 
+const validNftCollections = async (
+  address: string,
+): Promise<NftCollection[]> => {
+  const response = await fetch(
+    `https://eth-mainnet.g.alchemy.com/nft/v3/eeOVa5YoBY7lOHG7S_EhAAJ4bv19Tjbz/getCollectionsForOwner?owner=${address}&pageSize=100&withMetadata=true`,
+    { method: 'GET', headers: { accept: 'application/json' } },
+  );
+
+  const result: NftCollectionsQueryResponse = await response.json();
+
+  const nftCollections =
+    result.nftCollectionData!.NftCollections.NftCollection || [];
+
+  return nftCollections;
+
+  // const query = `
+  //   query CollectionsQuery($address: String!) {
+  //     collections(where: { owner: "${address}" }, first: 5) {
+  //       id
+  //       name
+  //       symbol
+  //       totalSupply
+  //     }
+  //   }
+  // `;
+
+  // const response = await fetch(
+  //   'https://gateway.thegraph.com/api/{api-key}/subgraphs/id/ECtdoov16DUmk5qbhFx4PVVN7vidiNDwzFNsui6FoHEo',
+  //   {
+  //     method: 'POST',
+  //     headers: {
+  //       'Content-Type': 'application/json',
+  //     },
+  //     body: JSON.stringify({ query }),
+  //   },
+  // );
+
+  // const result: NftsQueryResponse = await response.json();
+
+  // const nfts = result.nftData!.Nfts.Nft || [];
+
+  // return nfts;
+};
+
 const verifyReceiptsRunningAttestation = async (
   address: string,
 ): Promise<{ valid: boolean; data: any }> => {
@@ -238,6 +297,16 @@ const verifyPoapsOwned = async (
   return {
     valid: poaps.length > 0,
     data: { poaps },
+  };
+};
+
+const verifyNftCollectionsOwned = async (
+  address: string,
+): Promise<{ valid: boolean; data: any }> => {
+  const nftCollections = await validNftCollections(address);
+  return {
+    valid: nftCollections.length > 0,
+    data: { nftCollections },
   };
 };
 
@@ -346,6 +415,13 @@ const verificationMap: { [key: string]: VerificationMapEntry } = {
       `POAPs owned by ${address}. A specific product might be recommended.`,
     failure: (address: string) =>
       `No POAPs owned by ${address}. A random product is recommended.`,
+  },
+  NFTS_OWNED: {
+    verify: verifyNftCollectionsOwned,
+    success: (address: string) =>
+      `NFTs owned by ${address}. A specific collection might be recommended.`,
+    failure: (address: string) =>
+      `No NFTs owned by ${address}. A random collection is recommended.`,
   },
   ALL: {
     verify: (address: string, frameId?: number) => verifyAll(address, frameId!),
@@ -508,6 +584,36 @@ export const POST = async (req: Request) => {
       const recommendedProductIds = new Set<string>();
 
       poaps.forEach((poap: Poap) => {
+        const recommendations = recommendProducts(poap, products);
+        recommendations.forEach((product) => {
+          if (!recommendedProductIds.has(product.id)) {
+            recommendedProducts.push(product);
+            recommendedProductIds.add(product.id);
+          }
+        });
+      });
+
+      if (recommendedProducts.length > 0) {
+        const randomIndex = Math.floor(
+          Math.random() * recommendedProducts.length,
+        );
+        recommendedProduct = products.find(
+          (p) => p.title === recommendedProducts[randomIndex]!.title,
+        );
+
+        imageSrc = `${getBaseUrl()}/api/og?title=${encodeURIComponent(recommendedProduct!.title)}&subtitle=${encodeURIComponent(recommendedProduct!.description)}&content=${encodeURIComponent(recommendedProduct!.variantFormattedPrice)}&url=${recommendedProduct!.image}&width=600`;
+
+        customExplanation = `Product found from visited country on Poap ${recommendedProducts[randomIndex]!.title} for ${accountAddress} based on Poaps`;
+      } else {
+        customExplanation = `No product matched for countries visited for ${accountAddress} based on Poaps`;
+      }
+    } else if (frame?.matchingCriteria === 'NFTS_OWNED') {
+      const { nftCollections } = data;
+
+      const recommendedProducts: Product[] = [];
+      const recommendedProductIds = new Set<string>();
+
+      nftCollections.forEach((poap: Poap) => {
         const recommendations = recommendProducts(poap, products);
         recommendations.forEach((product) => {
           if (!recommendedProductIds.has(product.id)) {
