@@ -9,6 +9,8 @@ import {
 import { SchemaEncoder } from '@ethereum-attestation-service/eas-sdk';
 import { and, eq } from 'drizzle-orm';
 import { NextResponse } from 'next/server';
+// @ts-ignore
+import { Configuration, OpenAIApi } from 'openai';
 
 import { db } from '@/libs/DB';
 import { Env } from '@/libs/Env';
@@ -22,6 +24,13 @@ import {
   sessionSchema,
 } from '@/models/Schema';
 import { defaultErrorFrame, getBaseUrl } from '@/utils/Helpers';
+
+// Replace with your OpenAI API key
+const configuration = new Configuration({
+  apiKey: Env.OPEN_AI_API_KEY,
+});
+
+const openai = new OpenAIApi(configuration);
 
 export type Attestation = {
   recipient: string;
@@ -194,7 +203,7 @@ const validNftCollections = async (
   address: string,
 ): Promise<NftCollection[]> => {
   const response = await fetch(
-    `https://eth-mainnet.g.alchemy.com/nft/v3/eeOVa5YoBY7lOHG7S_EhAAJ4bv19Tjbz/getCollectionsForOwner?owner=${address}&pageSize=100&withMetadata=true`,
+    `https://eth-mainnet.g.alchemy.com/nft/v3/${Env.ALCHEMY_API_KEY}/getCollectionsForOwner?owner=${address}&pageSize=100&withMetadata=true`,
     { method: 'GET', headers: { accept: 'application/json' } },
   );
 
@@ -610,18 +619,27 @@ export const POST = async (req: Request) => {
     } else if (frame?.matchingCriteria === 'NFTS_OWNED') {
       const { nftCollections } = data;
 
-      const recommendedProducts: Product[] = [];
-      const recommendedProductIds = new Set<string>();
+      const prompt = `You own NFTs from the following collections: ${nftCollections
+        .map((c: any) => c.name)
+        .join(
+          ', ',
+        )}. Based on this, I'd love to recommend 3 other NFT collections that I think you'll really enjoy. For each recommendation, please provide the collection name and explain how it relates to the collections the user already owns, making sure to mention the user's collections explicitly. Format the response as a JSON object with each recommendation containing 'collectionName' and 'message' fields.`;
 
-      nftCollections.forEach((poap: Poap) => {
-        const recommendations = recommendProducts(poap, products);
-        recommendations.forEach((product) => {
-          if (!recommendedProductIds.has(product.id)) {
-            recommendedProducts.push(product);
-            recommendedProductIds.add(product.id);
-          }
-        });
+      const response = await openai.createChatCompletion({
+        model: 'gpt-4o',
+        messages: [
+          {
+            role: 'system',
+            content:
+              'You are a helpful and friendly assistant who gives personalized NFT collection recommendations with a personal touch.',
+          },
+          { role: 'user', content: prompt },
+        ],
       });
+
+      const recommendedProducts = JSON.parse(
+        response.data.choices[0].message?.content || '{}',
+      );
 
       if (recommendedProducts.length > 0) {
         const randomIndex = Math.floor(
@@ -633,9 +651,9 @@ export const POST = async (req: Request) => {
 
         imageSrc = `${getBaseUrl()}/api/og?title=${encodeURIComponent(recommendedProduct!.title)}&subtitle=${encodeURIComponent(recommendedProduct!.description)}&content=${encodeURIComponent(recommendedProduct!.variantFormattedPrice)}&url=${recommendedProduct!.image}&width=600`;
 
-        customExplanation = `Product found from visited country on Poap ${recommendedProducts[randomIndex]!.title} for ${accountAddress} based on Poaps`;
+        customExplanation = `NFT collection found for NFTs owned by ${recommendedProducts[randomIndex]!.collectionName} for ${accountAddress} based on NFTs`;
       } else {
-        customExplanation = `No product matched for countries visited for ${accountAddress} based on Poaps`;
+        customExplanation = `No product matched for NFTs owned by ${accountAddress} based on NFTs`;
       }
     } else if (frame?.matchingCriteria === 'ALL') {
       const { profileMessage, recommendedProducts } = data;
