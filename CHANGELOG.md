@@ -1,3 +1,10 @@
+# [1.22.0](https://github.com/gonzalomelov/target-onchain-web/compare/v1.21.0...v1.22.0) (2024-08-16)
+
+
+### Features
+
+* make recommendations for NFTs using ChatGPT API ([c4331b4](https://github.com/gonzalomelov/target-onchain-web/commit/c4331b4ff78d90fe42a245c00e6c07caa07c2a8f))
+
 # [1.21.0](https://github.com/gonzalomelov/target-onchain-web/compare/v1.20.8...v1.21.0) (2024-08-15)
 
 
